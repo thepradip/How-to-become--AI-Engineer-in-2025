@@ -6,6 +6,7 @@
 ### Prompt: Language to communicate to LLM
 
 ### LLM: Brain of  Our Intelligent System
+- [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 -[Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 
 ### Framework: Library and tools that  make our life easier
