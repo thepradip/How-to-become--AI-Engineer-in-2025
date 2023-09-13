@@ -19,4 +19,5 @@
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 
-### Projects: Make your hand dirty
+# Book And reading resources:
+-[ Best resources on GenAI](https://github.com/openai/openai-cookbook)
