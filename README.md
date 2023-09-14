@@ -1,3 +1,6 @@
+![Alt text](URL)
+
+
 # GenerativeAI
 # Video
 - [Data Science resources](https://github.com/thepradip/Path-to-become-Data-Scientist)
