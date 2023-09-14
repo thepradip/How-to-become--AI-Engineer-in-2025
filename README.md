@@ -27,3 +27,9 @@
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
 - [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
+# Free Generative AI Platform/App:
+- [ChatGPT](https://chat.openai.com/)
+- [Bard](https://bard.google.com/)
+- [Bing](https://www.bing.com/)
+- [YOU](you.com)
+- [Poe](https://poe.com/)
