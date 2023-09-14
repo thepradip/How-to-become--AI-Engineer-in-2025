@@ -27,13 +27,13 @@
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
 - [Langchain Usecase](https://python.langchain.com/docs/use_cases/)
+- [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
+- [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
   ## Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
 - [Pinecone Example](https://docs.pinecone.io/page/examples)
 
-- [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
-- [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
 # Free Generative AI Platform/App:
 - [ChatGPT](https://chat.openai.com/)
 - [Bard](https://bard.google.com/)
