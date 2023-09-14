@@ -10,6 +10,7 @@
 ### LLM: Brain of  Our Intelligent System
 -[Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 ## Vector DB
+-[openai Vector DB implementaion](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
 
 ### Framework: Library and tools that  make our life easier
