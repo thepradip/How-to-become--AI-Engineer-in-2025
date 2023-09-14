@@ -9,6 +9,8 @@
 
 ### LLM: Brain of  Our Intelligent System
 -[Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
+## Vector DB
+- [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
 
 ### Framework: Library and tools that  make our life easier
 - [LangChain & Vector Databases in Production](https://learn.activeloop.ai/courses/langchain)
