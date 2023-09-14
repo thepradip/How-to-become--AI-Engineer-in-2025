@@ -24,5 +24,6 @@
 # Book And reading resources:
 - [ Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
+- [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
 - [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
