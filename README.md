@@ -18,6 +18,7 @@
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
+- [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
 
 # Book And reading resources:
 -[ Best resources on GenAI](https://github.com/openai/openai-cookbook)
