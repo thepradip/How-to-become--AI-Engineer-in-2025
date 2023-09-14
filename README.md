@@ -1,4 +1,4 @@
-![Alt text](URL)
+![Alt text](https://github.com/thepradip/GenerativeAI/blob/main/GenAI.png)
 
 
 # GenerativeAI
