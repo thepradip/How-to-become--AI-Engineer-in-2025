@@ -3,9 +3,11 @@
 
 # GenerativeAI
 # Video
+- [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Data Science resources](https://github.com/thepradip/Path-to-become-Data-Scientist)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
+- [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 
 
 ### Prompt: Language to communicate to LLM
