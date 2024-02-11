@@ -36,6 +36,7 @@
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
+-   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
   ## Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
