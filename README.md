@@ -43,7 +43,20 @@
 - [Pinecone Example](https://docs.pinecone.io/page/examples)
 - [Chroma DB|open source|local](https://www.trychroma.com/)
 - [Weaviate DB|open source|local](https://weaviate.io/)
+## Tools and Library
+- [Openai](https://openai.com/)
+- [Hugging face](https://huggingface.co/models)
+- [Langchain](https://python.langchain.com/docs/get_started/introduction)
+- [Llamaindex](https://www.llamaindex.ai/)
+- [Unstructured-IO](https://github.com/Unstructured-IO/unstructured)
+- [Chainlit](https://docs.chainlit.io/get-started/overview)
+- [Streamlit](https://docs.streamlit.io/)
+- [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
+- [LMstudio](https://lmstudio.ai/)
+- [Ollama](https://ollama.com/)
+- [vllm](https://github.com/vllm-project/vllm)
 
+- 
 # Free Generative AI Platform/App:
 - [ChatGPT](https://chat.openai.com/)
 - [Bard](https://bard.google.com/)
