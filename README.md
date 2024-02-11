@@ -13,10 +13,10 @@
 ### Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
-
 ### LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
-
+- [Hugging face- Models](https://huggingface.co/models)
+- [Ollama| library](https://ollama.com/library)
 ### Framework: Library and tools that  make our life easier
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
