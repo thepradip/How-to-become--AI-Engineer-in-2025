@@ -49,3 +49,9 @@
 - [Bing](https://www.bing.com/)
 - [YOU](you.com)
 - [Poe](https://poe.com/)
+- [Perplexity](https://www.perplexity.ai/)
+# Readymade API-based/self-hosted LLM platform
+- [Together AI](https://www.together.ai/)
+-  [Anyscale](https://www.anyscale.com/)
+-  [Replicate](https://replicate.com/)
+- [Deepinfra](https://deepinfra.com/)
