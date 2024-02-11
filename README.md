@@ -55,3 +55,4 @@
 -  [Anyscale](https://www.anyscale.com/)
 -  [Replicate](https://replicate.com/)
 - [Deepinfra](https://deepinfra.com/)
+- [Hugging face| open source](https://huggingface.co/models)
