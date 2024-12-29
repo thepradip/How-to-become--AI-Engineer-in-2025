@@ -37,12 +37,13 @@
 
   ## AI Observability | Monitoring:
   - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
+  - [Lang Smith](https://docs.smith.langchain.com/)
   - [MLFlow](https://mlflow.org/)
+  - [LLM Ops|GCP|Azure|AWS](https://www.coursera.org/specializations/large-language-model-operations)
   - [LLMOps | GOOGLE](https://learn.deeplearning.ai/courses/llmops/lesson/1/introduction)
   - [Automated testing llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops/lesson/1/introduction)
   - [Quality safety LLM Applications](https://learn.deeplearning.ai/courses/quality-safety-llm-applications/lesson/1/introduction)
   - [Agent Ops](https://github.com/AgentOps-AI/AgentStack)
-  - [Lang Smith](https://docs.smith.langchain.com/)
   - [Comet|LLMOPs ](https://www.comet.com/site/llm-course/)
 
 ## Prompt: Language to communicate to LLM
@@ -52,10 +53,6 @@
 - [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
 - [Openai Prompt Collections](https://platform.openai.com/docs/examples)
 - [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
-
-## LLM: Brain of  Our Intelligent System
-- [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
-- [Hugging face- Models](https://huggingface.co/models)
 
 ## Image and Video Generation:
 - [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
@@ -140,8 +137,7 @@
 - [Anything LLM](https://anythingllm.com/)
 - [Ollama](https://ollama.com/)
 - [vllm](https://github.com/vllm-project/vllm)
-
-- 
+ 
 ## Free Generative AI Platform/App:
 - [ChatGPT](https://chatgpt.com/)
 - [Gemini](https://gemini.google.com/app)
