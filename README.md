@@ -41,6 +41,15 @@
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Hugging face- Models](https://huggingface.co/models)
 
+## Image and Video Generation:
+- [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
+- [Huggingface Diffusion course](https://huggingface.co/learn/diffusion-course/en/unit0/1)
+- [DallE prompts](https://mockey.ai/blog/dall-e-prompts/)
+- [Mid journey](https://www.midjourney.com/explore?tab=top)
+- [Sora](https://sora.com/explore/featured)
+- [Runway|Gen2](https://runwayml.com/research/gen-2)
+- Experiment with Dalle, Midjourney, Leonardo.ai, Kling, Sora
+
 ## Best Free AI Conferences:
   - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
   - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
