@@ -39,6 +39,13 @@
 ### LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Hugging face- Models](https://huggingface.co/models)
+
+  # Best Free AI Conferences:
+  - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
+  - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
+  - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
+  - [MLOPs Community](https://home.mlops.community/home/content)
+    
   
 ## GenAI Framework, Library, and Tools:
 - [OpenAI Cookbook](https://cookbook.openai.com/)
