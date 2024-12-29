@@ -157,5 +157,6 @@
  
   ## Cloud Services:
   - [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
-  - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)(https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
+  - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
+  - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
   - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
