@@ -64,10 +64,10 @@
 - Experiment with Dalle, Midjourney, Leonardo.ai, Kling, Sora
 
 ## Best Free AI Conferences:
-  - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
-  - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
-  - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
-  - [MLOPs Community](https://home.mlops.community/home/content)  
+- [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
+- [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
+- [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
+- [MLOPs Community](https://home.mlops.community/home/content)  
 ## GenAI Framework, Library, and Tools:
 - [OpenAI Cookbook](https://cookbook.openai.com/)
 - [Gemini Cookbook](https://ai.google.dev/gemini-api/cookbook)
