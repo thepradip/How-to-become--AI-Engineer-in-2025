@@ -21,6 +21,14 @@
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
+- https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/ 
+
+- [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
+- [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
+- [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
+- [Crew AI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
+- [Crew AI Advanced](https://learn.deeplearning.ai/courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/lesson/1/introduction)
+- [Llama 3.2](https://www.deeplearning.ai/short-courses/introducing-multimodal-llama-3-2/)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
