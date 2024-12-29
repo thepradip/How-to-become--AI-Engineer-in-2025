@@ -35,7 +35,7 @@
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 
-  ## AI Observability | Monitoring:
+## AI Observability | Monitoring:
   - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
   - [Lang Smith](https://docs.smith.langchain.com/)
   - [MLFlow](https://mlflow.org/)
