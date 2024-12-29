@@ -71,6 +71,8 @@
 - [Autogen](https://microsoft.github.io/autogen/0.2/)
 - [Pandas AI](https://pandas-ai.com/)
 - [Lovable.dev|GPT Engineer](https://pandas-ai.com/)
+- [Flowise](https://flowiseai.com/)
+- [Langflow](https://www.langflow.org/)
 
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
