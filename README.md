@@ -69,6 +69,17 @@
  - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
 
 
+
+# Research:
+- [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+- [Hugging Face Paper](https://huggingface.co/papers)
+- [OpenAI Research](https://openai.com/news/research/)
+- [Meta](https://research.facebook.com/)
+- [Google Research](https://research.google/)
+- [Deep Mind](https://deepmind.google/research/)
+- [Anthropic](https://www.anthropic.com/research)
+
+
 # Book And reading resources:
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
