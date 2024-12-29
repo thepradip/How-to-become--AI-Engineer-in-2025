@@ -35,6 +35,7 @@
 - [Prompting Guide](https://www.promptingguide.ai/prompts)
 - [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
 - [Openai Prompt Collections](https://platform.openai.com/docs/examples)
+- [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
 
 ## LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
