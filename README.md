@@ -1,7 +1,7 @@
 ![Alt text](GenAI.png)
 
 
-# GenerativeAI
+# GenerativeAI Foundation
 ## Programming
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
@@ -15,15 +15,16 @@
 - [coursera| Basic statistics](https://www.coursera.org/learn/basic-statistics)
 
 
-# Video
+# GenAI 
+- [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
-- [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
-- [Data Science resources](https://github.com/thepradip/Path-to-become-Data-Scientist)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
+- [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
+- [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 
 
 ### Prompt: Language to communicate to LLM
@@ -32,13 +33,25 @@
 ### LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Hugging face- Models](https://huggingface.co/models)
-- [Ollama| library](https://ollama.com/library)
-### Framework: Library and tools that  make our life easier
-- [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
-- [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+  
+## GenAI Framework, Library, and Tools:
+- [OpenAI Cookbook](https://cookbook.openai.com/)
+- [Gemini Cookbook](https://ai.google.dev/gemini-api/cookbook)
+- [Langchain](https://python.langchain.com/docs/introduction/)
+- [LLamaindex](https://docs.llamaindex.ai/en/stable/#introduction)
+- [Haystack](https://haystack.deepset.ai/)
+- [Phidata](https://www.phidata.com/)
+- [Lang Graph](https://www.langchain.com/langgraph)
+- [Workflow](https://docs.llamaindex.ai/en/stable/module_guides/workflow/)
+- [OpenAI Swarm](https://github.com/openai/swarm)
+- [Crew AI](https://www.crewai.com/)
+- [Autogen](https://microsoft.github.io/autogen/0.2/)
+- [Pandas AI](https://pandas-ai.com/)
+- [Lovable.dev|GPT Engineer](https://pandas-ai.com/)
 
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
+- [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
  - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
 
@@ -47,6 +60,7 @@
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
+- [generative ai with javascript](https://github.com/microsoft/generative-ai-with-javascript)
 - [Langchain Usecase](https://python.langchain.com/docs/use_cases/)
 - [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
@@ -74,8 +88,8 @@
 
 - 
 # Free Generative AI Platform/App:
-- [ChatGPT](https://chat.openai.com/)
-- [Bard](https://bard.google.com/)
+- [ChatGPT](https://chatgpt.com/)
+- [Gemini](https://gemini.google.com/app)
 - [Bing](https://www.bing.com/)
 - [YOU](you.com)
 - [Poe](https://poe.com/)
