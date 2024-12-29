@@ -18,10 +18,12 @@
 # GenAI 
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
-- [Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+- [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+- [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
+- [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
+- [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
-- [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
@@ -29,6 +31,10 @@
 
 ### Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
+- [Prompting Guide](https://www.promptingguide.ai/prompts)
+- [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
+- [Openai Prompt Collections](https://platform.openai.com/docs/examples)
 
 ### LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
