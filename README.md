@@ -140,14 +140,14 @@
  
 ## Free Generative AI Platform/App:
 - [ChatGPT](https://chatgpt.com/)
+- [XAI| free $25 credit](https://x.ai/api)
+- [Groq](https://console.groq.com/keys)
 - [Gemini](https://gemini.google.com/app)
 - [Bing](https://www.bing.com/)
 - [YOU](you.com)
 - [Poe](https://poe.com/)
 - [Perplexity](https://www.perplexity.ai/)
 ## Readymade API-based/self-hosted LLM platform
-- [XAI| free $25 credit](https://x.ai/api)
-- [Groq](https://console.groq.com/keys)
 - [Gemini](https://ai.google.dev/gemini-api/docs/api-key)
 - [Together AI](https://www.together.ai/)
 -  [Anyscale](https://www.anyscale.com/)
