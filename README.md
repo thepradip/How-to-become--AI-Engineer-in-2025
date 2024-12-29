@@ -74,6 +74,7 @@
 
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
+- [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
 - [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
  - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
