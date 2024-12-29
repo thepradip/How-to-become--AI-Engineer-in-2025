@@ -120,7 +120,7 @@
 - [Streamlit](https://docs.streamlit.io/)
 - [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
 - [LMstudio](https://lmstudio.ai/)
-- [Anything LLM]https://anythingllm.com/)
+- [Anything LLM](https://anythingllm.com/)
 - [Ollama](https://ollama.com/)
 - [vllm](https://github.com/vllm-project/vllm)
 
