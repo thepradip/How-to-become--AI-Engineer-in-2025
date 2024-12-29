@@ -2,7 +2,15 @@
 
 
 # GenerativeAI
+# Make Foundation Strong:
+## Math
+## Programming
+- [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
+- [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
 # Video
+- [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
+- [Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+- [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Data Science resources](https://github.com/thepradip/Path-to-become-Data-Scientist)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
