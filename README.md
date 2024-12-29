@@ -120,6 +120,7 @@
 - [Poe](https://poe.com/)
 - [Perplexity](https://www.perplexity.ai/)
 ## Readymade API-based/self-hosted LLM platform
+- [XAI| free $25 credit](https://x.ai/api)
 - [Together AI](https://www.together.ai/)
 -  [Anyscale](https://www.anyscale.com/)
 -  [Replicate](https://replicate.com/)
