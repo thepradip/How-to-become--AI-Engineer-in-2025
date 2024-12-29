@@ -21,7 +21,7 @@
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
-- https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/ 
+- [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
 
 - [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
 - [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
