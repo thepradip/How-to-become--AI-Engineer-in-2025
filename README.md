@@ -22,7 +22,6 @@
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
 - [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
-
 - [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
 - [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
 - [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
@@ -36,6 +35,15 @@
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 
+  ## AI Observability | Monitoring:
+  - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
+  - [MLFlow](https://mlflow.org/)
+  - [LLMOps | GOOGLE](https://learn.deeplearning.ai/courses/llmops/lesson/1/introduction)
+  - [Automated testing llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops/lesson/1/introduction)
+  - [Quality safety LLM Applications](https://learn.deeplearning.ai/courses/quality-safety-llm-applications/lesson/1/introduction)
+  - [Agent Ops](https://github.com/AgentOps-AI/AgentStack)
+  - [Lang Smith](https://docs.smith.langchain.com/)
+  - [Comet|LLMOPs ](https://www.comet.com/site/llm-course/)
 
 ## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
@@ -88,7 +96,7 @@
 - [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
 - [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
- - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
+- [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
 
 
 
@@ -113,7 +121,7 @@
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
 -   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-  ##   Vector DB
+  ## Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
 - [Pinecone Example](https://docs.pinecone.io/page/examples)
