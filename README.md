@@ -29,18 +29,18 @@
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 
 
-### Prompt: Language to communicate to LLM
+## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
 - [Prompting Guide](https://www.promptingguide.ai/prompts)
 - [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
 - [Openai Prompt Collections](https://platform.openai.com/docs/examples)
 
-### LLM: Brain of  Our Intelligent System
+## LLM: Brain of  Our Intelligent System
 - [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [Hugging face- Models](https://huggingface.co/models)
 
-  # Best Free AI Conferences:
+## Best Free AI Conferences:
   - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
   - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
   - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
@@ -70,7 +70,7 @@
 
 
 
-# Research:
+## Research:
 - [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 - [Hugging Face Paper](https://huggingface.co/papers)
 - [OpenAI Research](https://openai.com/news/research/)
@@ -80,7 +80,7 @@
 - [Anthropic](https://www.anthropic.com/research)
 
 
-# Book And reading resources:
+## Book And reading resources:
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
@@ -91,7 +91,7 @@
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
 -   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-  ## Vector DB
+  ##   Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
 - [Pinecone Example](https://docs.pinecone.io/page/examples)
@@ -111,14 +111,14 @@
 - [vllm](https://github.com/vllm-project/vllm)
 
 - 
-# Free Generative AI Platform/App:
+## Free Generative AI Platform/App:
 - [ChatGPT](https://chatgpt.com/)
 - [Gemini](https://gemini.google.com/app)
 - [Bing](https://www.bing.com/)
 - [YOU](you.com)
 - [Poe](https://poe.com/)
 - [Perplexity](https://www.perplexity.ai/)
-# Readymade API-based/self-hosted LLM platform
+## Readymade API-based/self-hosted LLM platform
 - [Together AI](https://www.together.ai/)
 -  [Anyscale](https://www.anyscale.com/)
 -  [Replicate](https://replicate.com/)
