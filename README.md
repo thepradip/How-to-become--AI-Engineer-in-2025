@@ -67,9 +67,7 @@
   - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
   - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
   - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
-  - [MLOPs Community](https://home.mlops.community/home/content)
-    
-  
+  - [MLOPs Community](https://home.mlops.community/home/content)  
 ## GenAI Framework, Library, and Tools:
 - [OpenAI Cookbook](https://cookbook.openai.com/)
 - [Gemini Cookbook](https://ai.google.dev/gemini-api/cookbook)
@@ -87,16 +85,12 @@
 - [Flowise](https://flowiseai.com/)
 - [Langflow](https://www.langflow.org/)
 - [Llama Stack](https://github.com/meta-llama/llama-stack)
-
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
 - [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
-
-
-
 ## Research:
 - [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 - [Hugging Face Paper](https://huggingface.co/papers)
@@ -105,8 +99,6 @@
 - [Google Research](https://research.google/)
 - [Deep Mind](https://deepmind.google/research/)
 - [Anthropic](https://www.anthropic.com/research)
-
-
 ## Book And reading resources:
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
@@ -155,8 +147,8 @@
 - [Deepinfra](https://deepinfra.com/)
 - [Hugging face| open source](https://huggingface.co/models)
  
-  ## Cloud Services:
-  - [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
-  - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
-  - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
-  - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
+## Cloud Services:
+- [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
+- [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
+- [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
+- [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
