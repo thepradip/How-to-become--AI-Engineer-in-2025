@@ -46,6 +46,7 @@
   - [Agent Ops](https://github.com/AgentOps-AI/AgentStack)
   - [Comet|LLMOPs](https://www.comet.com/site/llm-course/)
   - [Deep Check](https://www.deepchecks.com/llm-evaluation/)
+  - [Evidently Ai](https://www.evidentlyai.com/)
 
 ## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
