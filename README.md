@@ -169,3 +169,7 @@
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
+## Other projects:
+- [Eliza](https://github.com/elizaOS/eliza)
+- [Fish Speech](https://github.com/fishaudio/fish-speech)
+- [Anythingllm](https://anythingllm.com/)
