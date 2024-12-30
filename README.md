@@ -44,7 +44,8 @@
   - [Automated testing llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops/lesson/1/introduction)
   - [Quality safety LLM Applications](https://learn.deeplearning.ai/courses/quality-safety-llm-applications/lesson/1/introduction)
   - [Agent Ops](https://github.com/AgentOps-AI/AgentStack)
-  - [Comet|LLMOPs ](https://www.comet.com/site/llm-course/)
+  - [Comet|LLMOPs](https://www.comet.com/site/llm-course/)
+  - [Deep Check](https://www.deepchecks.com/llm-evaluation/)
 
 ## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
