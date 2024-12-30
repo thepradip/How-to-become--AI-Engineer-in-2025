@@ -158,7 +158,14 @@
 - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
 - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
-## GenAI Apps and Projects:
+# GenAI Apps and Projects:
+## Router models:
+- [Router LLM](https://github.com/lm-sys/RouteLLM)
+- [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
+## Chunking Strategy:
 - [Chunk 1](https://github.com/chonkie-ai/chonkie/tree/main)
 - [Chunk 2](https://github.com/umarbutler/semchunk)
-- 
+## RAG Library:
+- [RAGFlow](https://github.com/infiniflow/ragflow)
+- [Verba](https://github.com/weaviate/Verba)
+- [Graphrag](https://microsoft.github.io/graphrag/)
