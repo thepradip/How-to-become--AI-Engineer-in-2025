@@ -47,6 +47,10 @@
   - [Comet|LLMOPs](https://www.comet.com/site/llm-course/)
   - [Deep Check](https://www.deepchecks.com/llm-evaluation/)
   - [Evidently Ai](https://www.evidentlyai.com/)
+  - [MetaFlow](https://github.com/Netflix/metaflow)
+  - [BentoML](https://www.bentoml.com/)
+  - [ZenML](https://www.zenml.io/)
+    
 
 ## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
@@ -154,3 +158,7 @@
 - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
 - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
+## GenAI Apps and Projects:
+- [Chunk 1](https://github.com/chonkie-ai/chonkie/tree/main)
+- [Chunk 2](https://github.com/umarbutler/semchunk)
+- 
