@@ -40,7 +40,9 @@
 ## AI Observability | Monitoring:
   - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
   - [Lang Smith](https://docs.smith.langchain.com/)
-  - [MLFlow](https://mlflow.org/)
+  - [Lang Smith| Course](https://academy.langchain.com/enrollments)
+  - [MLFlow Wensite](https://mlflow.org/)
+  - [mlops mlflow |huggingface|Duke| Course](https://www.coursera.org/learn/mlops-mlflow-huggingface-duke/)
   - [LLM Ops|GCP|Azure|AWS](https://www.coursera.org/specializations/large-language-model-operations)
   - [LLMOps | GOOGLE](https://learn.deeplearning.ai/courses/llmops/lesson/1/introduction)
   - [Automated testing llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops/lesson/1/introduction)
