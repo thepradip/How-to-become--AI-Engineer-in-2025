@@ -173,6 +173,7 @@
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
+- [RAG evaluation | Course](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)
 
 ## Best Notebook:
 - [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
