@@ -169,11 +169,12 @@
 ## Chunking Strategy:
 - [Chunk 1](https://github.com/chonkie-ai/chonkie/tree/main)
 - [Chunk 2](https://github.com/umarbutler/semchunk)
-## RAG Library:
+## RAG and Evalution Library:
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
 - [RAG evaluation | Course](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)
+- [Arize|RAG evaluation/](https://arize.com/blog-course/rag-evaluation/)
 
 ## Best Notebook:
 - [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
