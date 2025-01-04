@@ -171,6 +171,12 @@
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
+
+## Best Notebook:
+- [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
+- [openAI](https://github.com/openai/openai-cookbook/tree/main/examples)
+- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
+- [Build Hours](https://github.com/openai/build-hours)
 ## Other projects:
 - [Eliza](https://github.com/elizaOS/eliza)
 - [Fish Speech](https://github.com/fishaudio/fish-speech)
