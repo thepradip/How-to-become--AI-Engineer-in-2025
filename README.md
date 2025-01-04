@@ -116,6 +116,7 @@
 - [generative ai with javascript](https://github.com/microsoft/generative-ai-with-javascript)
 - [Langchain Usecase](https://python.langchain.com/docs/use_cases/)
 - [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
+- [Hugging Face| Cookbook](https://huggingface.co/learn/cookbook/en/index)
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
