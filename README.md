@@ -19,6 +19,7 @@
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+- [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
 - [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
