@@ -5,14 +5,16 @@
 ## Programming
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
-## Math
-### Algebra:
-- [ 3 blue and 1 brown ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+## Math [12th basic math requirements]
+12th basic math requirements. probability, Linear Algebra, Stats, etc
 ### Probability and statistics: 
 - [Probability and statistics in data science using python](https://www.edx.org/course/probability-and-statistics-in-data-science-using-python-2)
 - [Khan Academy for probability](https://www.youtube.com/playlist?list=PLC58778F28211FA19) 
 - [Khan Academy for statistics](https://www.youtube.com/watch?v=uhxtUt_-GyM&list=PL1328115D3D8A2566)
 - [coursera| Basic statistics](https://www.coursera.org/learn/basic-statistics)
+### Algebra:
+- [ 3 blue and 1 brown|Algebra ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
 
 
 # GenAI 
