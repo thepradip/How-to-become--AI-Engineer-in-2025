@@ -172,7 +172,8 @@
 ## Chunking Strategy:
 - [Chunk 1](https://github.com/chonkie-ai/chonkie/tree/main)
 - [Chunk 2](https://github.com/umarbutler/semchunk)
-## RAG and Evalution Library:
+## RAG and Evaluation:
+- [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
