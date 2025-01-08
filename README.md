@@ -21,6 +21,7 @@
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
+- [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1)
 
 ## Prompt: Language to communicate to LLM
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
@@ -29,6 +30,7 @@
 - [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
 - [Openai Prompt Collections](https://platform.openai.com/docs/examples)
 - [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
+  
 
 ## Advanced
 - [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
@@ -46,6 +48,7 @@
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+- [Building RAG Agents with LLMs| Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [OpenAI|Build Hours](https://github.com/openai/build-hours)
 
 ## AI Observability | Monitoring:
