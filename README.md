@@ -15,23 +15,32 @@
 ### Algebra:
 - [ 3 blue and 1 brown|Algebra ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-
-
 # GenAI 
+## Beginner 
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
-- [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
+
+## Prompt: Language to communicate to LLM
+- [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
+- [Prompting Guide](https://www.promptingguide.ai/prompts)
+- [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
+- [Openai Prompt Collections](https://platform.openai.com/docs/examples)
+- [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
+
+## Advanced
+- [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
 - [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
+- [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
 - [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
 - [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
 - [Crew AI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
 - [Crew AI Advanced](https://learn.deeplearning.ai/courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/lesson/1/introduction)
 - [Llama 3.2](https://www.deeplearning.ai/short-courses/introducing-multimodal-llama-3-2/)
-- [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
@@ -57,14 +66,6 @@
   - [BentoML](https://www.bentoml.com/)
   - [ZenML](https://www.zenml.io/)
     
-
-## Prompt: Language to communicate to LLM
-- [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-- [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
-- [Prompting Guide](https://www.promptingguide.ai/prompts)
-- [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
-- [Openai Prompt Collections](https://platform.openai.com/docs/examples)
-- [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
 
 ## Image and Video Generation:
 - [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
@@ -97,6 +98,7 @@
 - [Flowise](https://flowiseai.com/)
 - [Langflow](https://www.langflow.org/)
 - [Llama Stack](https://github.com/meta-llama/llama-stack)
+
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
