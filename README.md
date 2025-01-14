@@ -194,3 +194,11 @@
 - [Eliza](https://github.com/elizaOS/eliza)
 - [Fish Speech](https://github.com/fishaudio/fish-speech)
 - [Anythingllm](https://anythingllm.com/)
+- [Open Canvas](https://github.com/langchain-ai/open-canvas)
+
+  ## Leaderboard
+  - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+  - [Open LLM](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)
+  - [LMArena](https://lmarena.ai/)
+  - [LLM compare](https://yourgpt.ai/tools/llm-comparison-and-leaderboard)
+  - [Vellum|Leaderboard](https://www.vellum.ai/llm-leaderboard)
