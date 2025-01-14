@@ -13,7 +13,7 @@
 - [Khan Academy for statistics](https://www.youtube.com/watch?v=uhxtUt_-GyM&list=PL1328115D3D8A2566)
 - [coursera| Basic statistics](https://www.coursera.org/learn/basic-statistics)
 ### Algebra:
-- [ 3 blue and 1 brown|Algebra ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+- [Algebra|3 blue and 1 brown ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 # GenAI 
 ## Beginner 
