@@ -1,4 +1,4 @@
-![Alt text](GenAI.png)
+![Alt text](GenAI.webp)
 
 
 # GenerativeAI Foundation
