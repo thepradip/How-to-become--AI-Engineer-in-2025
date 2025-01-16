@@ -131,9 +131,10 @@
   ## Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
-- [Pinecone Example](https://docs.pinecone.io/page/examples)
 - [Chroma DB|open source|local](https://www.trychroma.com/)
+- [Pinecone Example](https://docs.pinecone.io/page/examples)
 - [Weaviate DB|open source|local](https://weaviate.io/)
+- [Milvus](https://milvus.io/)
 ## Tools and Library
 - [Openai](https://openai.com/)
 - [Hugging face](https://huggingface.co/models)
