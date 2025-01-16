@@ -31,13 +31,13 @@
 - [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
   
 
-## Advanced
+## GenAI Level 2 and Agent Courses
 - [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
-- [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
 - [LLmaindex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/)
+- [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
 - [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
 - [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
 - [Crew AI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
