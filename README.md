@@ -201,6 +201,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Build Hours](https://github.com/openai/build-hours)
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 ## Other projects:
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 - [Eliza](https://github.com/elizaOS/eliza)
 - [Fish Speech](https://github.com/fishaudio/fish-speech)
 - [Anythingllm](https://anythingllm.com/)
