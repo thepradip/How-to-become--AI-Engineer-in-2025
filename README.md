@@ -19,6 +19,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [javascript beginner](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)
 ## Math [12th basic math requirements]
 12th basic math requirements. probability, Linear Algebra, Stats, etc
+
 ### Probability and statistics: 
 - [Probability and statistics in data science using python](https://www.edx.org/course/probability-and-statistics-in-data-science-using-python-2)
 - [Khan Academy for probability](https://www.youtube.com/playlist?list=PLC58778F28211FA19) 
@@ -116,6 +117,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Flowise](https://flowiseai.com/)
 - [Langflow](https://www.langflow.org/)
 - [Llama Stack](https://github.com/meta-llama/llama-stack)
+- [LLM Course](https://github.com/mlabonne/llm-course)
 
 ### Fine-tuning: Teach our AI a new Subject
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
@@ -201,6 +203,8 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
 - [Build Hours](https://github.com/openai/build-hours)
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
+- [LLM Course](https://github.com/mlabonne/llm-course)
+
 ## Other projects:
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 - [Eliza](https://github.com/elizaOS/eliza)
