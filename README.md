@@ -11,10 +11,12 @@
 - [Perplexity](https://www.perplexity.ai/)
   
 # GenerativeAI Foundation
-A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python and JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently and effectively.
+A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python or JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently and effectively.
 ## Programming
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
+- [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
+- [javascript beginner](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)
 ## Math [12th basic math requirements]
 12th basic math requirements. probability, Linear Algebra, Stats, etc
 ### Probability and statistics: 
@@ -26,7 +28,8 @@ A solid foundation in mathematics—covering probability, algebra, and calculus�
 - [Algebra|3 blue and 1 brown ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 # GenAI 
-## Beginner 
+## Beginner:
+ Understand key concepts such as transformers and essential AI terminology to grasp how these models work. Gradually learn to use APIs from platforms like OpenAI or Claude to build and customize your AI-powered products. This structured approach enables you to implement customizations and efficiently innovate effectively and efficiently in generative AI.
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
@@ -205,7 +208,6 @@ A solid foundation in mathematics—covering probability, algebra, and calculus�
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - [Khoj](https://github.com/khoj-ai/khoj)
 - [Awesome generative-ai](https://github.com/steven2358/awesome-generative-ai)
-
 
 ## Leaderboard
 - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
