@@ -1,7 +1,17 @@
 ![Alt text](GenAI.webp)
 
-
+## Free Generative AI Platform/App:
+- [ChatGPT](https://chatgpt.com/)
+- [XAI| free $25 credit](https://x.ai/api)
+- [Groq](https://console.groq.com/keys)
+- [Gemini](https://gemini.google.com/app)
+- [Bing](https://www.bing.com/)
+- [YOU](you.com)
+- [Poe](https://poe.com/)
+- [Perplexity](https://www.perplexity.ai/)
+  
 # GenerativeAI Foundation
+A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python and JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently and effectively.
 ## Programming
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
@@ -122,7 +132,8 @@
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
-- [generative ai with javascript](https://github.com/microsoft/generative-ai-with-javascript)
+- [KDnuggest| Nice resource](https://www.kdnuggets.com/)
+- [MLOps](https://huyenchip.com/mlops/)
 - [Langchain Usecase](https://python.langchain.com/docs/use_cases/)
 - [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
 - [Hugging Face| Cookbook](https://huggingface.co/learn/cookbook/en/index)
@@ -151,15 +162,7 @@
 - [Ollama](https://ollama.com/)
 - [vllm](https://github.com/vllm-project/vllm)
  
-## Free Generative AI Platform/App:
-- [ChatGPT](https://chatgpt.com/)
-- [XAI| free $25 credit](https://x.ai/api)
-- [Groq](https://console.groq.com/keys)
-- [Gemini](https://gemini.google.com/app)
-- [Bing](https://www.bing.com/)
-- [YOU](you.com)
-- [Poe](https://poe.com/)
-- [Perplexity](https://www.perplexity.ai/)
+
 ## Readymade API-based/self-hosted LLM platform
 - [Gemini](https://ai.google.dev/gemini-api/docs/api-key)
 - [Together AI](https://www.together.ai/)
