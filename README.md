@@ -179,6 +179,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
 - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
+- [LLMOPS](https://www.coursera.org/specializations/large-language-model-operations)
 # GenAI Apps and Projects:
 ## Router models:
 - [Router LLM](https://github.com/lm-sys/RouteLLM)
