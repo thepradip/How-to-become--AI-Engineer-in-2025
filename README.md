@@ -38,6 +38,7 @@
 - [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
 - [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
+- [LLmaindex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/)
 - [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
 - [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
 - [Crew AI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
