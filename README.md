@@ -155,13 +155,7 @@ These research-focused resources provide access to cutting-edge advancements in 
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
 -   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-  ## Vector DB
-- [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
-- [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
-- [Chroma DB|open source|local](https://www.trychroma.com/)
-- [Pinecone Example](https://docs.pinecone.io/page/examples)
-- [Weaviate DB|open source|local](https://weaviate.io/)
-- [Milvus](https://milvus.io/)
+ 
 ## Tools and Library
 - [Openai](https://openai.com/)
 - [Hugging face](https://huggingface.co/models)
@@ -193,23 +187,34 @@ These cloud services courses focus on leveraging platforms like AWS Bedrock, Azu
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
 - [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
 - [LLMOPS](https://www.coursera.org/specializations/large-language-model-operations)
+
 # GenAI Apps and Projects:
-## Router models:
-- [Router LLM](https://github.com/lm-sys/RouteLLM)
-- [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
 ## Chunking Strategy:
 - [chonkie](https://github.com/chonkie-ai/chonkie/tree/main)
 - [semchunk](https://github.com/umarbutler/semchunk)
 - [Llamaindex|Chunking](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/)
 - [Langchain Chunkinig](https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/)
 - [Unstructuredio| Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)
+ ## Vector DB
+- [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
+- [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
+- [Chroma DB|open source|local](https://www.trychroma.com/)
+- [Pinecone Example](https://docs.pinecone.io/page/examples)
+- [Weaviate DB|open source|local](https://weaviate.io/)
+- [Milvus](https://milvus.io/)
+
 ## RAG and Evaluation:
+- [Azure AI search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-cognitive-search-and-langchain-a-seamless-integration-for-enhanced-vector-/3901448)
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
 - [RAG evaluation | Course](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)
 - [Arize|RAG evaluation/](https://arize.com/blog-course/rag-evaluation/)
+
+- ## Router models:
+- [Router LLM](https://github.com/lm-sys/RouteLLM)
+- [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
 
 ## Best Notebook:
 - [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
