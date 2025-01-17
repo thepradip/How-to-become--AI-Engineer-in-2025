@@ -1,5 +1,5 @@
 
-<img src="GenAI.webp" alt="Generative AI" width="800">
+<img src="GenAI.png" alt="Generative AI" width="800">
 
 
 
