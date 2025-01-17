@@ -1,6 +1,9 @@
 ![Alt text](GenAI.webp)
 
 ## Free Generative AI Platform/App:
+Discover our free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts—all without any installations. 
+Dive in and play to understand how AI works, master the art of prompt writing, and build your innovative applications seamlessly. platform like chatgpt, XAI(twitter), Gemini from google, groq.
+
 - [ChatGPT](https://chatgpt.com/)
 - [XAI| free $25 credit](https://x.ai/api)
 - [Groq](https://console.groq.com/keys)
@@ -11,7 +14,7 @@
 - [Perplexity](https://www.perplexity.ai/)
   
 # GenerativeAI Foundation
-A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python or JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently and effectively.
+A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python or JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently.
 ## Programming
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
 - [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
@@ -30,7 +33,7 @@ A solid foundation in mathematics—covering probability, algebra, and calculus�
 
 # GenAI 
 ## Beginner:
- Understand key concepts such as transformers and essential AI terminology to grasp how these models work. Gradually learn to use APIs from platforms like OpenAI, Huggingface, and  Claude to build and customize your AI-powered products. This structured approach enables you to implement customizations efficiently in generative AI.
+ Understand key concepts such as transformers encoder, decoder, and essential AI terminology to grasp how these models work. Gradually learn to use APIs from platforms like OpenAI, Huggingface, and  Claude to build and customize your AI-powered products. This structured approach enables you to implement customizations efficiently in generative AI.
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
@@ -111,6 +114,8 @@ Best underrated AI conference free of cost
 - [MLOPs Community](https://home.mlops.community/home/content)
   
 ## GenAI Framework, Library, and Tools:
+Unlock the full potential of Generative AI with powerful frameworks like **LangChain** and **LlamaIndex**, perfect for seamless integration and advanced functionality. Harness the capabilities of agentic frameworks such as **Langgraph**, **CrewAI**, **Autogen**, and **Phidata** to create autonomous AI systems that handle complex tasks effortlessly. For those who prefer a no-code approach, platforms like **Flowise** and **Langflow** make designing and deploying sophisticated AI applications simple and accessible. Empower your AI journey with these versatile tools and bring your innovative ideas to life with ease.
+
 - [OpenAI Cookbook](https://cookbook.openai.com/)
 - [Gemini Cookbook](https://ai.google.dev/gemini-api/cookbook)
 - [Langchain](https://python.langchain.com/docs/introduction/)
@@ -159,8 +164,8 @@ These research-focused resources provide access to cutting-edge advancements in 
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
 -   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
  
-## Tools and Library
-- [Openai](https://openai.com/)
+## UI and Local LLM  for POC
+Build stunning AI applications effortlessly using simple UI libraries like Streamlit and Chainlit for your proof-of-concept projects. Harness powerful local LLMs such as Ollama, LMStudio, and VLLM for advanced text generation, while creating scalable backend services with FastAPI. Tap into the extensive collection of open-source models from Hugging Face to bring your Generative AI ideas to life
 - [Hugging face](https://huggingface.co/models)
 - [Langchain](https://python.langchain.com/docs/get_started/introduction)
 - [Llamaindex](https://www.llamaindex.ai/)
