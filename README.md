@@ -244,6 +244,7 @@ These cloud services courses focus on leveraging platforms like AWS Bedrock, Azu
 
 ## Leaderboard
 - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+- [SLM](https://llm.extractum.io/list/?small)
 - [Open LLM](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)
 - [LMArena](https://lmarena.ai/)
 - [LLM compare](https://yourgpt.ai/tools/llm-comparison-and-leaderboard)
