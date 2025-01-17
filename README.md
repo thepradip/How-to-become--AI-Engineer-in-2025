@@ -1,4 +1,7 @@
 ![Alt text](GenAI.webp)
+![Generative AI](GenAI.webp)
+
+<img src="GenAI.webp" alt="Generative AI" style="max-width: 100%; height: auto;">
 
 ## Free Generative AI Platform/App:
 Discover our free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts—all without any installations. 
