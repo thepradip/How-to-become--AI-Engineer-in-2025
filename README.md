@@ -37,6 +37,9 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
 
 ## Prompt: Language to communicate to LLM
+Prompt engineering is designing and crafting effective prompts to optimize the performance of large language models (LLMs). 
+These courses, such as ‚ÄúPrompt Engineering for Everyone‚Äù and OpenAI‚Äôs and Anthropic‚Äôs collections, guide learners in understanding how to structure prompts, leverage model capabilities, and create customized queries for specific tasks. 
+They provide practical techniques, examples, and strategies for improving interaction with LLMs across diverse applications.
 - [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
 - [Prompting Guide](https://www.promptingguide.ai/prompts)
@@ -46,6 +49,7 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
   
 
 ## GenAI Level 2 and Agent Courses
+These advanced courses offer a practical deep dive into generative AI frameworks like LangChain, LlamaIndex, and Autogen, emphasizing hands-on projects to build real-world applications. With a focus on agentic systems and retrieval-augmented generation, learners can enhance their expertise and confidently navigate cutting-edge AI technologies. Completing these courses ensures proficiency in key tools and frameworks, setting the stage for impactful development work.
 - [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
@@ -68,6 +72,7 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [OpenAI|Build Hours](https://github.com/openai/build-hours)
 
 ## AI Observability | Monitoring:
+These courses focus on AI observability and operational excellence, offering tools and frameworks like Arize, LangSmith, MLflow, and ZenML for monitoring, testing, and managing large language models (LLMs). Learners gain practical insights into LLMOps, quality assurance, and automated testing, ensuring safety and performance in AI applications. With hands-on content and cutting-edge platforms, these courses empower participants to build reliable, scalable, and well-monitored AI systems.
   - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
   - [Lang Smith](https://docs.smith.langchain.com/)
   - [Lang Smith| Course](https://academy.langchain.com/enrollments)
@@ -87,6 +92,7 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
     
 
 ## Image and Video Generation:
+These courses and platforms provide an in-depth exploration of image and video generation using cutting-edge tools like diffusion models, DALL-E, and Runway Gen-2. Learners can master techniques for crafting prompts and experimenting with tools like MidJourney, Sora, and Leonardo.ai to create stunning visual content. With practical experiments and creative freedom, these resources empower users to harness generative AI for artistic and professional projects.
 - [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
 - [Huggingface Diffusion course](https://huggingface.co/learn/diffusion-course/en/unit0/1)
 - [DallE prompts](https://mockey.ai/blog/dall-e-prompts/)
@@ -99,7 +105,8 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
 - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
 - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
-- [MLOPs Community](https://home.mlops.community/home/content)  
+- [MLOPs Community](https://home.mlops.community/home/content)
+  
 ## GenAI Framework, Library, and Tools:
 - [OpenAI Cookbook](https://cookbook.openai.com/)
 - [Gemini Cookbook](https://ai.google.dev/gemini-api/cookbook)
@@ -120,12 +127,14 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [LLM Course](https://github.com/mlabonne/llm-course)
 
 ### Fine-tuning: Teach our AI a new Subject
+These courses focus on fine-tuning large language models (LLMs) to specialize them for new subjects or tasks. Learners explore tools and techniques for customizing models, including embedding fine-tuning and debugging generative AI systems. With hands-on resources from OpenAI, Activeloop, and DeepLearning.ai, these courses empower users to adapt LLMs to specific domains for improved accuracy and relevance.
 - [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
 - [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
 ## Research:
+These research-focused resources provide access to cutting-edge advancements in AI from leading organizations like OpenAI, DeepMind, and Google Research. Platforms like Arxiv and Hugging Face Papers offer a wealth of scholarly articles, enabling learners to explore the latest innovations in AI agents, generative models, and more. Staying updated with these resources is essential for those aiming to contribute to or stay ahead in the evolving AI landscape.
 - [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 - [Hugging Face Paper](https://huggingface.co/papers)
 - [OpenAI Research](https://openai.com/news/research/)
@@ -166,6 +175,7 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [Anything LLM](https://anythingllm.com/)
 - [Ollama](https://ollama.com/)
 - [vllm](https://github.com/vllm-project/vllm)
+- [FastAPi](https://fastapi.tiangolo.com/)
  
 
 ## Readymade API-based/self-hosted LLM platform
@@ -177,6 +187,7 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [Hugging face| open source](https://huggingface.co/models)
  
 ## Cloud Services:
+These cloud services courses focus on leveraging platforms like AWS Bedrock, Azure AI, and GCP Vertex AI for deploying and managing AI solutions at scale. Learners gain practical knowledge in using cloud-based tools for building, fine-tuning, and operationalizing large language models (LLMs). With a strong emphasis on hands-on implementation, these resources prepare participants to harness the power of AI in enterprise-grade cloud environments.
 - [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
 - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
@@ -187,8 +198,11 @@ A solid foundation in mathematics‚Äîcovering probability, algebra, and calculus‚
 - [Router LLM](https://github.com/lm-sys/RouteLLM)
 - [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
 ## Chunking Strategy:
-- [Chunk 1](https://github.com/chonkie-ai/chonkie/tree/main)
-- [Chunk 2](https://github.com/umarbutler/semchunk)
+- [chonkie](https://github.com/chonkie-ai/chonkie/tree/main)
+- [semchunk](https://github.com/umarbutler/semchunk)
+- [Llamaindex|Chunking](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/)
+- [Langchain Chunkinig](https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/)
+- [Unstructuredio| Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)
 ## RAG and Evaluation:
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [RAGFlow](https://github.com/infiniflow/ragflow)
