@@ -71,7 +71,8 @@ These advanced courses offer a practical deep dive into generative AI frameworks
 - [Building RAG Agents with LLMs| Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [OpenAI|Build Hours](https://github.com/openai/build-hours)
 
-## AI Observability | Monitoring:
+## AI Observability | Monitoring: If you can't measure, you can't understand it
+
 These courses focus on AI observability and operational excellence, offering tools and frameworks like Arize, LangSmith, MLflow, and ZenML for monitoring, testing, and managing large language models (LLMs). Learners gain practical insights into LLMOps, quality assurance, and automated testing, ensuring safety and performance in AI applications. With hands-on content and cutting-edge platforms, these courses empower participants to build reliable, scalable, and well-monitored AI systems.
   - [Arize|LLM Observability](https://arize.com/blog-course/large-language-model-monitoring-observability/)
   - [Lang Smith](https://docs.smith.langchain.com/)
@@ -92,7 +93,7 @@ These courses focus on AI observability and operational excellence, offering too
     
 
 ## Image and Video Generation:
-These courses and platforms provide an in-depth exploration of image and video generation using cutting-edge tools like diffusion models, DALL-E, and Runway Gen-2. Learners can master techniques for crafting prompts and experimenting with tools like MidJourney, Sora, and Leonardo.ai to create stunning visual content. With practical experiments and creative freedom, these resources empower users to harness generative AI for artistic and professional projects.
+These courses and platforms provide an exploration of Multimodal image and video generation using cutting-edge tools like diffusion models, DALL-E, and Runway Gen-2. Learners can master techniques for crafting prompts and experimenting with tools like MidJourney, Sora, and Leonardo.ai to create stunning visual content. With practical experiments and creative freedom, these resources empower users to harness generative AI for artistic and professional projects.
 - [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
 - [Huggingface Diffusion course](https://huggingface.co/learn/diffusion-course/en/unit0/1)
 - [DallE prompts](https://mockey.ai/blog/dall-e-prompts/)
@@ -102,6 +103,7 @@ These courses and platforms provide an in-depth exploration of image and video g
 - Experiment with Dalle, Midjourney, Leonardo.ai, Kling, Sora
 
 ## Best Free AI Conferences:
+Best underrated AI conference free of cost
 - [LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)
 - [LLM in Production - Part II](https://www.youtube.com/playlist?list=PL3vkEKxWd-uupBSWL-DbVJuCMqXO9Z3Z4)
 - [LLM in Production - Part III](https://www.youtube.com/playlist?list=PL3vkEKxWd-usFkc3977ZeexYXS3GgDVSO)
