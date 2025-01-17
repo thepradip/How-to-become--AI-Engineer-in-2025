@@ -63,6 +63,7 @@ These advanced courses offer a practical deep dive into generative AI frameworks
 - [Llama 3.2](https://www.deeplearning.ai/short-courses/introducing-multimodal-llama-3-2/)
 - [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
+- [Smolagents](https://huggingface.co/docs/smolagents/en/index)
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1)
