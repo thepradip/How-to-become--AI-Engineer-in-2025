@@ -1,5 +1,8 @@
 
 <img src="GenAI.webp" alt="Generative AI" width="700">
+<div style="text-align: center;">
+  <img src="GenAI.webp" alt="Generative AI" width="700">
+</div>
 
 
 ## Free Generative AI Platform/App:
