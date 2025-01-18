@@ -23,6 +23,11 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
 - [javascript beginner](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)
+- [Coding Practice| Leetcode](https://leetcode.com/explore/)
+- [10 min Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
+- [Python Workshop](https://github.com/thepradip/Python-Beginner-Series-IPL)
+- [Datacamp|python and plot](https://www.youtube.com/watch?v=-Rf4fZDQ0yw&list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4)
+
 ## Math [12th basic math requirements]
 12th basic math requirements. probability, Linear Algebra, Stats, etc
 
