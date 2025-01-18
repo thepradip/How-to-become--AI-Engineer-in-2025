@@ -79,7 +79,7 @@ These advanced courses offer a practical deep dive into generative AI frameworks
 - [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1)
-
+- [Kaggle Learn](https://www.kaggle.com/learn)
 - [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 - [Building RAG Agents with LLMs| Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
 - [OpenAI|Build Hours](https://github.com/openai/build-hours)
