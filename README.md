@@ -62,6 +62,7 @@ They provide practical techniques, examples, and strategies for improving intera
 
 ## GenAI Level 2 and Agent Courses
 These advanced courses offer a practical deep dive into generative AI frameworks like LangChain, LlamaIndex, and Autogen, emphasizing hands-on projects to build real-world applications. With a focus on agentic systems and retrieval-augmented generation, learners can enhance their expertise and confidently navigate cutting-edge AI technologies. Completing these courses ensures proficiency in key tools and frameworks, setting the stage for impactful development work.
+
 - [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
 - [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
 - [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
