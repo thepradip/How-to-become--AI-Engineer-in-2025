@@ -23,6 +23,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
 - [javascript beginner](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)
+- [JavaScript Mastery| collections of best JS Projects](https://www.youtube.com/@javascriptmastery/videos)
 - [Coding Practice| Leetcode](https://leetcode.com/explore/)
 - [10 min Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [Python Workshop](https://github.com/thepradip/Python-Beginner-Series-IPL)
