@@ -213,6 +213,7 @@ These cloud services courses focus on leveraging platforms like AWS Bedrock, Azu
 - [Llamaindex|Chunking](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/)
 - [Langchain Chunkinig](https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/)
 - [Unstructuredio| Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)
+- [Microsoft| Markitdown](https://github.com/microsoft/markitdown)
  ## Vector DB
 - [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
 - [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
