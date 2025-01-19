@@ -223,7 +223,9 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Pinecone Example](https://docs.pinecone.io/page/examples)
 - [Weaviate DB|open source|local](https://weaviate.io/)
 - [Milvus](https://milvus.io/)
-
+- [Qdrant](https://qdrant.tech/)
+- [Vector DB Comparison](https://superlinked.com/vector-db-comparison)
+- 
 ## RAG and Evaluation:
 - [Azure AI search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-cognitive-search-and-langchain-a-seamless-integration-for-enhanced-vector-/3901448)
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
