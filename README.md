@@ -229,6 +229,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 ## RAG and Evaluation:
 - [Azure AI search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-cognitive-search-and-langchain-a-seamless-integration-for-enhanced-vector-/3901448)
 - [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
+- [Crawl4ai](https://github.com/unclecode/crawl4ai)
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 - [Verba](https://github.com/weaviate/Verba)
 - [Graphrag](https://microsoft.github.io/graphrag/)
@@ -249,6 +250,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 
 ## Other projects:
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
+- [CopilotKit)](https://github.com/CopilotKit/CopilotKit)
 - [Eliza](https://github.com/elizaOS/eliza)
 - [Fish Speech](https://github.com/fishaudio/fish-speech)
 - [Anythingllm](https://anythingllm.com/)
@@ -256,6 +258,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - [Khoj](https://github.com/khoj-ai/khoj)
 - [Awesome generative-ai](https://github.com/steven2358/awesome-generative-ai)
+- [Openai Realtime Agents](https://github.com/openai/openai-realtime-agents)
 
 ## Leaderboard
 - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
