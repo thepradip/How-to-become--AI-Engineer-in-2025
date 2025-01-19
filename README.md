@@ -50,6 +50,8 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
+- [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
+
 
 ## Prompt: Language to communicate to LLM
 Prompt engineering is designing and crafting effective prompts to optimize the performance of large language models (LLMs). 
