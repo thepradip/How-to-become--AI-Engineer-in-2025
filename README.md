@@ -46,6 +46,7 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 ## Beginner:
  Understand key concepts such as transformers encoder, decoder, and essential AI terminology to grasp how these models work. Gradually learn to use APIs from platforms like OpenAI, Huggingface, and  Claude to build and customize your AI-powered products. This structured approach enables you to implement customizations efficiently in generative AI.
 - [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
+- [Illustrated transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
 - [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
