@@ -156,6 +156,8 @@ These courses focus on fine-tuning large language models (LLMs) to specialize th
 - [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
 - [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
+- [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
+-  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
 ## Research:
 These research-focused resources provide access to cutting-edge advancements in AI from leading organizations like OpenAI, DeepMind, and Google Research. Platforms like Arxiv and Hugging Face Papers offer a wealth of scholarly articles, enabling learners to explore the latest innovations in AI agents, generative models, and more. Staying updated with these resources is essential for those aiming to contribute to or stay ahead in the evolving AI landscape.
 - [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
