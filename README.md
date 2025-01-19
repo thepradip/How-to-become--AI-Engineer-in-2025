@@ -27,6 +27,8 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 - [Coding Practice| Leetcode](https://leetcode.com/explore/)
 - [10 min Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [Python Workshop](https://github.com/thepradip/Python-Beginner-Series-IPL)
+- [Chainlit](https://docs.chainlit.io/get-started/overview)
+- [Streamlit](https://docs.streamlit.io/)
 - [Datacamp|python and plot](https://www.youtube.com/watch?v=-Rf4fZDQ0yw&list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4)
 
 ## Math [12th basic math requirements]
@@ -199,7 +201,7 @@ Build stunning AI applications effortlessly using simple UI libraries like Strea
 - [Hugging face| open source](https://huggingface.co/models)
  
 ## Cloud Services:
-These cloud services courses focus on leveraging platforms like AWS Bedrock, Azure AI, and GCP Vertex AI for deploying and managing AI solutions at scale. Learners gain practical knowledge in using cloud-based tools for building, fine-tuning, and operationalizing large language models (LLMs). With a strong emphasis on hands-on implementation, these resources prepare participants to harness the power of AI in enterprise-grade cloud environments.
+These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and GCP Vertex AI to deploy and manage AI solutions at scale. Learners gain practical knowledge in using cloud-based tools for building, fine-tuning, and operationalizing large language models (LLMs). With a strong emphasis on hands-on implementation, these resources prepare participants to harness the power of AI in enterprise-grade cloud environments.
 - [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
 - [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
 - [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
