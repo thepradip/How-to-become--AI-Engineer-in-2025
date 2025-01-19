@@ -4,7 +4,7 @@
 
 
 ## Free Generative AI Platform/App:
-Discover our free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts—all without any installations. 
+Discover free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts—all without any installations. 
 Dive in and play to understand how AI works, master the art of prompt writing, and build your innovative applications seamlessly. platform like chatgpt, XAI(twitter), Gemini from google, groq.
 
 - [ChatGPT](https://chatgpt.com/)
