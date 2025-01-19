@@ -179,7 +179,8 @@ These research-focused resources provide access to cutting-edge advancements in 
 - [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
 -  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
 -  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
--   [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+- [AI Agent|kaggle](https://www.kaggle.com/whitepaper-agents)
  
 ## UI and Local LLM  for POC
 Build stunning AI applications effortlessly using simple UI libraries like Streamlit and Chainlit for your proof-of-concept projects. Harness powerful local LLMs such as Ollama, LMStudio, and VLLM for advanced text generation, while creating scalable backend services with FastAPI. Tap into the extensive collection of open-source models from Hugging Face to bring your Generative AI ideas to life
