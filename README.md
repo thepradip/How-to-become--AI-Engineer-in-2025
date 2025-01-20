@@ -167,8 +167,9 @@ These research-focused resources provide access to cutting-edge advancements in 
 - [Google Research](https://research.google/)
 - [Deep Mind](https://deepmind.google/research/)
 - [Anthropic](https://www.anthropic.com/research)
+  
 ## Book And reading resources:
-- [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
+- [Foundations of Large Language Models](https://arxiv.org/pdf/2501.09223)
 - [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
 - [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
 - [KDnuggest| Nice resource](https://www.kdnuggets.com/)
@@ -247,6 +248,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
 
 ## Best Notebook:
+- [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
 - [openAI](https://github.com/openai/openai-cookbook/tree/main/examples)
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
@@ -254,7 +256,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - [LLM Course](https://github.com/mlabonne/llm-course)
 
-## Other projects and Collections:
+## Other projects:
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 - [CopilotKit)](https://github.com/CopilotKit/CopilotKit)
 - [Eliza](https://github.com/elizaOS/eliza)
