@@ -254,7 +254,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - [LLM Course](https://github.com/mlabonne/llm-course)
 
-## Other projects:
+## Other projects and Collections:
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 - [CopilotKit)](https://github.com/CopilotKit/CopilotKit)
 - [Eliza](https://github.com/elizaOS/eliza)
@@ -265,7 +265,7 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Khoj](https://github.com/khoj-ai/khoj)
 - [Awesome generative-ai](https://github.com/steven2358/awesome-generative-ai)
 - [Openai Realtime Agents](https://github.com/openai/openai-realtime-agents)
-
+- [LLMOps database](https://www.zenml.io/llmops-database)
 ## Leaderboard
 - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
 - [SLM](https://llm.extractum.io/list/?small)
