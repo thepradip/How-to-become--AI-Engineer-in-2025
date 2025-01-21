@@ -8,6 +8,7 @@ Discover free generative AI platform where you can ask questions, summarize text
 Dive in and play to understand how AI works, master the art of prompt writing, and build your innovative applications seamlessly. platform like chatgpt, XAI(twitter), Gemini from google, groq.
 
 - [ChatGPT](https://chatgpt.com/)
+- [Deep Seek](https://www.deepseek.com/)
 - [XAI| free $25 credit](https://x.ai/api)
 - [Groq](https://console.groq.com/keys)
 - [Gemini](https://gemini.google.com/app)
