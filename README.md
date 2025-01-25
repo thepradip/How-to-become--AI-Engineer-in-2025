@@ -64,6 +64,7 @@ They provide practical techniques, examples, and strategies for improving intera
 - [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
 - [Openai Prompt Collections](https://platform.openai.com/docs/examples)
 - [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
+- [Awesome chatgpt prompts|Collection](https://github.com/f/awesome-chatgpt-prompts)
   
 
 ## GenAI Level 2 and Agent Courses
