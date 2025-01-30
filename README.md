@@ -19,7 +19,41 @@ Dive in and play to understand how AI works, master the art of prompt writing, a
   
 # GenerativeAI Foundation
 A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python or JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently.
+
+
+
 ## Programming
+
+
+
+- **[AI Python for Beginners](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)**: An introductory course by DeepLearning.AI that teaches Python programming with AI assistance, covering basics like variables, functions, and data handling.
+
+- **[Crash Course on Python](https://www.coursera.org/learn/python-crash-course)**: Offered by Google on Coursera, this course provides foundational knowledge to write simple Python programs using common structures.
+
+- **[Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)**: A YouTube playlist guiding learners on integrating generative AI into JavaScript projects, covering key concepts and practical implementations.
+
+- **[JavaScript Basics](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)**: A beginner-level course by the University of California, Davis, introducing the fundamentals of JavaScript, including variables, arrays, and core programming structures.
+
+- **[JavaScript Mastery](https://www.youtube.com/@javascriptmastery/videos)**: A YouTube channel offering a collection of advanced JavaScript projects and tutorials to enhance coding skills.
+
+- **[LeetCode Explore](https://leetcode.com/explore/)**: A platform providing coding challenges and problems to practice and improve programming skills across various topics.
+
+- **[10 Minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)**: A quick guide to the pandas library, introducing data structures and essential functionalities for data analysis in Python.
+
+- **[Python Beginner Series - IPL](https://github.com/thepradip/Python-Beginner-Series-IPL)**: A GitHub repository offering a series of beginner-friendly Python tutorials, using IPL data for practical learning.
+
+- **[Chainlit Documentation](https://docs.chainlit.io/get-started/overview)**: Official documentation for Chainlit, an open-source Python package to build production-ready conversational AI applications.
+
+- **[Streamlit Documentation](https://docs.streamlit.io/)**: Comprehensive guides and references for Streamlit, an open-source Python framework for creating dynamic data applications.
+
+- **[DataCamp: Python and Plotting](https://www.youtube.com/playlist?list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4)**: A YouTube playlist by DataCamp covering Python programming and data visualization techniques.
+
+These descriptions provide a brief overview of each resource, facilitating quick reference and selection for further exploration. 
+
+
+
+
+
 - [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
 - [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
 - [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
