@@ -60,21 +60,6 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 
 
 
-
-
-
-- [Python](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
-- [Python Crash course](https://www.coursera.org/learn/python-crash-course/home/module/1)
-- [Generative AI with JavaScript](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
-- [javascript beginner](https://www.coursera.org/learn/javascript-basics?specialization=javascript-beginner)
-- [JavaScript Mastery| collections of best JS Projects](https://www.youtube.com/@javascriptmastery/videos)
-- [Coding Practice| Leetcode](https://leetcode.com/explore/)
-- [10 min Pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
-- [Python Workshop](https://github.com/thepradip/Python-Beginner-Series-IPL)
-- [Chainlit](https://docs.chainlit.io/get-started/overview)
-- [Streamlit](https://docs.streamlit.io/)
-- [Datacamp|python and plot](https://www.youtube.com/watch?v=-Rf4fZDQ0yw&list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4)
-
 ## Math [12th basic math requirements]
 12th basic math requirements. probability, Linear Algebra, Stats, etc
 
