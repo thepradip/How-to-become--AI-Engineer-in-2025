@@ -249,6 +249,11 @@ These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and 
 - [Router LLM](https://github.com/lm-sys/RouteLLM)
 - [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
 
+
+# AI Safety
+- [Responsible AI engineering](https://research.csiro.au/ss/team/se4ai/responsible-ai-engineering/)
+- [AI Safety Report 2025](https://assets.publishing.service.gov.uk/media/679a0c48a77d250007d313ee/International_AI_Safety_Report_2025_accessible_f.pdf)
+
 ## Best Notebook:
 - [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
 - [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
