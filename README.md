@@ -98,18 +98,10 @@ Here are concise descriptions for each resource, formatted in Markdown for inclu
 - **[How Diffusion Models Work](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)**: A short course by DeepLearning.AI that delves into the mechanics of diffusion models, explaining how algorithms like Midjourney and Stable Diffusion generate images from prompts. 
 
 
-
-
- 
-
-
-
 ## Prompt: Language to communicate to LLM
 Prompt engineering is designing and crafting effective prompts to optimize the performance of large language models (LLMs). 
 These courses, such as “Prompt Engineering for Everyone” and OpenAI’s and Anthropic’s collections, guide learners in understanding how to structure prompts, leverage model capabilities, and create customized queries for specific tasks. 
 They provide practical techniques, examples, and strategies for improving interaction with LLMs across diverse applications.
-
-
 
 
 - **[ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)**: A short course by DeepLearning.AI and OpenAI that teaches best practices for prompt engineering to build powerful applications using large language models. 
@@ -128,27 +120,52 @@ They provide practical techniques, examples, and strategies for improving intera
 ## GenAI Level 2 and Agent Courses
 These advanced courses offer a practical deep dive into generative AI frameworks like LangChain, LlamaIndex, and Autogen, emphasizing hands-on projects to build real-world applications. With a focus on agentic systems and retrieval-augmented generation, learners can enhance their expertise and confidently navigate cutting-edge AI technologies. Completing these courses ensures proficiency in key tools and frameworks, setting the stage for impactful development work.
 
-- [Kaggle |5 Day GenAI](https://www.kaggle.com/learn-guide/5-day-genai)
-- [Generative ai with llms](https://www.coursera.org/learn/generative-ai-with-llms)
-- [LangChain & Vector Databases in Production| Activeloop](https://learn.activeloop.ai/courses/langchain)
-- [Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)
-- [LLmaindex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/)
-- [Functions tools agents langchain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
-- [Lang Graph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
-- [Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
-- [Crew AI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
-- [Crew AI Advanced](https://learn.deeplearning.ai/courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/lesson/1/introduction)
-- [Llama 3.2](https://www.deeplearning.ai/short-courses/introducing-multimodal-llama-3-2/)
-- [Building-systems-with-chatgpt/](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
-- [HuggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/1)
-- [Smolagents](https://huggingface.co/docs/smolagents/en/index)
-- [evaluating-debugging-generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
-- [langchain for LLM application development/](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
-- [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1)
-- [Kaggle Learn](https://www.kaggle.com/learn)
-- [Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
-- [Building RAG Agents with LLMs| Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
-- [OpenAI|Build Hours](https://github.com/openai/build-hours)
+
+- **[Kaggle | 5-Day Generative AI](https://www.kaggle.com/learn-guide/5-day-genai)**: A structured program offering a hands-on introduction to generative AI concepts and techniques over five days.
+
+- **[Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms)**: A Coursera course exploring constructing and fine-tuning large language models for AI applications.
+
+- **[LangChain & Vector Databases in Production | Activeloop](https://learn.activeloop.ai/courses/langchain)**: Learn to integrate LangChain with vector databases for advanced AI applications.
+
+- **[Building AI Applications with Haystack](https://www.deeplearning.ai/short-courses/building-ai-applications-with-haystack/)**: A DeepLearning.AI short course focusing on using Haystack for AI-powered search and retrieval systems.
+
+- **[Building Agentic RAG with LlamaIndex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/)**: Learn to build Retrieval-Augmented Generation (RAG) systems using LlamaIndex for enhanced AI-driven responses.
+
+- **[Functions, Tools, and Agents in LangChain](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)**: A practical guide to utilizing LangChain’s agentic capabilities for AI applications.
+
+- **[AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)**: Explore agent-based architectures using LangGraph in this DeepLearning.AI course.
+
+- **[AI Agentic Design Patterns with Autogen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)**: Implement agentic AI design patterns with Autogen in real-world applications.
+
+- **[Multi-AI Agent Systems with CrewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)**: A hands-on course on building multi-agent AI systems using CrewAI.
+
+- **[Practical Multi-AI Agents and Advanced Use Cases with CrewAI](https://learn.deeplearning.ai/courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/lesson/1/introduction)**: A deeper dive into advanced use cases for CrewAI-based multi-agent systems.
+
+- **[Introducing Multimodal Llama 3.2](https://www.deeplearning.ai/short-courses/introducing-multimodal-llama-3-2/)**: An introduction to the multimodal capabilities of Meta’s Llama 3.2.
+
+- **[Building Systems with ChatGPT](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)**: A practical course on integrating ChatGPT into AI-driven applications.
+
+- **[HuggingFace NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1)**: A structured NLP course from Hugging Face covering key concepts and model fine-tuning.
+
+- **[SmolAgents Documentation](https://huggingface.co/docs/smolagents/en/index)**: A guide for SmolAgents, a lightweight agent-based framework.
+
+- **[Evaluating and Debugging Generative AI Models Using Weights and Biases](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)**: Learn to assess, optimize, and debug generative AI applications.
+
+- **[LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)**: Leverage LangChain for developing production-grade AI solutions.
+
+- **[Building and Evaluating Advanced RAG Applications](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1)**: A practical guide to implementing Retrieval-Augmented Generation (RAG) using NVIDIA’s AI tools.
+
+- **[Kaggle Learn](https://www.kaggle.com/learn)**: A free, hands-on learning platform for machine learning, data science, and AI topics.
+
+- **[LangChain: Chat with Your Data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)**: Build AI-powered chatbots that interact with custom datasets.
+
+- **[Building RAG Agents with LLMs | NVIDIA](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)**: An advanced course on constructing RAG-based AI agents.
+
+- **[OpenAI | Build Hours](https://github.com/openai/build-hours)**: A GitHub repository by OpenAI containing resources and build sessions for developers using AI models.
+
+This collection of resources covers foundational and advanced topics in generative AI, retrieval-augmented generation, AI agents, and model evaluation. 
+
+
 
 ## AI Observability | Monitoring: If you can't measure, you can't understand it
 
