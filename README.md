@@ -63,13 +63,19 @@ A solid foundation in mathematicsâ€”covering probability, algebra, and calculusâ
 ## Math [12th basic math requirements]
 12th basic math requirements. probability, Linear Algebra, Stats, etc
 
-### Probability and statistics: 
-- [Probability and statistics in data science using python](https://www.edx.org/course/probability-and-statistics-in-data-science-using-python-2)
-- [Khan Academy for probability](https://www.youtube.com/playlist?list=PLC58778F28211FA19) 
-- [Khan Academy for statistics](https://www.youtube.com/watch?v=uhxtUt_-GyM&list=PL1328115D3D8A2566)
-- [coursera| Basic statistics](https://www.coursera.org/learn/basic-statistics)
+### Probability and Statistics:
+- **[Probability and Statistics in Data Science using Python](https://www.edx.org/course/probability-and-statistics-in-data-science-using-python-2)**: Offered by UCSanDiegoX on edX, this course teaches statistical and probabilistic approaches to understand and gain insights from data using Python. 
+
+- **[Khan Academy: Probability](https://www.youtube.com/playlist?list=PLC58778F28211FA19)**: A comprehensive YouTube playlist by Khan Academy covering fundamental concepts in probability.
+
+- **[Khan Academy: Statistics](https://www.youtube.com/playlist?list=PL1328115D3D8A2566)**: A YouTube playlist by Khan Academy that provides an in-depth understanding of basic statistics.
+
+- **[Basic Statistics](https://www.coursera.org/learn/basic-statistics)**: This Coursera course from the University of Amsterdam introduces foundational statistical concepts, including descriptive statistics, probability distributions, and inferential statistics. 
+
 ### Algebra:
-- [Algebra|3 blue and 1 brown ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+- **[Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)**: A YouTube series by 3Blue1Brown that visually explores the fundamental concepts of linear algebra. 
+These resources provide a solid foundation in probability, statistics, and algebra, essential for data science and related fields. 
+
 
 # GenAI 
 ## Beginner:
