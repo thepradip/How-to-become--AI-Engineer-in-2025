@@ -385,84 +385,158 @@ Build stunning AI applications effortlessly using simple UI libraries like Strea
 These resources offer a range of tools and frameworks to support the development and deployment of AI and machine learning applications across various domains. 
 
 ## Readymade API-based/self-hosted LLM platform
-- [Gemini](https://ai.google.dev/gemini-api/docs/api-key)
-- [Together AI](https://www.together.ai/)
--  [Anyscale](https://www.anyscale.com/)
--  [Replicate](https://replicate.com/)
-- [Deepinfra](https://deepinfra.com/)
-- [Hugging face| open source](https://huggingface.co/models)
+
+- **[Gemini API](https://ai.google.dev/gemini-api/docs/api-key)**: Provides access to Google's Gemini models, enabling developers to integrate advanced AI capabilities into their applications.
+
+- **[Together AI](https://www.together.ai/)**: An AI acceleration platform offering fast inference, fine-tuning, and training services for over 200 generative AI models, including chat, image, code, and more. 
+
+- **[Anyscale](https://www.anyscale.com/)**: Empowers developers to build, deploy, and manage scalable AI and machine learning applications with ease, leveraging the Ray framework for distributed computing. 
+
+- **[Replicate](https://replicate.com/)**: Enables running and fine-tuning open-source models, as well as deploying custom models at scale, all accessible via a simple API. 
+
+- **[DeepInfra](https://deepinfra.com/)**: Offers fast machine learning inference through a simple API, providing access to top AI models with scalable and production-ready infrastructure. 
+
+- **[Hugging Face Models](https://huggingface.co/models)**: A comprehensive repository of pre-trained machine learning models across various modalities, including NLP, vision, and more, facilitating easy integration and fine-tuning for diverse applications. 
+
+These resources offer a range of tools and platforms to support the development and deployment of AI and machine learning applications across various domains. 
+
  
 ## Cloud Services:
 These cloud services courses leverage platforms like AWS Bedrock, Azure AI, and GCP Vertex AI to deploy and manage AI solutions at scale. Learners gain practical knowledge in using cloud-based tools for building, fine-tuning, and operationalizing large language models (LLMs). With a strong emphasis on hands-on implementation, these resources prepare participants to harness the power of AI in enterprise-grade cloud environments.
-- [AWS| Bedrock](https://www.coursera.org/learn/amazon-bedrock-getting-started)
-- [Azure| AI Services](https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai/)
-- [Azure| AI Services 2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)
-- [GCP|Vertex | Gemini](https://www.cloudskillsboost.google/paths/1282)
-- [LLMOPS](https://www.coursera.org/specializations/large-language-model-operations)
 
-# GenAI Apps and Projects:
-## Chunking Strategy:
-- [chonkie](https://github.com/chonkie-ai/chonkie/tree/main)
-- [semchunk](https://github.com/umarbutler/semchunk)
-- [Llamaindex|Chunking](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/)
-- [Langchain Chunkinig](https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/)
-- [Unstructuredio| Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)
-- [Microsoft| Markitdown](https://github.com/microsoft/markitdown)
- ## Vector DB
-- [openai Vector DB implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)
-- [Vector DB](https://thedataquarry.com/posts/vector-db-1/)
-- [Chroma DB|open source|local](https://www.trychroma.com/)
-- [Pinecone Example](https://docs.pinecone.io/page/examples)
-- [Weaviate DB|open source|local](https://weaviate.io/)
-- [Milvus](https://milvus.io/)
-- [Qdrant](https://qdrant.tech/)
-- [Vector DB Comparison](https://superlinked.com/vector-db-comparison)
-- 
+
+- **[Amazon Bedrock](https://aws.amazon.com/bedrock/)**: A fully managed service by AWS that provides access to foundation models from leading AI companies via a single API, enabling the development of generative AI applications with security and scalability. ([aws.amazon.com](https://aws.amazon.com/bedrock/?utm_source=chatgpt.com))
+
+- **[Azure AI Services](https://azure.microsoft.com/en-us/products/ai-services)**: A suite of AI services by Microsoft Azure offering capabilities such as language understanding, computer vision, and document processing to build intelligent applications. ([azure.microsoft.com](https://azure.microsoft.com/en-us/products/ai-services?utm_source=chatgpt.com))
+
+- **[Azure AI Studio](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-ai-studio/)**: A platform within Azure that provides tools and resources for building, training, and deploying AI models, facilitating the development of intelligent applications.
+
+- **[Google Cloud Vertex AI](https://cloud.google.com/vertex-ai)**: Google Cloud's unified AI platform that offers access to the latest Gemini models, enabling the development and deployment of machine learning models at scale. ([cloud.google.com](https://cloud.google.com/vertex-ai?utm_source=chatgpt.com))
+
+- **[Large Language Model Operations (LLMOps) Specialization](https://www.coursera.org/specializations/large-language-model-operations)**: A Coursera specialization that provides expertise in deploying, managing, and optimizing large language models across various platforms, including Azure, AWS, and local infrastructure. 
+
+These resources offer comprehensive tools and knowledge for developing, deploying, and managing AI and machine learning applications across various cloud platforms. 
+
+# GenAI Apps and Projects
+## Chunking Strategy
+
+- **[Chonkie](https://github.com/chonkie-ai/chonkie/tree/main)**: An open-source tool designed to enhance text processing by implementing efficient chunking strategies, facilitating better handling of large documents in AI applications.
+
+- **[Semchunk](https://github.com/umarbutler/semchunk)**: A semantic chunking tool that segments text into meaningful units, improving the performance of language models by providing contextually relevant chunks.
+
+- **[LlamaIndex: Chunking](https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/)**: Documentation on semantic chunking within LlamaIndex, offering examples and guidance on parsing nodes for optimized data processing.
+
+- **[Langchain Chunking](https://js.langchain.com/v0.1/docs/modules/data_connection/document_transformers/)**: Provides methods for transforming documents through chunking, enabling more efficient data handling in language model pipelines.
+
+- **[Unstructured.io: Chunking](https://docs.unstructured.io/open-source/core-functionality/chunking)**: Offers core functionalities for chunking unstructured data, aiding in converting complex documents into manageable pieces for analysis.
+
+- **[Microsoft: Markitdown](https://github.com/microsoft/markitdown)**: A tool by Microsoft that assists in converting markdown content into structured formats, facilitating better data organization and accessibility.
+
+## Vector Databases
+
+- **[OpenAI Vector Database Implementation](https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases)**: Examples from OpenAI's cookbook demonstrating how to implement vector databases for efficient similarity search and retrieval in AI applications.
+
+- **[Vector Database Overview](https://thedataquarry.com/posts/vector-db-1/)**: An informative post providing an overview of vector databases, discussing their importance and applications in managing high-dimensional data.
+
+- **[Chroma DB](https://www.trychroma.com/)**: An open-source, local-first vector database focusing on simplicity and performance, suitable for embedding and retrieval tasks in machine learning projects.
+
+- **[Pinecone Examples](https://docs.pinecone.io/page/examples)**: A collection of examples demonstrating how to use Pinecone's vector database for building scalable and efficient similarity search solutions.
+
+- **[Weaviate DB](https://weaviate.io/)**: An open-source vector database that allows for seamless integration of various data types, offering powerful search and retrieval capabilities.
+
+- **[Milvus](https://milvus.io/)**: A high-performance, open-source vector database designed for scalable similarity search, widely used in AI and machine learning applications.
+
+- **[Qdrant](https://qdrant.tech/)**: An open-source vector similarity search engine and database, optimized for performance and scalability in handling large-scale AI workloads.
+
+- **[Vector Database Comparison](https://superlinked.com/vector-db-comparison)**: A comparative analysis of various vector databases, highlighting their features, performance benchmarks, and suitability for different use cases.
+
+These resources provide valuable tools and insights for implementing chunking strategies and utilizing vector databases in AI and machine learning projects. 
+
 ## RAG and Evaluation:
-- [Azure AI search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-cognitive-search-and-langchain-a-seamless-integration-for-enhanced-vector-/3901448)
-- [RAG|Nvidia](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)
-- [Crawl4ai](https://github.com/unclecode/crawl4ai)
-- [RAGFlow](https://github.com/infiniflow/ragflow)
-- [Verba](https://github.com/weaviate/Verba)
-- [Graphrag](https://microsoft.github.io/graphrag/)
-- [RAG evaluation | Course](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)
-- [Arize|RAG evaluation/](https://arize.com/blog-course/rag-evaluation/)
 
-- ## Router models:
-- [Router LLM](https://github.com/lm-sys/RouteLLM)
-- [ModernBERT](https://github.com/AnswerDotAI/ModernBERT/tree/main)
+- **[Azure Cognitive Search and Langchain Integration](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-cognitive-search-and-langchain-a-seamless-integration-for-enhanced-vector-/3901448)**: This blog post discusses the seamless integration between Azure Cognitive Search and Langchain, highlighting how this combination enhances vector search capabilities in AI applications.
 
+- **[NVIDIA's Course on Building RAG Applications](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1)**: An NVIDIA Deep Learning Institute course that provides insights into building Retrieval-Augmented Generation (RAG) applications, focusing on leveraging large language models for improved information retrieval.
 
-# AI Safety
-- [Responsible AI engineering](https://research.csiro.au/ss/team/se4ai/responsible-ai-engineering/)
-- [AI Safety Report 2025](https://assets.publishing.service.gov.uk/media/679a0c48a77d250007d313ee/International_AI_Safety_Report_2025_accessible_f.pdf)
+- **[Crawl4AI](https://github.com/unclecode/crawl4ai)**: An open-source project designed to crawl and scrape data from websites, facilitating the collection of datasets for AI training and analysis.
 
-## Best Notebook:
-- [OpenAI| Best resources on GenAI](https://github.com/openai/openai-cookbook)
-- [Autogen](https://microsoft.github.io/autogen/0.2/docs/Examples)
-- [openAI](https://github.com/openai/openai-cookbook/tree/main/examples)
-- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
-- [Build Hours](https://github.com/openai/build-hours)
-- [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
-- [LLM Course](https://github.com/mlabonne/llm-course)
+- **[RAGFlow](https://github.com/infiniflow/ragflow)**: An open-source Retrieval-Augmented Generation (RAG) engine based on deep document understanding, aiming to enhance the generation of contextually relevant responses. 
+
+- **[Verba](https://github.com/weaviate/Verba)**: A Retrieval-Augmented Generation (RAG) chatbot powered by Weaviate, designed to provide contextually enriched responses by integrating retrieval mechanisms with generative models. 
+
+- **[GraphRAG](https://microsoft.github.io/graphrag/)**: A structured, hierarchical approach to Retrieval-Augmented Generation (RAG) that involves extracting a knowledge graph from raw text and leveraging this structure to enhance LLM reasoning about private data. 
+
+- **[Building and Evaluating Advanced RAG Applications](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)**: A short course by DeepLearning.AI that explores advanced retrieval methods and evaluation metrics to improve the performance of RAG pipelines. 
+
+- **[Arize's RAG Evaluation Metrics Starter Kit](https://arize.com/blog-course/rag-evaluation/)**: A resource that provides workflows and metrics for troubleshooting and evaluating Retrieval-Augmented Generation systems, focusing on retrieval and response evaluation. 
+
+These resources offer valuable insights and tools for developing, integrating, and evaluating Retrieval-Augmented Generation (RAG) systems in AI applications. 
+
+## Router Models
+
+- **[RouteLLM](https://github.com/lm-sys/RouteLLM)**: An open-source project that focuses on routing strategies for large language models, aiming to optimize performance and efficiency in various AI applications.
+
+- **[ModernBERT](https://github.com/AnswerDotAI/ModernBERT)**: A modern implementation of the BERT model, designed to enhance natural language understanding tasks with improved architecture and training techniques.
+
+## AI Safety
+
+- **[Responsible AI Engineering](https://research.csiro.au/ss/team/se4ai/responsible-ai-engineering/)**: A resource by CSIRO discussing methodologies and best practices for responsible AI engineering, emphasizing ethical considerations and safety in AI system development.
+
+- **[International AI Safety Report 2025](https://assets.publishing.service.gov.uk/media/679a0c48a77d250007d313ee/International_AI_Safety_Report_2025_accessible_f.pdf)**: A comprehensive report outlining the global state of AI safety as of 2025, providing insights into regulatory frameworks, risk assessments, and recommendations for future AI governance.
+
+## Notable Notebooks
+
+- **[OpenAI Cookbook](https://github.com/openai/openai-cookbook)**: A collection of examples and guides demonstrating how to use OpenAI's API for various applications, including code snippets and best practices.
+
+- **[Autogen Examples](https://microsoft.github.io/autogen/0.2/docs/Examples)**: A set of examples showcasing the use of Microsoft's Autogen framework for automated code generation and other AI-driven development tasks.
+
+- **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)**: A repository of resources and examples from Anthropic, focusing on building and understanding large-scale AI models with an emphasis on safety and interpretability.
+
+- **[Build Hours](https://github.com/openai/build-hours)**: Code and resources shared during OpenAI's Build Hours events, aimed at helping developers explore and implement OpenAI's models in various projects.
+
+- **[Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps)**: A curated collection of applications and projects utilizing large language models, highlighting innovative uses across different domains.
+
+- **[LLM Course](https://github.com/mlabonne/llm-course)**: A comprehensive course designed to introduce learners to large language models, complete with roadmaps and Colab notebooks for hands-on experience.
+
+These resources offer valuable insights and tools for exploring router models, ensuring AI safety, and engaging with practical applications and educational materials related to large language models. 
+
 
 ## Other projects:
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands)
-- [CopilotKit)](https://github.com/CopilotKit/CopilotKit)
-- [Eliza](https://github.com/elizaOS/eliza)
-- [Fish Speech](https://github.com/fishaudio/fish-speech)
-- [Anythingllm](https://anythingllm.com/)
-- [Open Canvas](https://github.com/langchain-ai/open-canvas)
-- [Awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
-- [Khoj](https://github.com/khoj-ai/khoj)
-- [Awesome generative-ai](https://github.com/steven2358/awesome-generative-ai)
-- [Openai Realtime Agents](https://github.com/openai/openai-realtime-agents)
-- [LLMOps database](https://www.zenml.io/llmops-database)
-## Leaderboard
-- [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
-- [SLM](https://llm.extractum.io/list/?small)
-- [SLM 2](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/?params=0%2C9)
-- [Open LLM](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)
-- [LMArena](https://lmarena.ai/)
-- [LLM compare](https://yourgpt.ai/tools/llm-comparison-and-leaderboard)
-- [Vellum|Leaderboard](https://www.vellum.ai/llm-leaderboard)
+
+## AI Projects and Tools
+
+- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)**: An open-source platform designed to facilitate collaborative AI research and development, providing tools and resources for the AI community.
+
+- **[CopilotKit](https://github.com/CopilotKit/CopilotKit)**: A toolkit that enhances the capabilities of AI copilots, offering customizable features to improve user interaction and productivity.
+
+- **[Eliza](https://github.com/elizaOS/eliza)**: An AI-driven operating system that integrates advanced language models to provide intuitive user experiences and automate tasks.
+
+- **[Fish Speech](https://github.com/fishaudio/fish-speech)**: A speech recognition project focused on developing efficient and accurate models for transcribing audio inputs.
+
+- **[AnythingLLM](https://anythingllm.com/)**: A platform that offers tools and resources for working with large language models, including fine-tuning and deployment solutions.
+
+- **[Open Canvas](https://github.com/langchain-ai/open-canvas)**: An open-source project that provides a visual interface for designing and managing complex language model workflows.
+
+- **[Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps)**: A curated list of applications and projects utilizing large language models, showcasing innovative uses across various domains.
+
+- **[Khoj](https://github.com/khoj-ai/khoj)**: An AI-powered search assistant that helps users find information quickly by understanding natural language queries.
+
+- **[Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai)**: A comprehensive collection of resources, tools, and research papers related to generative AI.
+
+- **[OpenAI Realtime Agents](https://github.com/openai/openai-realtime-agents)**: A demonstration of advanced agent patterns built on top of OpenAI's Realtime API, showcasing sequential agent handoffs and background escalations. 
+
+- **[LLMOps Database](https://www.zenml.io/llmops-database)**: A curated knowledge base of real-world implementations of Large Language Model Operations (LLMOps), providing detailed summaries and technical notes. 
+
+## Leaderboards
+
+- **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: A leaderboard showcasing the performance of models on the Massive Text Embedding Benchmark (MTEB), highlighting top-performing models in text embedding tasks. 
+
+- **[Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/?params=0%2C9)**: A platform that ranks open-source large language models based on various benchmarks, providing insights into their performance and capabilities. 
+
+- **[LMArena](https://lmarena.ai/)**: A platform that evaluates and compares large language models across different tasks, providing a comprehensive performance analysis. 
+
+- **[LLM Compare](https://yourgpt.ai/tools/llm-comparison-and-leaderboard)**: A tool that allows users to compare large language models based on key metrics such as performance, cost, and speed. 
+
+- **[Vellum LLM Leaderboard](https://www.vellum.ai/llm-leaderboard)**: A leaderboard that ranks large language models based on various benchmarks, providing insights into their strengths and weaknesses across different tasks. 
+
+These resources offer a range of tools, projects, and comparative analyses to support the development and evaluation of large language models and AI applications. 
