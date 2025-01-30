@@ -80,12 +80,28 @@ These resources provide a solid foundation in probability, statistics, and algeb
 # GenAI 
 ## Beginner:
  Understand key concepts such as transformers encoder, decoder, and essential AI terminology to grasp how these models work. Gradually learn to use APIs from platforms like OpenAI, Huggingface, and  Claude to build and customize your AI-powered products. This structured approach enables you to implement customizations efficiently in generative AI.
-- [Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)
-- [Illustrated transformer](https://jalammar.github.io/illustrated-transformer/)
-- [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)
-- [Google|Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
-- [Microsoft|Generative AI ](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)
-- [Diffusion-models](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)
+
+
+
+Here are concise descriptions for each resource, formatted in Markdown for inclusion in a GitHub README file:
+
+- **[Transformers](https://huggingface.co/learn/nlp-course/chapter1/1)**: A comprehensive course by Hugging Face that teaches natural language processing (NLP) using their libraries, including Transformers, Datasets, Tokenizers, and Accelerate. ([huggingface.co](https://huggingface.co/learn/nlp-course/en/chapter1/1?utm_source=chatgpt.com))
+
+- **[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)**: A visual and intuitive guide by Jay Alammar explaining the Transformer model architecture and its application in machine translation tasks. ([jalammar.github.io](https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com))
+
+- **[Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)**: An introductory course by DeepLearning.AI, led by Andrew Ng, that explores the fundamentals of generative AI, its applications, and implications across various industries. 
+
+- **[Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)**: A learning path by Google Cloud that provides an overview of generative AI concepts, including large language models and responsible AI principles. 
+
+- **[Generative AI for Beginners](https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/)**: A comprehensive 18-lesson course by Microsoft Cloud Advocates covering the fundamentals of building generative AI applications. 
+
+- **[How Diffusion Models Work](https://learn.deeplearning.ai/courses/diffusion-models/lesson/1/introduction)**: A short course by DeepLearning.AI that delves into the mechanics of diffusion models, explaining how algorithms like Midjourney and Stable Diffusion generate images from prompts. 
+
+
+
+
+ 
+
 
 
 ## Prompt: Language to communicate to LLM
