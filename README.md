@@ -108,13 +108,21 @@ Here are concise descriptions for each resource, formatted in Markdown for inclu
 Prompt engineering is designing and crafting effective prompts to optimize the performance of large language models (LLMs). 
 These courses, such as “Prompt Engineering for Everyone” and OpenAI’s and Anthropic’s collections, guide learners in understanding how to structure prompts, leverage model capabilities, and create customized queries for specific tasks. 
 They provide practical techniques, examples, and strategies for improving interaction with LLMs across diverse applications.
-- [chatgpt prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-- [IBM |Prompt-engineering-for-everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone#modules)
-- [Prompting Guide](https://www.promptingguide.ai/prompts)
-- [Prompt Collections](https://github.com/f/awesome-chatgpt-prompts)
-- [Openai Prompt Collections](https://platform.openai.com/docs/examples)
-- [Anthropic collections](https://docs.anthropic.com/en/prompt-library/library)
-- [Awesome chatgpt prompts|Collection](https://github.com/f/awesome-chatgpt-prompts)
+
+
+
+
+- **[ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)**: A short course by DeepLearning.AI and OpenAI that teaches best practices for prompt engineering to build powerful applications using large language models. 
+
+- **[Prompt Engineering for Everyone](https://www.coursera.org/learn/generative-ai-prompt-engineering-for-everyone)**: An introductory course by IBM on Coursera that covers the fundamentals of prompt engineering in generative AI. ([coursera.org](https://www.coursera.org/learn/prompt-engineering?utm_source=chatgpt.com))
+
+- **[Prompt Engineering Guide](https://www.promptingguide.ai/)**: A comprehensive guide that offers best practices, techniques, and examples for crafting effective prompts in AI models. ([promptingguide.ai](https://www.promptingguide.ai/?utm_source=chatgpt.com))
+
+- **[Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)**: A curated list of ChatGPT prompts to inspire and enhance AI interactions. 
+
+- **[OpenAI Prompt Examples](https://platform.openai.com/docs/examples)**: Official OpenAI examples demonstrating effective prompt usage across various scenarios. 
+- **[Anthropic Prompt Library](https://docs.anthropic.com/en/prompt-library/library)**: A library of prompt examples and guidelines provided by Anthropic to assist in AI model interactions. 
+
   
 
 ## GenAI Level 2 and Agent Courses
