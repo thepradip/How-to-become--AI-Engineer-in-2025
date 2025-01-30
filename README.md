@@ -284,53 +284,105 @@ These resources provide a robust foundation for developers and researchers aimin
 
 ### Fine-tuning: Teach our AI a new Subject
 These courses focus on fine-tuning large language models (LLMs) to specialize them for new subjects or tasks. Learners explore tools and techniques for customizing models, including embedding fine-tuning, and debugging generative AI systems. With hands-on resources from OpenAI, Activeloop, and DeepLearning.ai, these courses empower users to adapt LLMs to specific domains for improved accuracy and relevance.
-- [Fine tuning LLM](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
-- [Activeloop| Fine tuning](https://learn.activeloop.ai/courses/llms)
-- [OpenAI  Fine tuning](https://platform.openai.com/docs/guides/fine-tuning)
-- [Evaluating Debugging Generative-ai](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)
-- [Fine tuning Embedding](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)
-- [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
--  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
+
+
+- **[Fine-Tuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)**: A short course by DeepLearning.AI that provides practical guidance on fine-tuning large language models, covering techniques to adapt models for specific tasks and improve performance.
+
+- **[Activeloop | Training & Fine-Tuning LLMs for Production](https://learn.activeloop.ai/courses/llms)**: A free course offering comprehensive insights into training and fine-tuning large language models for production environments, including practical projects and theoretical lessons. 
+
+- **[OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)**: Official documentation from OpenAI detailing the process of fine-tuning their models, providing step-by-step instructions and best practices for customizing models to specific applications. 
+
+- **[Evaluating and Debugging Generative AI Models Using Weights and Biases](https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/)**: A course that teaches how to evaluate and debug generative AI models using the Weights & Biases platform, focusing on tracking experiments, managing data versions, and improving model performance. 
+
+- **[Fine-Tuning Embeddings](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding.html)**: A guide on fine-tuning embeddings to enhance the performance of language models in specific tasks, providing practical examples and methodologies.
+
+- **[Unsloth: Efficient Fine-Tuning](https://github.com/unslothai/unsloth)**: A tool that enables efficient fine-tuning of models like Llama 3.3, Mistral, and others, achieving faster performance with reduced memory usage. 
+
+- **[Hugging Face AutoTrain](https://huggingface.co/autotrain)**: A platform that allows users to automatically train, evaluate, and deploy state-of-the-art machine learning models without coding, supporting various tasks including LLM fine-tuning. 
+
+These resources offer valuable guidance and tools for fine-tuning large language models and enhancing their performance across various applications. 
+
+
 ## Research:
 These research-focused resources provide access to cutting-edge advancements in AI from leading organizations like OpenAI, DeepMind, and Google Research. Platforms like Arxiv and Hugging Face Papers offer a wealth of scholarly articles, enabling learners to explore the latest innovations in AI agents, generative models, and more. Staying updated with these resources is essential for those aiming to contribute to or stay ahead in the evolving AI landscape.
-- [Arxiv](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-- [Hugging Face Paper](https://huggingface.co/papers)
-- [OpenAI Research](https://openai.com/news/research/)
-- [Meta](https://research.facebook.com/)
-- [Google Research](https://research.google/)
-- [Deep Mind](https://deepmind.google/research/)
-- [Anthropic](https://www.anthropic.com/research)
+
+
+- **[ArXiv: AI Agent Research](https://arxiv.org/search/?query=AI+agent&searchtype=all&abstracts=show&order=-announced_date_first&size=50)**: A comprehensive repository of the latest research papers on AI agents, offering a wide range of studies and findings from the academic community.
+
+- **[Hugging Face Papers](https://huggingface.co/papers)**: A curated collection of trending AI research papers, updated daily, providing insights into recent advancements and methodologies in the field.
+
+- **[OpenAI Research](https://openai.com/news/research/)**: OpenAI's official research portal, featuring publications and updates on their latest AI models, safety protocols, and technological breakthroughs.
+
+- **[Meta AI Research](https://research.facebook.com/)**: Meta's platform showcasing their AI research initiatives, including publications, projects, and collaborations aimed at advancing artificial intelligence.
+
+- **[Google Research](https://research.google/)**: Google's research division presents a wide array of studies and developments in AI and other scientific domains, highlighting their contributions to technology and innovation.
+
+- **[DeepMind Research](https://deepmind.google/research/)**: DeepMind's repository of research papers and articles, detailing their work on complex AI challenges and their applications across various fields.
+
+- **[Anthropic Research](https://www.anthropic.com/research)**: Anthropic's research page focuses on developing large-scale AI systems with an emphasis on safety, reliability, and ethical considerations.
+
+These resources provide valuable insights into current AI research and developments, supporting further exploration and understanding of the field. 
+
   
 ## Book And reading resources:
-- [Foundations of Large Language Models](https://arxiv.org/pdf/2501.09223)
-- [LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)
-- [introduction to large language models](https://docs.cohere.com/docs/introduction-to-large-language-models)
-- [KDnuggest| Nice resource](https://www.kdnuggets.com/)
-- [MLOps](https://huyenchip.com/mlops/)
-- [Langchain Usecase](https://python.langchain.com/docs/use_cases/)
-- [LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG?utm_source=bambu&utm_medium=social&utm_campaign=advocacy&blaid=5058202)
-- [Hugging Face| Cookbook](https://huggingface.co/learn/cookbook/en/index)
-- [Evaluating-with-llms](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)
--  [Best Fine-tuning- Unsloth](https://github.com/unslothai/unsloth)
--  [Best fine-tuning- Auto Train](https://huggingface.co/autotrain)
-- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-- [AI Agent|kaggle](https://www.kaggle.com/whitepaper-agents)
+
+- **[Foundations of Large Language Models](https://arxiv.org/pdf/2501.09223)**: A comprehensive research paper that delves into the underlying principles and architectures of large language models, providing a solid theoretical foundation for understanding their development and applications.
+
+- **[LLM Patterns](https://eugeneyan.com/writing/llm-patterns/)**: An insightful article by Eugene Yan that explores common design patterns in large language models, offering practical guidance on their implementation and optimization.
+
+- **[Introduction to Large Language Models](https://docs.cohere.com/docs/introduction-to-large-language-models)**: A beginner-friendly guide by Cohere that introduces the basics of large language models, covering their architecture, training processes, and potential applications.
+
+- **[KDnuggets](https://www.kdnuggets.com/)**: A leading platform offering a wealth of resources on data science, machine learning, and AI, including tutorials, articles, and industry news to keep practitioners informed and updated.
+
+- **[MLOps](https://huyenchip.com/mlops/)**: A comprehensive resource by Chip Huyen that discusses the practices and tools for deploying and maintaining machine learning models in production, emphasizing scalability and reliability.
+
+- **[Langchain Use Cases](https://python.langchain.com/docs/use_cases/)**: A collection of practical examples demonstrating how to implement various applications using Langchain, a framework for developing applications powered by language models.
+
+- **[LLM Auto Eval Best Practices RAG](https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG)**: An article by Databricks discussing best practices for the automated evaluation of large language models, focusing on Retrieval-Augmented Generation (RAG) techniques.
+
+- **[Hugging Face Cookbook](https://huggingface.co/learn/cookbook/en/index)**: A collection of practical recipes and tutorials by Hugging Face, guiding users through various tasks in natural language processing and machine learning using their libraries and tools.
+
+- **[Evaluating with LLMs](https://mlflow.org/docs/latest/models.html#evaluating-with-llms)**: Documentation by MLflow on how to evaluate machine learning models using large language models, providing guidelines for assessment and validation.
+
+- **[Unsloth: Efficient Fine-Tuning](https://github.com/unslothai/unsloth)**: A tool that enables efficient fine-tuning of models like Llama 3.3, Mistral, and others, achieving faster performance with reduced memory usage.
+
+- **[Hugging Face AutoTrain](https://huggingface.co/autotrain)**: A platform that allows users to automatically train, evaluate, and deploy state-of-the-art machine learning models without coding, supporting various tasks including LLM fine-tuning.
+
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**: A framework for unified and efficient fine-tuning of over 100 large language and vision-language models, facilitating streamlined customization for diverse applications.
+
+- **[AI Agent Whitepaper](https://www.kaggle.com/whitepaper-agents)**: A comprehensive whitepaper hosted on Kaggle that explores the development and deployment of AI agents, discussing methodologies, challenges, and case studies.
+
+These resources offer valuable insights and tools for understanding, developing, and deploying large language models and AI agents across various applications. 
+
  
 ## UI and Local LLM  for POC
-Build stunning AI applications effortlessly using simple UI libraries like Streamlit and Chainlit for your proof-of-concept projects. Harness powerful local LLMs such as Ollama, LMStudio, and VLLM for advanced text generation, while creating scalable backend services with FastAPI. Tap into the extensive collection of open-source models from Hugging Face to bring your Generative AI ideas to life
-- [Hugging face](https://huggingface.co/models)
-- [Langchain](https://python.langchain.com/docs/get_started/introduction)
-- [Llamaindex](https://www.llamaindex.ai/)
-- [Unstructured-IO](https://github.com/Unstructured-IO/unstructured)
-- [Chainlit](https://docs.chainlit.io/get-started/overview)
-- [Streamlit](https://docs.streamlit.io/)
-- [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
-- [LMstudio](https://lmstudio.ai/)
-- [Anything LLM](https://anythingllm.com/)
-- [Ollama](https://ollama.com/)
-- [vllm](https://github.com/vllm-project/vllm)
-- [FastAPi](https://fastapi.tiangolo.com/)
- 
+Build stunning AI applications effortlessly using simple UI libraries like Streamlit and Chainlit for your proof-of-concept projects. Harness powerful local LLMs such as Ollama, LMStudio, and VLLM for advanced text generation, while creating scalable backend services with FastAPI. Tap into the extensive collection of open-source models from Hugging Face to bring your Generative AI ideas to life.
+
+- **[Hugging Face Models](https://huggingface.co/models)**: A comprehensive repository of pre-trained machine learning models across various modalities, including NLP, vision, and more, facilitating easy integration and fine-tuning for diverse applications.
+
+- **[Langchain](https://python.langchain.com/docs/get_started/introduction)**: A framework designed to simplify the development of applications powered by large language models, offering tools for prompt management, LLM chaining, data augmentation, and more.
+
+- **[LlamaIndex](https://www.llamaindex.ai/)**: An interface that connects large language models with external data sources, enabling efficient data retrieval and interaction for enhanced AI applications.
+
+- **[Unstructured-IO](https://github.com/Unstructured-IO/unstructured)**: A Python library that provides pre-processing tools for unstructured data, converting it into structured formats suitable for analysis and machine learning tasks.
+
+- **[Chainlit](https://docs.chainlit.io/get-started/overview)**: A framework for creating conversational AI applications, allowing developers to build, test, and deploy chatbots with ease.
+
+- **[Streamlit](https://docs.streamlit.io/)**: An open-source app framework in Python that enables the creation of interactive web applications for data science and machine learning projects with minimal effort.
+
+- **[Text-Generation-WebUI](https://github.com/oobabooga/text-generation-webui)**: A Gradio-based web interface for running large language models, supporting multiple inference backends for text generation tasks. 
+
+- **[LM Studio](https://lmstudio.ai/)**: A platform that allows users to discover, download, and run local large language models on their computers, supporting architectures like Llama 3.2, Mistral, and more. 
+
+- **[Anything LLM](https://anythingllm.com/)**: An all-in-one AI application that enables users to chat with documents, utilize AI agents, and run models locally and offline, ensuring full privacy. 
+
+- **[Ollama](https://ollama.com/)**: A tool that facilitates running large language models like Llama 3.3, DeepSeek-R1, and others locally on macOS, Linux, and Windows platforms. 
+
+- **[vLLM](https://github.com/vllm-project/vllm)**: A high-throughput and memory-efficient inference and serving engine for large language models, designed to optimize performance and resource utilization. 
+
+- **[FastAPI](https://fastapi.tiangolo.com/)**: A modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints, ensuring quick development and robust code. 
+
+These resources offer a range of tools and frameworks to support the development and deployment of AI and machine learning applications across various domains. 
 
 ## Readymade API-based/self-hosted LLM platform
 - [Gemini](https://ai.google.dev/gemini-api/docs/api-key)
