@@ -4,11 +4,9 @@
 
 
 ## Free Generative AI Platform/App:
-Discover free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts—all without any installations. 
+Discover a free generative AI platform where you can ask questions, summarize texts, generate stunning images, and create content like code, stories, and video scripts all without any installations. 
 Dive in and play to understand how AI works, master the art of prompt writing, and build your innovative applications seamlessly. platform like chatgpt, XAI(twitter), Gemini from google, groq.
 
-
-Here are concise descriptions for each platform, formatted in Markdown for inclusion in a GitHub README file:
 
 - **[ChatGPT](https://chat.openai.com/)**: Developed by OpenAI, ChatGPT is a conversational AI model capable of understanding and generating human-like text, assisting with a variety of tasks.
 
@@ -28,23 +26,10 @@ Here are concise descriptions for each platform, formatted in Markdown for inclu
 
 - **[Perplexity](https://www.perplexity.ai/)**: Perplexity AI is a conversational search engine that provides direct answers to user queries by leveraging large language models.
 
-These descriptions offer a brief overview of each platform, aiding in quick reference and selection for further exploration. 
 
-
-
-- [ChatGPT](https://chatgpt.com/)
-- [Deep Seek](https://www.deepseek.com/)
-- [XAI| free $25 credit](https://x.ai/api)
-- [Groq](https://console.groq.com/keys)
-- [Gemini](https://gemini.google.com/app)
-- [Bing](https://www.bing.com/)
-- [YOU](you.com)
-- [Poe](https://poe.com/)
-- [Perplexity](https://www.perplexity.ai/)
   
 # GenerativeAI Foundation
 A solid foundation in mathematics—covering probability, algebra, and calculus—and proficiency in programming languages like Python or JavaScript are essential for generative AI. While no-code platforms offer accessible solutions, mastering these fundamentals enables you to implement customizations more efficiently.
-
 
 
 ## Programming
@@ -73,7 +58,6 @@ A solid foundation in mathematics—covering probability, algebra, and calculus�
 
 - **[DataCamp: Python and Plotting](https://www.youtube.com/playlist?list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4)**: A YouTube playlist by DataCamp covering Python programming and data visualization techniques.
 
-These descriptions provide a brief overview of each resource, facilitating quick reference and selection for further exploration. 
 
 
 
