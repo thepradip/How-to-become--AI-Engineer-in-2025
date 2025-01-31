@@ -525,7 +525,10 @@ These resources offer valuable insights and tools for exploring router models, e
 
 - **[OpenAI Realtime Agents](https://github.com/openai/openai-realtime-agents)**: A demonstration of advanced agent patterns built on top of OpenAI's Realtime API, showcasing sequential agent handoffs and background escalations. 
 
-- **[LLMOps Database](https://www.zenml.io/llmops-database)**: A curated knowledge base of real-world implementations of Large Language Model Operations (LLMOps), providing detailed summaries and technical notes. 
+- **[LLMOps Database](https://www.zenml.io/llmops-database)**: A curated knowledge base of real-world implementations of Large Language Model Operations (LLMOps), providing detailed summaries and technical notes.
+
+## Build from Scratch
+-**[Let's build GPT: from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy)**: GPT implementation from scratch hands on.
 
 ## Leaderboards
 
