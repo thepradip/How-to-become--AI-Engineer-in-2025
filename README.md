@@ -298,7 +298,8 @@ These courses focus on fine-tuning large language models (LLMs) to specialize th
 
 - **[Unsloth: Efficient Fine-Tuning](https://github.com/unslothai/unsloth)**: A tool that enables efficient fine-tuning of models like Llama 3.3, Mistral, and others, achieving faster performance with reduced memory usage. 
 
-- **[Hugging Face AutoTrain](https://huggingface.co/autotrain)**: A platform that allows users to automatically train, evaluate, and deploy state-of-the-art machine learning models without coding, supporting various tasks including LLM fine-tuning. 
+- **[Hugging Face AutoTrain](https://huggingface.co/autotrain)**: A platform that allows users to automatically train, evaluate, and deploy state-of-the-art machine learning models without coding, supporting various tasks including LLM fine-tuning.
+- **[Unsloth notebooks](https://docs.unsloth.ai/get-started/unsloth-notebooks)**: Collection of notebooks, fine tune, inference, RL algorithms.
 
 These resources offer valuable guidance and tools for fine-tuning large language models and enhancing their performance across various applications. 
 
