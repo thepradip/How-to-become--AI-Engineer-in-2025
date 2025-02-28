@@ -228,6 +228,8 @@ Exploring AI-driven image generation tools like DALL·E, Midjourney, Leonardo.ai
 
 ## Best Free AI Conferences:
 Exploring AI conferences that are both impactful and free can provide valuable insights without financial constraints.
+- **[AI Summit 2025|AI Leadership](https://www.youtube.com/watch?v=L89GzWEILkM&ab_channel=AIEngineer)**: This is the AI Summit 2025 part 1 Leadership YouTube playlist, which offers insights into AI Agents and deploying large language models (LLMs) in production environments. It covers best practices and real-world applications.
+- - **[AI Summit 2025|AI Leadership](https://www.youtube.com/watch?v=D7BzTxVVMuw&t=39s&ab_channel=AIEngineer))**: AI Summit 2025 part 2 AI Agent YouTube playlist offering insights into AI Agent, deploying Large Language Models (LLMs) in production environments, covering best practices and real-world applications.
 
 - **[LLM in Production](https://www.youtube.com/playlist?list=PL3vkEKxWd-us5YvvuvYkjP_QGlgUq3tpA)**: A YouTube playlist offering insights into deploying Large Language Models (LLMs) in production environments, covering best practices and real-world applications.
 
