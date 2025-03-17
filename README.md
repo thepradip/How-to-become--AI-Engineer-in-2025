@@ -8,9 +8,10 @@ Discover a free generative AI platform where you can ask questions, summarize te
 Dive in and play to understand how AI works, master the art of prompt writing, and build your innovative applications seamlessly. platform like chatgpt, XAI(twitter), Gemini from google, groq.
 
 
-- **[ChatGPT](https://chat.openai.com/)**: Developed by OpenAI, ChatGPT is a conversational AI model capable of understanding and generating human-like text, assisting with a variety of tasks.
+- **[ChatGPT](https://chat.openai.com/)**: Developed by OpenAI, ChatGPT is a conversational AI model capable of understanding and generating human-like text, assisting with various tasks.
 
-- **[DeepSeek](https://www.deepseek.com/)**: DeepSeek offers advanced AI models, including DeepSeek-V3, known for its rapid inference and high performance in various benchmarks.
+- **[DeepSeek](https://www.deepseek.com/)**: DeepSeek offers advanced AI models, including DeepSeek-V3, which is known for its rapid inference and high performance in various benchmarks.
+- **[Qwen][https://chat.qwen.ai/]**: Qwen is an AI-powered chat platform that leverages advanced language models to deliver engaging and human-like conversational experiences. It provides users with quick, insightful responses for both casual queries and professional needs, making it a versatile tool for everyday interactions and creative content generation.
 
 - **[XAI](https://x.ai/api)**: XAI provides the Grok API, granting developers access to cutting-edge language models with features like function calling and extended context length.
 
