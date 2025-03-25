@@ -116,9 +116,9 @@ They provide practical techniques, examples, and strategies for improving intera
   
 
 ## GenAI Level 2 and Agent Courses
-These advanced courses offer a practical deep dive into generative AI frameworks like LangChain, LlamaIndex, and Autogen, emphasizing hands-on projects to build real-world applications. With a focus on agentic systems and retrieval-augmented generation, learners can enhance their expertise and confidently navigate cutting-edge AI technologies. Completing these courses ensures proficiency in key tools and frameworks, setting the stage for impactful development work.
+These advanced courses offer a practical deep dive into generative AI frameworks like LangChain, LlamaIndex, and Autogen, emphasizing hands-on projects to build real-world applications. Focusing on agentic systems and retrieval-augmented generation, learners can enhance their expertise and confidently navigate cutting-edge AI technologies. Completing these courses ensures proficiency in key tools and frameworks, setting the stage for impactful development work.
 
-
+- **[Full Course (10 Lesson) AI Agents for Beginners](https://www.youtube.com/watch?v=OhI005_aJkA&ab_channel=MicrosoftDeveloper)**- Microsoft AI Agent beginner course
 - **[Kaggle | 5-Day Generative AI](https://www.kaggle.com/learn-guide/5-day-genai)**: A structured program offering a hands-on introduction to generative AI concepts and techniques over five days.
 
 - **[Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms)**: A Coursera course exploring constructing and fine-tuning large language models for AI applications.
