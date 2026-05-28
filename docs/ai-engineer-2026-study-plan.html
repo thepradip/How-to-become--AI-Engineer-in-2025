@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Engineer 2026 Study Plan</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111318'/%3E%3Cpath d='M18 44 32 14l14 30h-7l-3-7h-8l-3 7h-7Zm13-13h4l-2-6-2 6Z' fill='%23aee0c8'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111318;
+      --muted: #626a73;
+      --line: #d9dde3;
+      --paper: #f7f4ed;
+      --surface: #ffffff;
+      --blue: #2458d3;
+      --green: #16845b;
+      --red: #c34831;
+      --gold: #b86e00;
+      --shadow: 0 18px 45px rgba(20, 25, 35, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    .hero {
+      min-height: 58svh;
+      display: grid;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.1)),
+        url("../assets/ai-engineer-2026-hero.png") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #aee0c8;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 86px);
+      line-height: 0.92;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 20px 0 0;
+      font-size: clamp(17px, 2.4vw, 22px);
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      margin: 0 -16px 30px;
+      padding: 14px 16px;
+      background: rgba(247, 244, 237, 0.92);
+      border-bottom: 1px solid rgba(17, 19, 24, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .progress-wrap {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .bar {
+      height: 10px;
+      background: #e3ded4;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--green), var(--blue));
+      transition: width 280ms ease;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    button, .button-link {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 1px 0 rgba(17, 19, 24, 0.04);
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    button:hover, .button-link:hover {
+      transform: translateY(-1px);
+      border-color: #9fa8b4;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 28px;
+    }
+
+    .filter.active {
+      background: var(--ink);
+      color: #ffffff;
+      border-color: var(--ink);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.35fr;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel h2 {
+      margin: 0;
+      padding: 18px 18px 12px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .panel-body { padding: 0 18px 18px; }
+
+    .weeks {
+      display: grid;
+      gap: 10px;
+    }
+
+    .week {
+      display: grid;
+      gap: 8px;
+      padding: 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      background: #fbfcfd;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .week.hidden { display: none; }
+
+    .week:hover { transform: translateY(-2px); }
+
+    .week-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .week-title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+      font-weight: 850;
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--green);
+      flex: 0 0 auto;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .foundations { background: var(--blue); }
+    .llm { background: var(--green); }
+    .agents { background: var(--red); }
+    .product { background: var(--gold); }
+    .ops { background: #5b4fc4; }
+
+    .week p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .links a {
+      border-bottom: 1px solid currentColor;
+      color: #233a7a;
+      font-size: 13px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--line);
+    }
+
+    .tool {
+      padding: 14px;
+      background: #ffffff;
+      min-height: 118px;
+    }
+
+    .tool strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .tool p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .projects {
+      display: grid;
+      gap: 10px;
+      counter-reset: project;
+    }
+
+    .project {
+      counter-increment: project;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px 0;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .project:first-child { border-top: 0; }
+
+    .project::before {
+      content: counter(project);
+      display: grid;
+      place-items: center;
+      width: 34px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #111318;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .project h3 {
+      margin: 0 0 5px;
+      font-size: 15px;
+    }
+
+    .project p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .prompt-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .prompt {
+      padding: 14px;
+      border-left: 4px solid var(--green);
+      background: #f5fbf8;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .prompt strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .hero { min-height: 52svh; }
+      .toolbar, .grid { grid-template-columns: 1fr; }
+      .actions { justify-content: flex-start; }
+      .matrix, .prompt-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .hero-inner { padding: 38px 0; }
+      .shell { width: min(100% - 20px, 1180px); }
+      .toolbar { margin-inline: -10px; }
+      .week-head { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">2026 roadmap</p>
+      <h1>AI Engineer Study Plan</h1>
+      <p>From Python and prompting to LangGraph agents, coding assistants, local inference, RAG evaluation, and product-ready UI.</p>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="toolbar" aria-label="Study controls">
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progressText">0 of 12 weeks complete</span>
+          <span id="focusText">All tracks</span>
+        </div>
+        <div class="bar" aria-hidden="true"><span id="progressBar"></span></div>
+      </div>
+      <div class="actions">
+        <a class="button-link" href="../README.md">README</a>
+        <a class="button-link" href="../output/pdf/ai-engineer-2026-study-plan.pdf">PDF</a>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </section>
+
+    <nav class="filters" aria-label="Track filters">
+      <button class="filter active" type="button" data-filter="all">All</button>
+      <button class="filter" type="button" data-filter="foundations">Foundations</button>
+      <button class="filter" type="button" data-filter="llm">LLM and RAG</button>
+      <button class="filter" type="button" data-filter="agents">Agents</button>
+      <button class="filter" type="button" data-filter="product">Product UI</button>
+      <button class="filter" type="button" data-filter="ops">LLMOps</button>
+    </nav>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>12-week timeline</h2>
+        <div class="panel-body weeks" id="weeks">
+          <article class="week" data-track="foundations">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="1">Week 1: Python and Git</label>
+              <span class="tag foundations">Foundations</span>
+            </div>
+            <p>Build a CLI notebook helper, learn API calls, and keep every experiment in Git.</p>
+            <div class="links"><a href="https://www.deeplearning.ai/short-courses/ai-python-for-beginners/">AI Python</a><a href="https://pandas.pydata.org/docs/user_guide/10min.html">pandas</a></div>
+          </article>
+          <article class="week" data-track="foundations">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="2">Week 2: Math for builders</label>
+              <span class="tag foundations">Foundations</span>
+            </div>
+            <p>Refresh vectors, probability, stats, cosine similarity, and evaluation vocabulary.</p>
+            <div class="links"><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Linear algebra</a><a href="https://www.youtube.com/playlist?list=PL1328115D3D8A2566">Statistics</a></div>
+          </article>
+          <article class="week" data-track="llm">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="3">Week 3: LLM APIs</label>
+              <span class="tag llm">LLM</span>
+            </div>
+            <p>Use OpenAI, Claude, Gemini, Qwen, and Kimi APIs. Compare model cost, speed, context, and output quality.</p>
+            <div class="links"><a href="https://cookbook.openai.com/">OpenAI Cookbook</a><a href="https://github.com/anthropics/anthropic-cookbook">Anthropic Cookbook</a></div>
+          </article>
+          <article class="week" data-track="llm">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="4">Week 4: Prompt systems</label>
+              <span class="tag llm">LLM</span>
+            </div>
+            <p>Create reusable prompts with task, context, constraints, schema, examples, critique, and stop rules.</p>
+            <div class="links"><a href="https://www.promptingguide.ai/">Prompting Guide</a><a href="https://docs.anthropic.com/en/prompt-library/library">Anthropic Library</a></div>
+          </article>
+          <article class="week" data-track="llm">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="5">Week 5: RAG baseline</label>
+              <span class="tag llm">RAG</span>
+            </div>
+            <p>Parse documents, chunk content, embed text, retrieve sources, and answer with citations.</p>
+            <div class="links"><a href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/">Advanced RAG</a><a href="https://docs.llamaindex.ai/en/stable/">LlamaIndex</a></div>
+          </article>
+          <article class="week" data-track="agents">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="6">Week 6: LangGraph agents</label>
+              <span class="tag agents">Agents</span>
+            </div>
+            <p>Build a planner-search-writer-critic graph with state, retries, and a human approval checkpoint.</p>
+            <div class="links"><a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/">AI Agents in LangGraph</a><a href="https://www.langchain.com/langgraph">LangGraph</a></div>
+          </article>
+          <article class="week" data-track="agents">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="7">Week 7: Advanced agents</label>
+              <span class="tag agents">Agents</span>
+            </div>
+            <p>Compare CrewAI, AutoGen, OpenHands, OpenClaw, Hermes Agent, and OpenAI Agents SDK.</p>
+            <div class="links"><a href="https://www.crewai.com/">CrewAI</a><a href="https://github.com/All-Hands-AI/OpenHands">OpenHands</a><a href="https://openai.github.io/openai-agents-python/">Agents SDK</a></div>
+          </article>
+          <article class="week" data-track="agents">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="8">Week 8: Coding agents</label>
+              <span class="tag agents">Coding</span>
+            </div>
+            <p>Ship one feature with Claude Code, Codex, or Kimi Code. Review diffs, tests, and security risks yourself.</p>
+            <div class="links"><a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a><a href="https://openai.com/codex/">Codex</a><a href="https://www.kimi.com/code/en">Kimi Code</a></div>
+          </article>
+          <article class="week" data-track="product">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="9">Week 9: Vibe-coded UI</label>
+              <span class="tag product">Product</span>
+            </div>
+            <p>Prototype in Lovable, v0, Bolt, or Replit, then refactor into a clean app with states and accessibility.</p>
+            <div class="links"><a href="https://lovable.dev/">Lovable</a><a href="https://v0.dev/">v0</a><a href="https://gamma.app/">Gamma</a></div>
+          </article>
+          <article class="week" data-track="ops">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="10">Week 10: Local inference</label>
+              <span class="tag ops">Inference</span>
+            </div>
+            <p>Run models with Ollama and LM Studio, then serve a model with vLLM and record throughput.</p>
+            <div class="links"><a href="https://docs.ollama.com/">Ollama</a><a href="https://docs.vllm.ai/en/latest/">vLLM</a><a href="https://lmstudio.ai/">LM Studio</a></div>
+          </article>
+          <article class="week" data-track="ops">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="11">Week 11: Evals and monitoring</label>
+              <span class="tag ops">LLMOps</span>
+            </div>
+            <p>Add tracing, regression prompts, RAG metrics, cost logging, and failure examples.</p>
+            <div class="links"><a href="https://docs.smith.langchain.com/">LangSmith</a><a href="https://phoenix.arize.com/">Phoenix</a><a href="https://github.com/confident-ai/deepeval">DeepEval</a></div>
+          </article>
+          <article class="week" data-track="product">
+            <div class="week-head">
+              <label class="week-title"><input type="checkbox" data-week="12">Week 12: Portfolio capstone</label>
+              <span class="tag product">Portfolio</span>
+            </div>
+            <p>Publish a polished AI app with README, screenshots, eval results, deploy notes, and a Gamma pitch deck.</p>
+            <div class="links"><a href="https://nextjs.org/">Next.js</a><a href="https://streamlit.io/">Streamlit</a><a href="https://gamma.app/">Gamma</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Best tools by use case</h2>
+        <div class="panel-body">
+          <div class="matrix">
+            <div class="tool"><strong>Coding</strong><p>Claude Code, OpenAI Codex, Kimi Code, Cursor, Cline, Roo Code.</p></div>
+            <div class="tool"><strong>Agent graphs</strong><p>LangGraph first, then CrewAI, AutoGen, OpenAI Agents SDK, OpenHands.</p></div>
+            <div class="tool"><strong>Local inference</strong><p>Ollama and LM Studio for learning; vLLM for production-style serving.</p></div>
+            <div class="tool"><strong>RAG</strong><p>LlamaIndex or LangChain, Chroma or Qdrant, reranking, and repeatable evals.</p></div>
+            <div class="tool"><strong>UI prototype</strong><p>Lovable, v0, Bolt, Figma Make, then refactor into maintainable code.</p></div>
+            <div class="tool"><strong>Presenting</strong><p>Gamma for fast decks, Figma Slides or PowerPoint for polished delivery.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Project ladder</h2>
+        <div class="panel-body projects">
+          <article class="project"><div><h3>Personal document search</h3><p>RAG app with citations, chunk tests, and retrieval metrics.</p></div></article>
+          <article class="project"><div><h3>Research agent</h3><p>LangGraph workflow with planner, search, writer, critic, and approvals.</p></div></article>
+          <article class="project"><div><h3>Local model lab</h3><p>Ollama model switcher plus vLLM benchmark with latency notes.</p></div></article>
+          <article class="project"><div><h3>Coding-agent feature</h3><p>Use Claude Code, Codex, or Kimi Code to ship a tested feature.</p></div></article>
+          <article class="project"><div><h3>Portfolio product</h3><p>AI app, polished UI, eval report, deploy guide, and Gamma pitch.</p></div></article>
+        </div>
+      </section>
+
+      <section class="panel wide">
+        <h2>Prompt enhancement checklist</h2>
+        <div class="panel-body prompt-grid">
+          <div class="prompt"><strong>Task</strong>State the exact job, audience, and definition of done.</div>
+          <div class="prompt"><strong>Context</strong>Add files, data, examples, constraints, and source rules.</div>
+          <div class="prompt"><strong>Format</strong>Ask for JSON, Markdown, code patch, table, or final answer style.</div>
+          <div class="prompt"><strong>Critique</strong>Request risks, missing tests, assumptions, and improvement ideas.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const boxes = Array.from(document.querySelectorAll('input[type="checkbox"][data-week]'));
+    const progressText = document.getElementById('progressText');
+    const progressBar = document.getElementById('progressBar');
+    const focusText = document.getElementById('focusText');
+    const filters = Array.from(document.querySelectorAll('.filter'));
+    const weeks = Array.from(document.querySelectorAll('.week'));
+    const storeKey = 'ai-engineer-2026-progress';
+
+    function loadProgress() {
+      const saved = JSON.parse(localStorage.getItem(storeKey) || '{}');
+      boxes.forEach((box) => {
+        box.checked = Boolean(saved[box.dataset.week]);
+      });
+      updateProgress();
+    }
+
+    function saveProgress() {
+      const state = {};
+      boxes.forEach((box) => {
+        state[box.dataset.week] = box.checked;
+      });
+      localStorage.setItem(storeKey, JSON.stringify(state));
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const complete = boxes.filter((box) => box.checked).length;
+      const percent = Math.round((complete / boxes.length) * 100);
+      progressText.textContent = `${complete} of ${boxes.length} weeks complete`;
+      progressBar.style.width = `${percent}%`;
+    }
+
+    function setFilter(value, label) {
+      weeks.forEach((week) => {
+        week.classList.toggle('hidden', value !== 'all' && week.dataset.track !== value);
+      });
+      filters.forEach((button) => {
+        button.classList.toggle('active', button.dataset.filter === value);
+      });
+      focusText.textContent = value === 'all' ? 'All tracks' : label;
+    }
+
+    boxes.forEach((box) => box.addEventListener('change', saveProgress));
+    filters.forEach((button) => {
+      button.addEventListener('click', () => setFilter(button.dataset.filter, button.textContent.trim()));
+    });
+    document.getElementById('reset').addEventListener('click', () => {
+      boxes.forEach((box) => { box.checked = false; });
+      saveProgress();
+    });
+    loadProgress();
+  </script>
+</body>
+</html>
