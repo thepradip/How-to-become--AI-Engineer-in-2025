@@ -1,6 +1,6 @@
 # How to Become an AI Engineer in 2026
 
-<img src="assets/ai-engineer-2026-hero.png" alt="AI engineer 2026 roadmap" width="800">
+<img src="assets/ai-engineer-2026-hero.png" alt="AI Engineer roadmap 2026" width="800">
 
 This roadmap is for builders who want to go from Python basics to useful AI products, agents, local inference, evaluation, and UI shipping in 2026. It keeps the original beginner-friendly spirit, but adds the tools that now matter in day-to-day AI engineering: agentic coding assistants, LangGraph, local LLM inference, UI vibe-coding tools, prompt improvement workflows, and production evaluation.
 
