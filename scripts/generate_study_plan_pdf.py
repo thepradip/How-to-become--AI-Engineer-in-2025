@@ -213,7 +213,7 @@ def build():
     story = []
 
     if HERO.exists():
-        img = Image(str(HERO), width=7.05 * inch, height=2.65 * inch)
+        img = Image(str(HERO), width=7.05 * inch, height=3.92 * inch)
         img.hAlign = "LEFT"
         story.extend([img, Spacer(1, 14)])
 
