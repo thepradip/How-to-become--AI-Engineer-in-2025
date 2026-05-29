@@ -1353,6 +1353,164 @@
     }
     .quiz-complete:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(56,189,248,0.3); }
 
+    /* ── Feasibility Section ─────────────────────────── */
+    .pace-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .pace-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .pace-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pace-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .pace-card p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .pace-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin-bottom: 6px;
+    }
+
+    .pace-badge.yes  { background: rgba(52,211,153,0.15); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
+    .pace-badge.no   { background: rgba(248,113,113,0.12); color: var(--red);   border: 1px solid rgba(248,113,113,0.25); }
+    .pace-badge.maybe{ background: rgba(251,191,36,0.12);  color: var(--amber); border: 1px solid rgba(251,191,36,0.25); }
+
+    .insight-box {
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      border-left: 3px solid var(--blue);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+
+    .insight-box p {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .insight-box span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .pace-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .pace-compare-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .pace-compare-card.recommended {
+      border-color: var(--green);
+      background: rgba(52,211,153,0.04);
+    }
+
+    .pace-compare-card.not-rec {
+      border-color: var(--border);
+      opacity: 0.75;
+    }
+
+    .pace-compare-card .pace-hrs {
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .pace-compare-card.recommended .pace-hrs { color: var(--green); }
+    .pace-compare-card.not-rec .pace-hrs { color: var(--faint); }
+
+    .pace-compare-card .pace-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .pace-compare-card .pace-note {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .pattern-list {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 0;
+    }
+
+    .pattern-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .pattern-week {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--faint);
+      white-space: nowrap;
+      min-width: 60px;
+    }
+
+    .pattern-bar {
+      height: 6px;
+      border-radius: 99px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      .pace-compare { grid-template-columns: 1fr; }
+    }
+
     /* ── Utility ─────────────────────────────────────── */
     .text-grad {
       background: var(--grad1);
@@ -1718,6 +1876,116 @@
     </a>
 
   </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Feasibility ────────────────────────────────── -->
+<section class="section">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Before You Start</div>
+    <h2 class="section-title">Is This Realistic for You?</h2>
+    <p class="section-desc">12 weeks at ~10 hrs/week = ~120 hours total. Here's who can actually finish it.</p>
+  </div>
+
+  <!-- Who can do it -->
+  <div class="pace-grid">
+    <div class="pace-card fade-in">
+      <span class="pace-icon">🎓</span>
+      <div>
+        <div class="pace-badge yes">Fully Feasible</div>
+        <h4>Student / Career Break</h4>
+        <p>Dedicated full-time learner with no major commitments. 4 hrs/day gets you done in 6–8 weeks.</p>
+      </div>
+    </div>
+    <div class="pace-card fade-in">
+      <span class="pace-icon">💼</span>
+      <div>
+        <div class="pace-badge yes">Feasible</div>
+        <h4>Developer, 10 hrs/week</h4>
+        <p>2 focused hours on weekdays. Consistent pace, no burnout. The plan was built for this profile.</p>
+      </div>
+    </div>
+    <div class="pace-card fade-in">
+      <span class="pace-icon">🌙</span>
+      <div>
+        <div class="pace-badge maybe">Stretch</div>
+        <h4>Full-Time Job, Evenings</h4>
+        <p>Realistic budget is 1–2 hrs/day max. At 5–8 hrs/week, plan for 16–20 weeks instead.</p>
+      </div>
+    </div>
+    <div class="pace-card fade-in">
+      <span class="pace-icon">📅</span>
+      <div>
+        <div class="pace-badge maybe">Possible</div>
+        <h4>Weekends Only</h4>
+        <p>8 hrs/weekend = ~10 weeks. Works if weekends are genuinely free and you protect the time.</p>
+      </div>
+    </div>
+    <div class="pace-card fade-in">
+      <span class="pace-icon">👶</span>
+      <div>
+        <div class="pace-badge no">Difficult</div>
+        <h4>Full-Time Job + Family</h4>
+        <p>Budget 4–6 hrs/week realistically. Aim for 6 months, not 3. Quality over speed.</p>
+      </div>
+    </div>
+    <div class="pace-card fade-in">
+      <span class="pace-icon">🔰</span>
+      <div>
+        <div class="pace-badge no">Add More Time</div>
+        <h4>Complete Beginner, No Python</h4>
+        <p>Add 4–6 weeks for Python and Git fundamentals before week 1. Plan for 16–18 weeks total.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 hrs vs 4 hrs -->
+  <h3 style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;">4 hrs/day vs 2 hrs/day — what actually works</h3>
+  <div class="pace-compare fade-in">
+    <div class="pace-compare-card recommended">
+      <div class="pace-hrs">2 hrs</div>
+      <div class="pace-label">per day, 5 days/week</div>
+      <div class="pace-note">10 hrs/week · finishes in 12 weeks · sustainable · low burnout risk · consistent output every day</div>
+    </div>
+    <div class="pace-compare-card not-rec">
+      <div class="pace-hrs">4 hrs</div>
+      <div class="pace-label">per day, every day</div>
+      <div class="pace-note">28 hrs/week · finishes faster but most people burn out by week 4 · mentally exhausting for hands-on work</div>
+    </div>
+  </div>
+
+  <!-- Honest pattern -->
+  <h3 style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;">The honest pattern most self-learners follow</h3>
+  <div class="pattern-list fade-in">
+    <div class="pattern-item">
+      <span class="pattern-week">Week 1–2</span>
+      <div class="pattern-bar" style="width:90%;background:var(--green);"></div>
+      <span>Motivated — hits the target hours every day</span>
+    </div>
+    <div class="pattern-item">
+      <span class="pattern-week">Week 3–4</span>
+      <div class="pattern-bar" style="width:65%;background:var(--amber);"></div>
+      <span>Fatigue sets in — average drops to 2–3 hrs/day</span>
+    </div>
+    <div class="pattern-item">
+      <span class="pattern-week">Week 5–6</span>
+      <div class="pattern-bar" style="width:45%;background:var(--amber);"></div>
+      <span>Life interrupts — some days are zero, backlog builds</span>
+    </div>
+    <div class="pattern-item">
+      <span class="pattern-week">Week 7+</span>
+      <div class="pattern-bar" style="width:25%;background:var(--red);"></div>
+      <span>Burnout risk if over-scheduled — many people quit here</span>
+    </div>
+  </div>
+
+  <!-- Key insight -->
+  <div class="insight-box fade-in" style="margin-top:24px;">
+    <p>Consistency beats intensity for self-learning.</p>
+    <span>The person who does 2 focused hours every day always outpaces the person doing 4 hours some days and 0 hours on others. Protect your daily minimum — even 90 minutes counts.</span>
+  </div>
+
 </section>
 
 <div class="divider"></div>
