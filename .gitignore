@@ -2,3 +2,5 @@ output/pdf/
 output/.DS_Store
 .DS_Store
 scripts/
+*.pdf
+

@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Become an AI Engineer in 2026</title>
+  <meta name="description" content="A complete, practical roadmap to becoming an AI Engineer in 2026. 12-week study plan, resources, projects, and tools.">
+  <meta property="og:title" content="How to Become an AI Engineer in 2026">
+  <meta property="og:description" content="Practical roadmap from Python basics to AI products, agents, RAG, LLMOps, and a portfolio.">
+  <meta property="og:image" content="assets/ai-engineer-2026-hero.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1117'/%3E%3Ccircle cx='32' cy='27' r='10' fill='none' stroke='%2338bdf8' stroke-width='2.5'/%3E%3Cpath d='M26 41h12M32 37v8' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='22' r='3' fill='%23a78bfa'/%3E%3Ccircle cx='44' cy='22' r='3' fill='%2334d399'/%3E%3C/svg%3E">
+
+  <style>
+    /* ── Reset & Tokens ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --bg2: #161b27;
+      --bg3: #1e2535;
+      --surface: #242d3e;
+      --surface2: #2e3a50;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.14);
+      --text: #e8edf5;
+      --muted: #8b97ab;
+      --faint: #5a6478;
+      --blue: #38bdf8;
+      --blue-d: #0ea5e9;
+      --purple: #a78bfa;
+      --purple-d: #7c3aed;
+      --green: #34d399;
+      --green-d: #059669;
+      --amber: #fbbf24;
+      --red: #f87171;
+      --pink: #f472b6;
+      --grad1: linear-gradient(135deg, #38bdf8 0%, #a78bfa 50%, #34d399 100%);
+      --grad2: linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+      --shadow: 0 8px 32px rgba(0,0,0,0.4);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+      --radius: 14px;
+      --radius-sm: 8px;
+      --radius-xs: 6px;
+      --font: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    ul { list-style: none; }
+
+    /* ── Scrollbar ─────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 99px; }
+
+    /* ── Nav ─────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 60px;
+      background: rgba(15,17,23,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .nav-brand svg { flex-shrink: 0; }
+
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      padding: 6px 12px;
+      border-radius: var(--radius-xs);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+
+    .nav-cta {
+      background: var(--grad2);
+      color: #fff !important;
+      border-radius: var(--radius-xs) !important;
+      padding: 7px 16px !important;
+      font-weight: 600 !important;
+      font-size: 13px !important;
+    }
+
+    .nav-cta:hover { opacity: 0.9; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      width: 22px; height: 2px;
+      background: var(--muted);
+      border-radius: 99px;
+      transition: 0.2s;
+    }
+
+    /* ── Hero ─────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px 60px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.18;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .hero-blob-1 {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, #38bdf8, transparent 70%);
+      top: -150px; left: -150px;
+      animation-delay: 0s;
+    }
+
+    .hero-blob-2 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #a78bfa, transparent 70%);
+      top: 50px; right: -100px;
+      animation-delay: -3s;
+    }
+
+    .hero-blob-3 {
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, #34d399, transparent 70%);
+      bottom: 0; left: 30%;
+      animation-delay: -6s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(56,189,248,0.1);
+      border: 1px solid rgba(56,189,248,0.25);
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--blue);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero-badge span.dot {
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .hero-title {
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    .hero-title .line-plain { color: var(--text); }
+
+    .hero-title .line-grad {
+      background: var(--grad1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: clamp(15px, 2vw, 19px);
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--grad2);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(56,189,248,0.35);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border2);
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface2);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 28px;
+      font-weight: 800;
+      background: var(--grad1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 2px;
+    }
+
+    /* ── Section Shell ────────────────────────────── */
+    .section {
+      padding: 80px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(26px, 4vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── Divider ────────────────────────────────────── */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Tracks Grid ────────────────────────────────── */
+    .tracks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .track-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .track-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--track-color, var(--blue));
+      opacity: 0.8;
+    }
+
+    .track-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .track-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .track-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .track-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .track-proof {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 99px;
+      background: rgba(255,255,255,0.06);
+      color: var(--faint);
+    }
+
+    /* ── Study Plan ──────────────────────────────────── */
+    .study-section {
+      padding: 80px 24px;
+      background: var(--bg2);
+    }
+
+    .study-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sticky-bar {
+      position: sticky;
+      top: 60px;
+      z-index: 50;
+      background: rgba(22,27,39,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      margin-bottom: 32px;
+    }
+
+    .sticky-bar-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .progress-wrap {
+      min-width: 0;
+    }
+
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--faint);
+      margin-bottom: 8px;
+    }
+
+    .progress-track {
+      height: 8px;
+      background: var(--bg3);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--purple) 60%, var(--green) 100%);
+      border-radius: 99px;
+      transition: width 0.4s cubic-bezier(.4,0,.2,1);
+    }
+
+    .bar-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .bar-btn {
+      padding: 8px 14px;
+      border-radius: var(--radius-xs);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      color: var(--text);
+      transition: all 0.2s;
+    }
+
+    .bar-btn:hover {
+      background: var(--surface2);
+      transform: translateY(-1px);
+    }
+
+    .filters-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .filter-btn {
+      padding: 7px 16px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover { border-color: var(--border2); color: var(--text); }
+
+    .filter-btn.active {
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .filter-btn[data-filter="all"].active { background: var(--surface2); color: var(--text); border-color: var(--border2); }
+    .filter-btn[data-filter="foundations"].active { background: #1d4ed8; }
+    .filter-btn[data-filter="llm"].active { background: #047857; }
+    .filter-btn[data-filter="agents"].active { background: #b91c1c; }
+    .filter-btn[data-filter="product"].active { background: #92400e; }
+    .filter-btn[data-filter="ops"].active { background: #4c1d95; }
+
+    .weeks-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .week-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      align-items: start;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .week-card:hover {
+      border-color: var(--border2);
+      transform: translateX(4px);
+    }
+
+    .week-card.done { opacity: 0.65; }
+    .week-card.done .week-title { text-decoration: line-through; color: var(--faint); }
+    .week-card.hidden { display: none !important; }
+
+    .week-check {
+      width: 22px; height: 22px;
+      accent-color: var(--green);
+      flex-shrink: 0;
+      margin-top: 1px;
+      cursor: pointer;
+    }
+
+    .week-body { min-width: 0; }
+
+    .week-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .week-num {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--faint);
+      background: var(--surface);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .week-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+
+    .week-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .week-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      padding: 3px 10px;
+      border-radius: var(--radius-xs);
+      background: rgba(56,189,248,0.08);
+      border: 1px solid rgba(56,189,248,0.15);
+      transition: all 0.15s;
+    }
+
+    .week-link:hover {
+      background: rgba(56,189,248,0.15);
+      border-color: rgba(56,189,248,0.3);
+    }
+
+    .week-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .week-tag.foundations { background: rgba(37,99,235,0.2); color: #60a5fa; border: 1px solid rgba(37,99,235,0.3); }
+    .week-tag.llm        { background: rgba(5,150,105,0.2); color: #6ee7b7; border: 1px solid rgba(5,150,105,0.3); }
+    .week-tag.agents     { background: rgba(220,38,38,0.2); color: #fca5a5; border: 1px solid rgba(220,38,38,0.3); }
+    .week-tag.product    { background: rgba(180,83,9,0.2);  color: #fcd34d; border: 1px solid rgba(180,83,9,0.3); }
+    .week-tag.ops        { background: rgba(109,40,217,0.2); color: #c4b5fd; border: 1px solid rgba(109,40,217,0.3); }
+
+    /* ── Resources ───────────────────────────────────── */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .resource-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+
+    .resource-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .resource-card-header {
+      padding: 18px 20px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .resource-icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-xs);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      background: rgba(255,255,255,0.05);
+      flex-shrink: 0;
+    }
+
+    .resource-card-header h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .resource-card-body {
+      padding: 14px 20px 18px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .resource-link {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      transition: color 0.15s;
+      text-decoration: none;
+    }
+
+    .resource-link:last-child { border-bottom: none; }
+
+    .resource-link::before {
+      content: '→';
+      color: var(--blue);
+      flex-shrink: 0;
+      font-size: 12px;
+      margin-top: 1px;
+    }
+
+    .resource-link:hover { color: var(--text); }
+
+    .resource-link span { flex: 1; line-height: 1.45; }
+
+    /* ── Tools Matrix ─────────────────────────────────── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .tool-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: all 0.2s;
+    }
+
+    .tool-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tool-card-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tool-emoji {
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .tool-card-head h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .tool-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tool-pill {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 99px;
+      background: rgba(255,255,255,0.06);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      transition: all 0.15s;
+    }
+
+    .tool-pill.primary {
+      background: rgba(56,189,248,0.1);
+      color: var(--blue);
+      border-color: rgba(56,189,248,0.2);
+    }
+
+    /* ── Projects ─────────────────────────────────────── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+      counter-reset: project;
+    }
+
+    .project-card {
+      counter-increment: project;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: start;
+      transition: all 0.25s;
+    }
+
+    .project-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .project-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--grad2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 900;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .project-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .project-tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 99px;
+      background: rgba(167,139,250,0.1);
+      color: var(--purple);
+      border: 1px solid rgba(167,139,250,0.2);
+    }
+
+    /* ── Timeline / 90-day ───────────────────────────── */
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--blue) 0%, var(--purple) 50%, var(--green) 100%);
+      opacity: 0.4;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 20px;
+      align-items: start;
+      padding-bottom: 32px;
+      position: relative;
+    }
+
+    .timeline-item:last-child { padding-bottom: 0; }
+
+    .timeline-dot {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--bg3);
+      border: 2px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-dot.blue { border-color: var(--blue); color: var(--blue); }
+    .timeline-dot.purple { border-color: var(--purple); color: var(--purple); }
+    .timeline-dot.green { border-color: var(--green); color: var(--green); }
+    .timeline-dot.amber { border-color: var(--amber); color: var(--amber); }
+    .timeline-dot.red { border-color: var(--red); color: var(--red); }
+    .timeline-dot.pink { border-color: var(--pink); color: var(--pink); }
+
+    .timeline-content {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      transition: all 0.2s;
+    }
+
+    .timeline-content:hover {
+      border-color: var(--border2);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-days {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .timeline-content h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .timeline-content p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .timeline-output {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--green);
+      padding: 3px 10px;
+      border-radius: 99px;
+      background: rgba(52,211,153,0.1);
+      border: 1px solid rgba(52,211,153,0.2);
+    }
+
+    /* ── AI Platforms ─────────────────────────────────── */
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .platform-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .platform-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .platform-emoji {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .platform-info h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .platform-info p {
+      font-size: 11px;
+      color: var(--faint);
+      line-height: 1.4;
+    }
+
+    /* ── Checklist ───────────────────────────────────── */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      transition: all 0.2s;
+    }
+
+    .checklist-item:hover {
+      border-color: var(--border2);
+    }
+
+    .check-icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(52,211,153,0.15);
+      border: 1px solid rgba(52,211,153,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--green);
+      font-size: 14px;
+    }
+
+    .checklist-item p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-top: 3px;
+    }
+
+    /* ── CTA Banner ──────────────────────────────────── */
+    .cta-banner {
+      margin: 0 24px 80px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(56,189,248,0.08) 0%, transparent 60%);
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .cta-banner p {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .cta-banner .btn { position: relative; }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--faint);
+    }
+
+    footer a {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+    /* ── Scrollspy underline ─────────────────────────── */
+    .scroll-indicator {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      height: 2px;
+      background: var(--grad1);
+      z-index: 200;
+      transition: width 0.1s linear;
+    }
+
+    /* ── Back to Top ─────────────────────────────────── */
+    .back-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 0.2s;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 90;
+    }
+
+    .back-top.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .back-top:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      transform: translateY(-3px);
+    }
+
+    /* ── Mobile Responsive ───────────────────────────── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px; left: 0; right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        padding: 12px;
+        gap: 2px;
+        z-index: 99;
+      }
+
+      .nav-links.open a { padding: 10px 14px; border-radius: var(--radius-xs); }
+
+      .section { padding: 56px 16px; }
+      .study-section { padding: 56px 16px; }
+      .sticky-bar-inner { grid-template-columns: 1fr; }
+      .week-card { grid-template-columns: auto 1fr; }
+      .week-card .week-tag { display: none; }
+      .week-title { font-size: 14px; }
+      .hero-stats { gap: 24px; }
+      .resource-grid { grid-template-columns: 1fr; }
+      .cta-banner { padding: 40px 24px; }
+      .timeline::before { left: 16px; }
+      .timeline-item { grid-template-columns: 34px 1fr; }
+      .timeline-dot { width: 34px; height: 34px; font-size: 12px; }
+    }
+
+    @media (max-width: 480px) {
+      .tracks-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .platforms-grid { grid-template-columns: 1fr 1fr; }
+      .checklist-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Utility ─────────────────────────────────────── */
+    .text-grad {
+      background: var(--grad1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .w-full { width: 100%; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+    /* ── Animations ──────────────────────────────────── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Scroll Indicator ────────────────────────────── -->
+<div class="scroll-indicator" id="scrollIndicator"></div>
+
+<!-- ── Nav ────────────────────────────────────────── -->
+<nav>
+  <a class="nav-brand" href="#top">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <rect width="28" height="28" rx="7" fill="#161b27"/>
+      <circle cx="14" cy="11" r="5" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M10 19h8M14 16v5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="7" cy="8" r="1.5" fill="#a78bfa"/>
+      <circle cx="21" cy="8" r="1.5" fill="#34d399"/>
+    </svg>
+    AI Engineer 2026
+  </a>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#roadmap">Roadmap</a>
+    <a href="#study-plan">Study Plan</a>
+    <a href="#resources">Resources</a>
+    <a href="#projects">Projects</a>
+    <a href="#tools">Tools</a>
+    <a href="#study-plan" class="nav-cta">Start Learning →</a>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Updated for 2026 · Practical & Free
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line-plain">How to Become an</span><br>
+      <span class="line-grad">AI Engineer</span><br>
+      <span class="line-plain">in 2026</span>
+    </h1>
+
+    <p class="hero-desc">
+      Go from Python basics to shipping real AI products — agents, RAG pipelines, local inference, and a portfolio — in 12 focused weeks. Every resource is free or open-source.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#study-plan" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 110 14A7 7 0 018 1zm0 1.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm.75 2.75v3.19l2.28 2.28-1.06 1.06-2.5-2.5A.75.75 0 017.25 9V5.25h1.5z"/></svg>
+        Start the 12-Week Plan
+      </a>
+      <a href="#roadmap" class="btn btn-secondary">
+        View Full Roadmap →
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Weeks</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Learning Tracks</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10</div>
+        <div class="stat-label">Capstone Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Free Resources</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Roadmap Tracks ──────────────────────────────── -->
+<section class="section" id="roadmap">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Learning Tracks</div>
+    <h2 class="section-title">The Complete 2026 Roadmap</h2>
+    <p class="section-desc">Eight practical tracks from foundations to production. Master each to become a confident AI engineer.</p>
+  </div>
+
+  <div class="tracks-grid">
+    <div class="track-card fade-in" style="--track-color: #3b82f6">
+      <div class="track-icon">🐍</div>
+      <h3>Foundations</h3>
+      <p>Python, JavaScript, math (vectors, probability, stats), Git, and REST APIs. Build the muscle memory every AI engineer needs.</p>
+      <span class="track-proof">CLI data app + FastAPI endpoint</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #10b981">
+      <div class="track-icon">🧠</div>
+      <h3>LLM Basics</h3>
+      <p>Transformers, embeddings, prompting, multimodal models, tool calling, and reasoning patterns across major model families.</p>
+      <span class="track-proof">Chat app with tool calling</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #8b5cf6">
+      <div class="track-icon">📚</div>
+      <h3>RAG &amp; Search</h3>
+      <p>Chunking, retrieval, vector databases, reranking, GraphRAG, and repeatable evaluation. Make your app know things.</p>
+      <span class="track-proof">Document Q&amp;A with citations</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #ef4444">
+      <div class="track-icon">🤖</div>
+      <h3>AI Agents</h3>
+      <p>LangGraph graphs, CrewAI teams, AutoGen conversations, OpenAI Agents SDK, memory, retries, and approval gates.</p>
+      <span class="track-proof">Research agent with memory</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #f59e0b">
+      <div class="track-icon">💻</div>
+      <h3>Coding Agents</h3>
+      <p>Claude Code, OpenAI Codex, Kimi Code, Cursor, Windsurf, Cline. Ship real features with AI assistance — and review every diff.</p>
+      <span class="track-proof">Feature shipped with tests</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #06b6d4">
+      <div class="track-icon">⚡</div>
+      <h3>Local Inference</h3>
+      <p>Ollama, LM Studio, llama.cpp, vLLM, quantization. Understand latency, memory, throughput, and when to self-host.</p>
+      <span class="track-proof">Local model API + benchmark</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #ec4899">
+      <div class="track-icon">🎨</div>
+      <h3>UI &amp; Product</h3>
+      <p>Streamlit, Chainlit, Next.js, Lovable, v0, Bolt. Prototype fast with vibe-coding tools, then refactor into clean code.</p>
+      <span class="track-proof">Polished AI demo + landing page</span>
+    </div>
+    <div class="track-card fade-in" style="--track-color: #6366f1">
+      <div class="track-icon">📊</div>
+      <h3>LLMOps</h3>
+      <p>Tracing, evals, safety, monitoring, cost controls. LangSmith, Phoenix, DeepEval, Ragas. Know when your app breaks.</p>
+      <span class="track-proof">Evaluated app with dashboards</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── AI Platforms ────────────────────────────────── -->
+<section class="section">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Start Here</div>
+    <h2 class="section-title">Free AI Platforms to Try First</h2>
+    <p class="section-desc">Explore these tools before writing a single line of code. Get a feel for the AI landscape.</p>
+  </div>
+
+  <div class="platforms-grid">
+    <a href="https://chat.openai.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🤖</span>
+      <div class="platform-info">
+        <h4>ChatGPT</h4>
+        <p>Coding, analysis, image gen, agents</p>
+      </div>
+    </a>
+    <a href="https://claude.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">✦</span>
+      <div class="platform-info">
+        <h4>Claude</h4>
+        <p>Writing, coding, long-context reasoning</p>
+      </div>
+    </a>
+    <a href="https://gemini.google.com/app" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">💎</span>
+      <div class="platform-info">
+        <h4>Gemini</h4>
+        <p>Google ecosystem, multimodal</p>
+      </div>
+    </a>
+    <a href="https://www.kimi.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🌙</span>
+      <div class="platform-info">
+        <h4>Kimi</h4>
+        <p>Long-context chat and code</p>
+      </div>
+    </a>
+    <a href="https://www.deepseek.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔵</span>
+      <div class="platform-info">
+        <h4>DeepSeek</h4>
+        <p>Reasoning and coding models</p>
+      </div>
+    </a>
+    <a href="https://chat.qwen.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🟣</span>
+      <div class="platform-info">
+        <h4>Qwen Chat</h4>
+        <p>Alibaba models, vision, long-context</p>
+      </div>
+    </a>
+    <a href="https://x.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">𝕏</span>
+      <div class="platform-info">
+        <h4>Grok</h4>
+        <p>xAI assistant and API ecosystem</p>
+      </div>
+    </a>
+    <a href="https://console.groq.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">⚡</span>
+      <div class="platform-info">
+        <h4>GroqCloud</h4>
+        <p>Ultra-fast hosted inference</p>
+      </div>
+    </a>
+    <a href="https://www.perplexity.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔍</span>
+      <div class="platform-info">
+        <h4>Perplexity</h4>
+        <p>Research with cited sources</p>
+      </div>
+    </a>
+    <a href="https://poe.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🌐</span>
+      <div class="platform-info">
+        <h4>Poe</h4>
+        <p>Many model providers, one place</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── 12-Week Study Plan ──────────────────────────── -->
+<div class="study-section" id="study-plan">
+  <div class="study-inner">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Interactive Tracker</div>
+      <h2 class="section-title">Your 12-Week Study Plan</h2>
+      <p class="section-desc">Check off weeks as you complete them. Progress saves in your browser. Filter by track to focus.</p>
+    </div>
+
+    <div class="sticky-bar">
+      <div class="sticky-bar-inner">
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progressText">0 of 12 weeks complete</span>
+            <span id="focusLabel">All tracks</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+        <div class="bar-actions">
+          <button class="bar-btn" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="filters-row" aria-label="Track filters">
+      <button class="filter-btn active" data-filter="all">All Tracks</button>
+      <button class="filter-btn" data-filter="foundations">Foundations</button>
+      <button class="filter-btn" data-filter="llm">LLM &amp; RAG</button>
+      <button class="filter-btn" data-filter="agents">Agents</button>
+      <button class="filter-btn" data-filter="product">Product UI</button>
+      <button class="filter-btn" data-filter="ops">LLMOps</button>
+    </nav>
+
+    <div class="weeks-list" id="weeksList">
+
+      <article class="week-card" data-track="foundations">
+        <input type="checkbox" class="week-check" data-week="1" aria-label="Mark week 1 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W1</span>
+            Python, Git &amp; APIs
+          </div>
+          <p class="week-desc">Build a CLI notebook helper, learn API calls, pandas basics, and keep every experiment in Git from day one.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.deeplearning.ai/short-courses/ai-python-for-beginners/" target="_blank" rel="noopener">AI Python (DeepLearning.AI)</a>
+            <a class="week-link" href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener">10 min to pandas</a>
+            <a class="week-link" href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener">FastAPI</a>
+          </div>
+        </div>
+        <span class="week-tag foundations">Foundations</span>
+      </article>
+
+      <article class="week-card" data-track="foundations">
+        <input type="checkbox" class="week-check" data-week="2" aria-label="Mark week 2 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W2</span>
+            Math for AI Builders
+          </div>
+          <p class="week-desc">Refresh vectors, probability, statistics, cosine similarity, gradients, and evaluation vocabulary you'll need all year.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" rel="noopener">Essence of Linear Algebra</a>
+            <a class="week-link" href="https://www.youtube.com/playlist?list=PL1328115D3D8A2566" target="_blank" rel="noopener">Stats (Khan Academy)</a>
+          </div>
+        </div>
+        <span class="week-tag foundations">Foundations</span>
+      </article>
+
+      <article class="week-card" data-track="llm">
+        <input type="checkbox" class="week-check" data-week="3" aria-label="Mark week 3 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W3</span>
+            LLM APIs &amp; Model Comparison
+          </div>
+          <p class="week-desc">Use OpenAI, Claude, Gemini, Qwen, and Kimi APIs. Compare model cost, speed, context window, and output quality side-by-side.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://cookbook.openai.com/" target="_blank" rel="noopener">OpenAI Cookbook</a>
+            <a class="week-link" href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener">Anthropic Cookbook</a>
+            <a class="week-link" href="https://ai.google.dev/gemini-api/cookbook" target="_blank" rel="noopener">Gemini Cookbook</a>
+          </div>
+        </div>
+        <span class="week-tag llm">LLM</span>
+      </article>
+
+      <article class="week-card" data-track="llm">
+        <input type="checkbox" class="week-check" data-week="4" aria-label="Mark week 4 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W4</span>
+            Prompt Engineering Systems
+          </div>
+          <p class="week-desc">Create reusable prompt templates with task, context, constraints, schema, examples, critique pass, and stop rules.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompting Guide</a>
+            <a class="week-link" href="https://docs.anthropic.com/en/prompt-library/library" target="_blank" rel="noopener">Anthropic Library</a>
+            <a class="week-link" href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener">Prompt Eng. for Devs</a>
+          </div>
+        </div>
+        <span class="week-tag llm">LLM</span>
+      </article>
+
+      <article class="week-card" data-track="llm">
+        <input type="checkbox" class="week-check" data-week="5" aria-label="Mark week 5 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W5</span>
+            RAG Baseline
+          </div>
+          <p class="week-desc">Parse documents, chunk content, embed text, retrieve relevant sources, and answer questions with citations and retrieval metrics.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank" rel="noopener">Advanced RAG Course</a>
+            <a class="week-link" href="https://docs.llamaindex.ai/en/stable/" target="_blank" rel="noopener">LlamaIndex</a>
+            <a class="week-link" href="https://www.trychroma.com/" target="_blank" rel="noopener">Chroma</a>
+          </div>
+        </div>
+        <span class="week-tag llm">RAG</span>
+      </article>
+
+      <article class="week-card" data-track="agents">
+        <input type="checkbox" class="week-check" data-week="6" aria-label="Mark week 6 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W6</span>
+            LangGraph Agents
+          </div>
+          <p class="week-desc">Build a planner-search-writer-critic graph with shared state, automatic retries, and a human-in-the-loop approval checkpoint.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank" rel="noopener">AI Agents in LangGraph</a>
+            <a class="week-link" href="https://www.langchain.com/langgraph" target="_blank" rel="noopener">LangGraph Docs</a>
+          </div>
+        </div>
+        <span class="week-tag agents">Agents</span>
+      </article>
+
+      <article class="week-card" data-track="agents">
+        <input type="checkbox" class="week-check" data-week="7" aria-label="Mark week 7 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W7</span>
+            Advanced Agent Frameworks
+          </div>
+          <p class="week-desc">Compare CrewAI, AutoGen, OpenHands, and OpenAI Agents SDK. Build a multi-agent team that handles a real research workflow.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://www.crewai.com/" target="_blank" rel="noopener">CrewAI</a>
+            <a class="week-link" href="https://microsoft.github.io/autogen/" target="_blank" rel="noopener">AutoGen</a>
+            <a class="week-link" href="https://github.com/All-Hands-AI/OpenHands" target="_blank" rel="noopener">OpenHands</a>
+            <a class="week-link" href="https://openai.github.io/openai-agents-python/" target="_blank" rel="noopener">OpenAI Agents SDK</a>
+          </div>
+        </div>
+        <span class="week-tag agents">Agents</span>
+      </article>
+
+      <article class="week-card" data-track="agents">
+        <input type="checkbox" class="week-check" data-week="8" aria-label="Mark week 8 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W8</span>
+            Coding Agents in Practice
+          </div>
+          <p class="week-desc">Ship one real feature with Claude Code, Codex, or Kimi Code. Review every diff yourself. Write tests. Understand security risks.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">Claude Code Docs</a>
+            <a class="week-link" href="https://openai.com/codex/" target="_blank" rel="noopener">OpenAI Codex</a>
+            <a class="week-link" href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor</a>
+          </div>
+        </div>
+        <span class="week-tag agents">Coding</span>
+      </article>
+
+      <article class="week-card" data-track="product">
+        <input type="checkbox" class="week-check" data-week="9" aria-label="Mark week 9 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W9</span>
+            Vibe-Coded UI &amp; Prototyping
+          </div>
+          <p class="week-desc">Prototype in Lovable, v0, or Bolt in under an hour. Then refactor into a clean app with proper states, accessibility, and maintainable code.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://lovable.dev/" target="_blank" rel="noopener">Lovable</a>
+            <a class="week-link" href="https://v0.dev/" target="_blank" rel="noopener">v0 by Vercel</a>
+            <a class="week-link" href="https://bolt.new/" target="_blank" rel="noopener">Bolt.new</a>
+            <a class="week-link" href="https://gamma.app/" target="_blank" rel="noopener">Gamma</a>
+          </div>
+        </div>
+        <span class="week-tag product">Product</span>
+      </article>
+
+      <article class="week-card" data-track="ops">
+        <input type="checkbox" class="week-check" data-week="10" aria-label="Mark week 10 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W10</span>
+            Local Inference
+          </div>
+          <p class="week-desc">Run 7B models locally with Ollama and LM Studio. Serve a model with vLLM, test concurrent requests, and record throughput numbers.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://docs.ollama.com/" target="_blank" rel="noopener">Ollama</a>
+            <a class="week-link" href="https://docs.vllm.ai/en/latest/" target="_blank" rel="noopener">vLLM</a>
+            <a class="week-link" href="https://lmstudio.ai/" target="_blank" rel="noopener">LM Studio</a>
+          </div>
+        </div>
+        <span class="week-tag ops">Inference</span>
+      </article>
+
+      <article class="week-card" data-track="ops">
+        <input type="checkbox" class="week-check" data-week="11" aria-label="Mark week 11 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W11</span>
+            Evals, Tracing &amp; Monitoring
+          </div>
+          <p class="week-desc">Add tracing, regression prompts, RAG quality metrics, cost logging, and a failure examples library so your app gets measurably better.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://docs.smith.langchain.com/" target="_blank" rel="noopener">LangSmith</a>
+            <a class="week-link" href="https://phoenix.arize.com/" target="_blank" rel="noopener">Arize Phoenix</a>
+            <a class="week-link" href="https://github.com/confident-ai/deepeval" target="_blank" rel="noopener">DeepEval</a>
+            <a class="week-link" href="https://github.com/explodinggradients/ragas" target="_blank" rel="noopener">Ragas</a>
+          </div>
+        </div>
+        <span class="week-tag ops">LLMOps</span>
+      </article>
+
+      <article class="week-card" data-track="product">
+        <input type="checkbox" class="week-check" data-week="12" aria-label="Mark week 12 complete">
+        <div class="week-body">
+          <div class="week-title">
+            <span class="week-num">W12</span>
+            Portfolio Capstone
+          </div>
+          <p class="week-desc">Publish a polished AI app with a detailed README, screenshots, eval results, deploy notes, and a Gamma pitch deck for interviews.</p>
+          <div class="week-links">
+            <a class="week-link" href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a>
+            <a class="week-link" href="https://streamlit.io/" target="_blank" rel="noopener">Streamlit</a>
+            <a class="week-link" href="https://gamma.app/" target="_blank" rel="noopener">Gamma</a>
+          </div>
+        </div>
+        <span class="week-tag product">Portfolio</span>
+      </article>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── Resources ───────────────────────────────────── -->
+<section class="section" id="resources">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Curated Resources</div>
+    <h2 class="section-title">Learn From the Best</h2>
+    <p class="section-desc">Free courses, cookbooks, and documentation organized by what you need to build.</p>
+  </div>
+
+  <div class="resource-grid">
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🐍</div>
+        <h3>Programming &amp; Python</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/ai-python-for-beginners/" target="_blank" rel="noopener"><span>AI Python for Beginners — DeepLearning.AI</span></a>
+        <a class="resource-link" href="https://www.coursera.org/learn/python-crash-course" target="_blank" rel="noopener"><span>Crash Course on Python — Google/Coursera</span></a>
+        <a class="resource-link" href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener"><span>10 Minutes to pandas</span></a>
+        <a class="resource-link" href="https://www.coursera.org/learn/javascript-basics" target="_blank" rel="noopener"><span>JavaScript Basics — Coursera</span></a>
+        <a class="resource-link" href="https://docs.streamlit.io/" target="_blank" rel="noopener"><span>Streamlit Docs — fastest AI demos</span></a>
+        <a class="resource-link" href="https://docs.chainlit.io/get-started/overview" target="_blank" rel="noopener"><span>Chainlit — conversational AI apps</span></a>
+        <a class="resource-link" href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener"><span>FastAPI — production Python APIs</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🧬</div>
+        <h3>Generative AI Core</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://huggingface.co/learn/nlp-course/chapter1/1" target="_blank" rel="noopener"><span>Hugging Face NLP Course — transformers &amp; datasets</span></a>
+        <a class="resource-link" href="https://jalammar.github.io/illustrated-transformer/" target="_blank" rel="noopener"><span>The Illustrated Transformer — visual deep-dive</span></a>
+        <a class="resource-link" href="https://www.coursera.org/learn/generative-ai-for-everyone" target="_blank" rel="noopener"><span>Generative AI for Everyone — DeepLearning.AI</span></a>
+        <a class="resource-link" href="https://learn.microsoft.com/en-gb/shows/generative-ai-for-beginners/" target="_blank" rel="noopener"><span>Generative AI for Beginners — Microsoft</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/how-diffusion-models-work/" target="_blank" rel="noopener"><span>How Diffusion Models Work</span></a>
+        <a class="resource-link" href="https://cookbook.openai.com/" target="_blank" rel="noopener"><span>OpenAI Cookbook — practical API recipes</span></a>
+        <a class="resource-link" href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener"><span>Anthropic Cookbook — Claude patterns</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🤖</div>
+        <h3>AI Agents &amp; LangGraph</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank" rel="noopener"><span>AI Agents in LangGraph — DeepLearning.AI</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank" rel="noopener"><span>Multi AI Agent Systems with CrewAI</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/" target="_blank" rel="noopener"><span>Functions, Tools &amp; Agents with LangChain</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/" target="_blank" rel="noopener"><span>Building Agentic RAG with LlamaIndex</span></a>
+        <a class="resource-link" href="https://github.com/microsoft/ai-agents-for-beginners" target="_blank" rel="noopener"><span>AI Agents for Beginners — Microsoft</span></a>
+        <a class="resource-link" href="https://www.kaggle.com/whitepaper-agents" target="_blank" rel="noopener"><span>Kaggle AI Agents Whitepaper</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">📚</div>
+        <h3>RAG &amp; Vector Search</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank" rel="noopener"><span>Building &amp; Evaluating Advanced RAG</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/" target="_blank" rel="noopener"><span>LangChain Chat With Your Data</span></a>
+        <a class="resource-link" href="https://docs.llamaindex.ai/en/stable/" target="_blank" rel="noopener"><span>LlamaIndex Documentation</span></a>
+        <a class="resource-link" href="https://haystack.deepset.ai/" target="_blank" rel="noopener"><span>Haystack — production RAG pipelines</span></a>
+        <a class="resource-link" href="https://microsoft.github.io/graphrag/" target="_blank" rel="noopener"><span>GraphRAG — Microsoft graph-based retrieval</span></a>
+        <a class="resource-link" href="https://qdrant.tech/" target="_blank" rel="noopener"><span>Qdrant Vector Database</span></a>
+        <a class="resource-link" href="https://weaviate.io/" target="_blank" rel="noopener"><span>Weaviate — AI-native vector store</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">⚡</div>
+        <h3>Local Inference</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://docs.ollama.com/" target="_blank" rel="noopener"><span>Ollama — run LLMs on macOS/Linux/Windows</span></a>
+        <a class="resource-link" href="https://lmstudio.ai/" target="_blank" rel="noopener"><span>LM Studio — desktop model runner</span></a>
+        <a class="resource-link" href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noopener"><span>llama.cpp — core inference engine</span></a>
+        <a class="resource-link" href="https://docs.vllm.ai/en/latest/" target="_blank" rel="noopener"><span>vLLM — high-throughput serving</span></a>
+        <a class="resource-link" href="https://huggingface.co/models" target="_blank" rel="noopener"><span>Hugging Face Models — model discovery</span></a>
+        <a class="resource-link" href="https://github.com/oobabooga/text-generation-webui" target="_blank" rel="noopener"><span>Text Generation WebUI</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">📊</div>
+        <h3>LLMOps &amp; Evaluation</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://docs.smith.langchain.com/" target="_blank" rel="noopener"><span>LangSmith — tracing &amp; evals</span></a>
+        <a class="resource-link" href="https://phoenix.arize.com/" target="_blank" rel="noopener"><span>Arize Phoenix — open-source observability</span></a>
+        <a class="resource-link" href="https://github.com/confident-ai/deepeval" target="_blank" rel="noopener"><span>DeepEval — LLM evaluation framework</span></a>
+        <a class="resource-link" href="https://github.com/explodinggradients/ragas" target="_blank" rel="noopener"><span>Ragas — RAG evaluation metrics</span></a>
+        <a class="resource-link" href="https://wandb.ai/site/weave/" target="_blank" rel="noopener"><span>W&amp;B Weave — LLM tracing</span></a>
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/quality-safety-llm-applications/" target="_blank" rel="noopener"><span>Quality &amp; Safety for LLM Apps</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🔬</div>
+        <h3>Fine-Tuning</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models/" target="_blank" rel="noopener"><span>Fine-Tuning LLMs — DeepLearning.AI</span></a>
+        <a class="resource-link" href="https://github.com/unslothai/unsloth" target="_blank" rel="noopener"><span>Unsloth — efficient fine-tuning</span></a>
+        <a class="resource-link" href="https://docs.unsloth.ai/get-started/unsloth-notebooks" target="_blank" rel="noopener"><span>Unsloth Notebooks — ready to run</span></a>
+        <a class="resource-link" href="https://github.com/hiyouga/LLaMA-Factory" target="_blank" rel="noopener"><span>LLaMA-Factory</span></a>
+        <a class="resource-link" href="https://huggingface.co/autotrain" target="_blank" rel="noopener"><span>Hugging Face AutoTrain</span></a>
+        <a class="resource-link" href="https://platform.openai.com/docs/guides/fine-tuning" target="_blank" rel="noopener"><span>OpenAI Fine-Tuning Guide</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">📖</div>
+        <h3>Research &amp; Reading</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://huggingface.co/papers" target="_blank" rel="noopener"><span>Hugging Face Papers — daily AI papers</span></a>
+        <a class="resource-link" href="https://openai.com/research/" target="_blank" rel="noopener"><span>OpenAI Research</span></a>
+        <a class="resource-link" href="https://www.anthropic.com/research" target="_blank" rel="noopener"><span>Anthropic Research</span></a>
+        <a class="resource-link" href="https://deepmind.google/research/" target="_blank" rel="noopener"><span>Google DeepMind Research</span></a>
+        <a class="resource-link" href="https://eugeneyan.com/writing/llm-patterns/" target="_blank" rel="noopener"><span>LLM Patterns — Eugene Yan</span></a>
+        <a class="resource-link" href="https://huyenchip.com/mlops/" target="_blank" rel="noopener"><span>Designing ML Systems — Chip Huyen</span></a>
+        <a class="resource-link" href="https://arxiv.org/pdf/2501.09223" target="_blank" rel="noopener"><span>Foundations of LLMs (arxiv paper)</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Tools by Use Case ───────────────────────────── -->
+<section class="section" id="tools">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Tool Selection</div>
+    <h2 class="section-title">Best Tools by Use Case</h2>
+    <p class="section-desc">Don't learn every tool. Learn the right one for each job, then upgrade when you outgrow it.</p>
+  </div>
+
+  <div class="tools-grid">
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">💻</span>
+        <h3>Coding</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">Claude Code</span>
+        <span class="tool-pill primary">OpenAI Codex</span>
+        <span class="tool-pill">Cursor</span>
+        <span class="tool-pill">Kimi Code</span>
+        <span class="tool-pill">Cline</span>
+        <span class="tool-pill">Roo Code</span>
+        <span class="tool-pill">Windsurf</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">🔗</span>
+        <h3>Agent Graphs</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">LangGraph</span>
+        <span class="tool-pill">CrewAI</span>
+        <span class="tool-pill">AutoGen</span>
+        <span class="tool-pill">OpenAI Agents SDK</span>
+        <span class="tool-pill">Smolagents</span>
+        <span class="tool-pill">OpenHands</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">⚡</span>
+        <h3>Local Inference</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">Ollama</span>
+        <span class="tool-pill primary">LM Studio</span>
+        <span class="tool-pill">vLLM (prod)</span>
+        <span class="tool-pill">llama.cpp</span>
+        <span class="tool-pill">Text Gen WebUI</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">📚</span>
+        <h3>RAG &amp; Search</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">LlamaIndex</span>
+        <span class="tool-pill primary">LangChain</span>
+        <span class="tool-pill">Chroma</span>
+        <span class="tool-pill">Qdrant</span>
+        <span class="tool-pill">Weaviate</span>
+        <span class="tool-pill">Milvus</span>
+        <span class="tool-pill">Pinecone</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">🎨</span>
+        <h3>UI Prototyping</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">Lovable</span>
+        <span class="tool-pill primary">v0</span>
+        <span class="tool-pill">Bolt.new</span>
+        <span class="tool-pill">Replit</span>
+        <span class="tool-pill">Figma Make</span>
+        <span class="tool-pill">Gamma</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">📊</span>
+        <h3>Observability</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">LangSmith</span>
+        <span class="tool-pill primary">Arize Phoenix</span>
+        <span class="tool-pill">DeepEval</span>
+        <span class="tool-pill">Ragas</span>
+        <span class="tool-pill">W&amp;B Weave</span>
+        <span class="tool-pill">MLflow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Projects ─────────────────────────────────────── -->
+<section class="section" id="projects">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Build Your Portfolio</div>
+    <h2 class="section-title">10 Projects to Ship</h2>
+    <p class="section-desc">Each project proves a different skill. Finish all ten and you have a portfolio that speaks for itself.</p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card fade-in">
+      <div class="project-num">1</div>
+      <div>
+        <h3>Personal AI Search</h3>
+        <p>RAG app over your notes with citations, chunk tests, and retrieval metrics. Deploy and share.</p>
+        <div class="project-tags">
+          <span class="project-tag">RAG</span>
+          <span class="project-tag">Chroma</span>
+          <span class="project-tag">LlamaIndex</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">2</div>
+      <div>
+        <h3>PDF-to-Structured-Data</h3>
+        <p>Extract tables, entities, and fields from messy PDFs with validation and a Streamlit UI.</p>
+        <div class="project-tags">
+          <span class="project-tag">Parsing</span>
+          <span class="project-tag">Validation</span>
+          <span class="project-tag">Streamlit</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">3</div>
+      <div>
+        <h3>RAG Chatbot with Evals</h3>
+        <p>Chat over documents with hallucination tests, retrieval quality metrics, and a regression suite.</p>
+        <div class="project-tags">
+          <span class="project-tag">RAG</span>
+          <span class="project-tag">DeepEval</span>
+          <span class="project-tag">Ragas</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">4</div>
+      <div>
+        <h3>LangGraph Research Agent</h3>
+        <p>Planner, search, writer, critic, and human-approval nodes. Handles multi-step research tasks.</p>
+        <div class="project-tags">
+          <span class="project-tag">LangGraph</span>
+          <span class="project-tag">Agents</span>
+          <span class="project-tag">Memory</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">5</div>
+      <div>
+        <h3>Local Ollama App</h3>
+        <p>Switch between models, compare latency and quality, expose an OpenAI-compatible endpoint.</p>
+        <div class="project-tags">
+          <span class="project-tag">Ollama</span>
+          <span class="project-tag">Inference</span>
+          <span class="project-tag">Benchmarking</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">6</div>
+      <div>
+        <h3>vLLM Inference Server</h3>
+        <p>Serve a quantized model with vLLM. Load-test it and publish a benchmark report with notes.</p>
+        <div class="project-tags">
+          <span class="project-tag">vLLM</span>
+          <span class="project-tag">Serving</span>
+          <span class="project-tag">Performance</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">7</div>
+      <div>
+        <h3>Coding-Agent Feature Ship</h3>
+        <p>Use Claude Code or Codex to implement a feature. Review diffs, write tests, understand all changes.</p>
+        <div class="project-tags">
+          <span class="project-tag">Claude Code</span>
+          <span class="project-tag">Testing</span>
+          <span class="project-tag">Code Review</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">8</div>
+      <div>
+        <h3>Vibe-Coded UI Refactor</h3>
+        <p>Generate an app in Lovable or v0, then refactor into clean Next.js with proper state and a11y.</p>
+        <div class="project-tags">
+          <span class="project-tag">Lovable/v0</span>
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Accessibility</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">9</div>
+      <div>
+        <h3>Gamma AI Product Pitch</h3>
+        <p>Build a 10-slide deck for your AI product idea using Gamma. Include problem, solution, and roadmap.</p>
+        <div class="project-tags">
+          <span class="project-tag">Gamma</span>
+          <span class="project-tag">Storytelling</span>
+          <span class="project-tag">Product</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">10</div>
+      <div>
+        <h3>Fine-Tuned Domain Model</h3>
+        <p>Fine-tune a small model with Unsloth for extraction or style. Compare it to few-shot prompting.</p>
+        <div class="project-tags">
+          <span class="project-tag">Unsloth</span>
+          <span class="project-tag">Fine-tuning</span>
+          <span class="project-tag">Evaluation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── 90-Day Path ─────────────────────────────────── -->
+<section class="section">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">90-Day Timeline</div>
+    <h2 class="section-title">The Practical 90-Day Path</h2>
+    <p class="section-desc">Six focused phases. Each ends with a concrete deliverable you can show to employers.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot blue">1</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 1–15</span>
+        <h3>Python, APIs &amp; Prompting</h3>
+        <p>Build Python fluency, learn API calls and Git workflow, master prompt structure for repeatable results.</p>
+        <span class="timeline-output">✦ CLI app + prompt notebook</span>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot purple">2</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 16–30</span>
+        <h3>LLM APIs, Embeddings &amp; UI</h3>
+        <p>Use multiple model APIs, understand embeddings, and build a Streamlit or Chainlit chat interface with tool calling.</p>
+        <span class="timeline-output">✦ Chat app with tools</span>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot green">3</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 31–45</span>
+        <h3>RAG, Chunking &amp; Vector DBs</h3>
+        <p>Parse documents, embed and retrieve at scale, add a reranker, measure retrieval quality with repeatable eval cases.</p>
+        <span class="timeline-output">✦ Document Q&amp;A app</span>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot amber">4</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 46–60</span>
+        <h3>LangGraph &amp; Multi-Agent Systems</h3>
+        <p>Build stateful agent graphs, add memory and tool use, implement human checkpoints, compare agent frameworks.</p>
+        <span class="timeline-output">✦ Research agent with checkpoints</span>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot red">5</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 61–75</span>
+        <h3>Local Inference &amp; vLLM</h3>
+        <p>Run 7B–13B models locally, quantize and benchmark, serve a model with vLLM, log throughput and memory.</p>
+        <span class="timeline-output">✦ Local model server + benchmark</span>
+      </div>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <div class="timeline-dot pink">6</div>
+      <div class="timeline-content">
+        <span class="timeline-days">Days 76–90</span>
+        <h3>UI, Deployment &amp; Portfolio</h3>
+        <p>Prototype with Lovable/v0, refactor to production code, add tracing and evals, deploy and write a polished README.</p>
+        <span class="timeline-output">✦ Capstone with demo, evals &amp; README</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Ready Checklist ─────────────────────────────── -->
+<section class="section">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Definition of Done</div>
+    <h2 class="section-title">Ready to Apply?</h2>
+    <p class="section-desc">You're ready for an AI engineering role when you can genuinely say yes to all of these.</p>
+  </div>
+
+  <div class="checklist-grid">
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Build a Python or JavaScript AI app from scratch without a tutorial holding your hand.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Explain embeddings, attention, tokens, context windows, tool calling, and RAG to a non-technical person.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Use at least one coding agent (Claude Code, Codex) responsibly and review every diff it produces.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Build a LangGraph or equivalent agent with state management, tool calls, and error handling.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Run a local model with Ollama, understand when vLLM is worth the complexity.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Evaluate a RAG or agent app with repeatable test cases and measurable quality metrics.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Deploy a small AI app and monitor latency, cost, and output quality over time.</p>
+    </div>
+    <div class="checklist-item fade-in">
+      <div class="check-icon">✓</div>
+      <p>Communicate tradeoffs clearly: model choice, safety, privacy, UX, and budget constraints.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner ──────────────────────────────────── -->
+<div style="padding: 0 24px 80px; max-width: 1200px; margin: 0 auto;">
+  <div class="cta-banner fade-in">
+    <h2>Your 12-Week Plan Starts <span class="text-grad">Today</span></h2>
+    <p>Track your progress, check off every week, and build a portfolio that proves you can ship AI.</p>
+    <a href="#study-plan" class="btn btn-primary">
+      Open Interactive Study Plan →
+    </a>
+  </div>
+</div>
+
+<!-- ── Footer ──────────────────────────────────────── -->
+<footer>
+  <p>
+    Built for the AI engineering community · 2026 Edition ·
+    <a href="https://github.com/thepradip/How-to-become--AI-Engineer-in-2025" target="_blank" rel="noopener">View on GitHub</a>
+  </p>
+</footer>
+
+<!-- ── Back to Top ────────────────────────────────── -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<!-- ── JavaScript ─────────────────────────────────── -->
+<script>
+  /* ── Hamburger ──────────────────────── */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  /* ── Scroll Indicator ───────────────── */
+  const scrollIndicator = document.getElementById('scrollIndicator');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    scrollIndicator.style.width = (scrollTop / docHeight * 100) + '%';
+  }, { passive: true });
+
+  /* ── Back to Top ────────────────────── */
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ── Fade-in on scroll ──────────────── */
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  fadeEls.forEach(el => observer.observe(el));
+
+  /* ── Progress Tracker ───────────────── */
+  const STORE_KEY = 'ai-eng-2026-v1';
+  const checkboxes = Array.from(document.querySelectorAll('.week-check[data-week]'));
+  const progressFill = document.getElementById('progressFill');
+  const progressText = document.getElementById('progressText');
+
+  function loadProgress() {
+    const saved = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+    checkboxes.forEach(cb => {
+      cb.checked = Boolean(saved[cb.dataset.week]);
+      cb.closest('.week-card').classList.toggle('done', cb.checked);
+    });
+    updateProgress();
+  }
+
+  function saveProgress() {
+    const state = {};
+    checkboxes.forEach(cb => { state[cb.dataset.week] = cb.checked; });
+    localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const done = checkboxes.filter(cb => cb.checked).length;
+    const pct = Math.round((done / checkboxes.length) * 100);
+    progressText.textContent = done + ' of ' + checkboxes.length + ' weeks complete';
+    progressFill.style.width = pct + '%';
+  }
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      cb.closest('.week-card').classList.toggle('done', cb.checked);
+      saveProgress();
+    });
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    checkboxes.forEach(cb => {
+      cb.checked = false;
+      cb.closest('.week-card').classList.remove('done');
+    });
+    saveProgress();
+  });
+
+  loadProgress();
+
+  /* ── Track Filters ──────────────────── */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const weekCards = document.querySelectorAll('.week-card');
+  const focusLabel = document.getElementById('focusLabel');
+  const filterLabels = { all: 'All tracks', foundations: 'Foundations', llm: 'LLM & RAG', agents: 'Agents', product: 'Product UI', ops: 'LLMOps' };
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      weekCards.forEach(card => {
+        card.classList.toggle('hidden', f !== 'all' && card.dataset.track !== f);
+      });
+      focusLabel.textContent = filterLabels[f] || f;
+    });
+  });
+
+  /* ── Week card click to toggle ──────── */
+  weekCards.forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.classList.contains('week-check') || e.target.closest('a')) return;
+      const cb = card.querySelector('.week-check');
+      cb.checked = !cb.checked;
+      card.classList.toggle('done', cb.checked);
+      saveProgress();
+    });
+  });
+</script>
+
+</body>
+</html>
