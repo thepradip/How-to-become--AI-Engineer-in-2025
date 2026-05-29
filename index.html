@@ -1507,8 +1507,8 @@
     <div class="track-card fade-in" style="--track-color: #06b6d4">
       <div class="track-icon">⚡</div>
       <h3>Local Inference</h3>
-      <p>Ollama, LM Studio, llama.cpp, vLLM, quantization. Understand latency, memory, throughput, and when to self-host.</p>
-      <span class="track-proof">Local model API + benchmark</span>
+      <p>Run 4-bit &amp; 8-bit quantized models on a 16 GB GPU (T4 or M-series). Text, image, and video generation — Ollama, vLLM, ComfyUI, AUTOMATIC1111.</p>
+      <span class="track-proof">Text + image + video pipeline on local GPU</span>
     </div>
     <div class="track-card fade-in" style="--track-color: #ec4899">
       <div class="track-icon">🎨</div>
@@ -1606,6 +1606,117 @@
         <p>Many model providers, one place</p>
       </div>
     </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Cloud AI Services ──────────────────────────── -->
+<section class="section">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Managed Cloud AI</div>
+    <h2 class="section-title">Cloud AI Platforms & AutoML</h2>
+    <p class="section-desc">Production-grade AI services you can call from an API or build on without managing infrastructure.</p>
+  </div>
+
+  <div class="platforms-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+
+    <a href="https://ai.azure.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔷</span>
+      <div class="platform-info">
+        <h4>Azure AI Foundry</h4>
+        <p>Microsoft's unified AI platform — models, agents, evaluations, fine-tuning</p>
+      </div>
+    </a>
+
+    <a href="https://azure.microsoft.com/en-us/products/machine-learning/automatedml" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🤖</span>
+      <div class="platform-info">
+        <h4>Azure AutoML</h4>
+        <p>Auto-trains and deploys ML models without writing training code</p>
+      </div>
+    </a>
+
+    <a href="https://azure.microsoft.com/en-us/products/ai-services/ai-agent-service" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔗</span>
+      <div class="platform-info">
+        <h4>Azure AI Agent Service</h4>
+        <p>Deploy and manage agents with tools, memory, and code interpreter</p>
+      </div>
+    </a>
+
+    <a href="https://aws.amazon.com/bedrock/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🌿</span>
+      <div class="platform-info">
+        <h4>AWS Bedrock</h4>
+        <p>Managed API for Claude, Titan, Llama, Mistral — no infra to manage</p>
+      </div>
+    </a>
+
+    <a href="https://aws.amazon.com/sagemaker/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🛠️</span>
+      <div class="platform-info">
+        <h4>AWS SageMaker</h4>
+        <p>End-to-end ML platform — AutoPilot handles training, tuning, deployment</p>
+      </div>
+    </a>
+
+    <a href="https://cloud.google.com/vertex-ai" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔮</span>
+      <div class="platform-info">
+        <h4>Google Vertex AI</h4>
+        <p>Gemini API, AutoML, model garden, agent builder — full Google AI stack</p>
+      </div>
+    </a>
+
+    <a href="https://huggingface.co/inference-endpoints/dedicated" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🤗</span>
+      <div class="platform-info">
+        <h4>HF Inference Endpoints</h4>
+        <p>Deploy any Hugging Face model as a dedicated API in one click</p>
+      </div>
+    </a>
+
+    <a href="https://www.together.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">⚡</span>
+      <div class="platform-info">
+        <h4>Together AI</h4>
+        <p>Fast inference for open models — Llama, Qwen, Mistral, FLUX</p>
+      </div>
+    </a>
+
+    <a href="https://replicate.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🔁</span>
+      <div class="platform-info">
+        <h4>Replicate</h4>
+        <p>Run any open-source model (text, image, video) via API — pay per second</p>
+      </div>
+    </a>
+
+    <a href="https://modal.com/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🚀</span>
+      <div class="platform-info">
+        <h4>Modal</h4>
+        <p>Serverless GPU functions — deploy inference endpoints in pure Python</p>
+      </div>
+    </a>
+
+    <a href="https://fireworks.ai/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🎆</span>
+      <div class="platform-info">
+        <h4>Fireworks AI</h4>
+        <p>Production-grade fast inference for open models with custom fine-tuning</p>
+      </div>
+    </a>
+
+    <a href="https://www.runpod.io/" target="_blank" rel="noopener" class="platform-card fade-in">
+      <span class="platform-emoji">🖥️</span>
+      <div class="platform-info">
+        <h4>RunPod</h4>
+        <p>Rent GPU pods by the hour — ideal for fine-tuning and heavy inference</p>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -1817,8 +1928,8 @@
             <span class="week-num">W10</span>
             Local Inference
           </div>
-          <p class="week-desc">Run 7B models locally with Ollama and LM Studio. Serve a model with vLLM, test concurrent requests, and record throughput numbers.</p>
-          <div class="week-time">8–10 hrs</div>
+          <p class="week-desc">Run 4-bit and 8-bit quantized models on a 16 GB GPU (T4 or M-series). Try Qwen3-4B, Gemma 3 4B, Llama 3.1 8B for text. Generate images with SD3.5 Medium or SDXL via ComfyUI. Run CogVideoX-2B for video. Serve with vLLM and benchmark tokens/sec.</p>
+          <div class="week-time">10–12 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://docs.ollama.com/" target="_blank" rel="noopener">Ollama</a>
             <a class="week-link" href="https://docs.vllm.ai/en/latest/" target="_blank" rel="noopener">vLLM</a>
@@ -2003,6 +2114,79 @@
       </div>
     </div>
 
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">⚡</div>
+        <h3>Local Text Models — 16 GB GPU</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Target: T4 · M-series 16 GB · 4-bit &amp; 8-bit</div>
+        <a class="resource-link" href="https://huggingface.co/Qwen/Qwen3-4B" target="_blank" rel="noopener"><span>Qwen3-4B — 4-bit ~2.5 GB · best-in-class small model</span></a>
+        <a class="resource-link" href="https://huggingface.co/Qwen/Qwen3-8B" target="_blank" rel="noopener"><span>Qwen3-8B — 4-bit ~4.5 GB · strong reasoning &amp; coding</span></a>
+        <a class="resource-link" href="https://huggingface.co/google/gemma-3-4b-it" target="_blank" rel="noopener"><span>Gemma 3 4B — 4-bit ~2.5 GB · Google, excellent instruction</span></a>
+        <a class="resource-link" href="https://huggingface.co/google/gemma-3-12b-it" target="_blank" rel="noopener"><span>Gemma 3 12B — 4-bit ~6.5 GB · fits 16 GB comfortably</span></a>
+        <a class="resource-link" href="https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct" target="_blank" rel="noopener"><span>Llama 3.1 8B — 4-bit ~4.5 GB · Meta flagship 8B</span></a>
+        <a class="resource-link" href="https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct" target="_blank" rel="noopener"><span>Llama 3.2 3B — 4-bit ~2 GB · Meta, ultra-fast</span></a>
+        <a class="resource-link" href="https://huggingface.co/microsoft/phi-4-mini-instruct" target="_blank" rel="noopener"><span>Phi-4 mini 3.8B — 4-bit ~2.4 GB · Microsoft, great coding</span></a>
+        <a class="resource-link" href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3" target="_blank" rel="noopener"><span>Mistral 7B v0.3 — 4-bit ~4 GB · fast, reliable instruct</span></a>
+        <a class="resource-link" href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B" target="_blank" rel="noopener"><span>DeepSeek-R1 7B — 4-bit ~4 GB · reasoning distilled model</span></a>
+        <a class="resource-link" href="https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct" target="_blank" rel="noopener"><span>SmolLM2 1.7B — 4-bit ~1 GB · tiny but surprisingly capable</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🎨</div>
+        <h3>Image Generation — 16 GB GPU</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">All models &lt;10 B params · fp16 or bf16</div>
+        <a class="resource-link" href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium" target="_blank" rel="noopener"><span>SD 3.5 Medium (2.5 B) — ~5 GB · best quality-to-size ratio</span></a>
+        <a class="resource-link" href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank" rel="noopener"><span>Stable Diffusion XL (6.9 B) — ~7 GB · huge community &amp; LoRA ecosystem</span></a>
+        <a class="resource-link" href="https://huggingface.co/lodestones/Chroma" target="_blank" rel="noopener"><span>Chroma (8.9 B) — ~9 GB · recent FLUX-family, high quality</span></a>
+        <a class="resource-link" href="https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS" target="_blank" rel="noopener"><span>PixArt-Sigma XL (0.6 B) — ~2 GB · fast, efficient generation</span></a>
+        <a class="resource-link" href="https://huggingface.co/runwayml/stable-diffusion-v1-5" target="_blank" rel="noopener"><span>SD 1.5 (0.9 B) — ~2 GB · lightest, massive LoRA library</span></a>
+        <a class="resource-link" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener"><span>ComfyUI — node-based workflow UI for all image models</span></a>
+        <a class="resource-link" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener"><span>AUTOMATIC1111 — classic SD Web UI, huge extension library</span></a>
+        <a class="resource-link" href="https://github.com/lllyasviel/Fooocus" target="_blank" rel="noopener"><span>Fooocus — minimal UI, SDXL-based, zero configuration</span></a>
+        <a class="resource-link" href="https://invoke-ai.github.io/InvokeAI/" target="_blank" rel="noopener"><span>InvokeAI — production-grade local image generation UI</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🎬</div>
+        <h3>Video Generation — 16 GB GPU</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">All models &lt;10 B params · targets T4 / M-series 16 GB</div>
+        <a class="resource-link" href="https://huggingface.co/THUDM/CogVideoX-2b" target="_blank" rel="noopener"><span>CogVideoX-2B — ~6 GB · best small video model, 6-sec clips</span></a>
+        <a class="resource-link" href="https://huggingface.co/THUDM/CogVideoX-5b" target="_blank" rel="noopener"><span>CogVideoX-5B — ~10 GB · higher quality, use bf16 on 16 GB</span></a>
+        <a class="resource-link" href="https://huggingface.co/Lightricks/LTX-Video" target="_blank" rel="noopener"><span>LTX-Video 2B — ~6 GB · fast generation, good motion quality</span></a>
+        <a class="resource-link" href="https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B" target="_blank" rel="noopener"><span>Wan2.1 T2V 1.3B — ~4 GB · smallest capable video model</span></a>
+        <a class="resource-link" href="https://huggingface.co/guoyww/animatediff" target="_blank" rel="noopener"><span>AnimateDiff — uses SD backbone, converts any image model to video</span></a>
+        <a class="resource-link" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener"><span>ComfyUI — unified workflow tool for all video gen models</span></a>
+        <a class="resource-link" href="https://github.com/hpcaitech/Open-Sora" target="_blank" rel="noopener"><span>Open-Sora — open-source text-to-video, multiple size options</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">☁️</div>
+        <h3>Cloud AI &amp; AutoML</h3>
+      </div>
+      <div class="resource-card-body">
+        <a class="resource-link" href="https://ai.azure.com/" target="_blank" rel="noopener"><span>Azure AI Foundry — models, agents, evals, fine-tuning on Azure</span></a>
+        <a class="resource-link" href="https://azure.microsoft.com/en-us/products/machine-learning/automatedml" target="_blank" rel="noopener"><span>Azure AutoML — no-code ML training and deployment</span></a>
+        <a class="resource-link" href="https://azure.microsoft.com/en-us/products/ai-services/ai-agent-service" target="_blank" rel="noopener"><span>Azure AI Agent Service — deploy agents with tools and memory</span></a>
+        <a class="resource-link" href="https://aws.amazon.com/bedrock/" target="_blank" rel="noopener"><span>AWS Bedrock — managed Claude, Titan, Llama API</span></a>
+        <a class="resource-link" href="https://aws.amazon.com/sagemaker/autopilot/" target="_blank" rel="noopener"><span>SageMaker Autopilot — AWS automated ML pipeline</span></a>
+        <a class="resource-link" href="https://cloud.google.com/vertex-ai" target="_blank" rel="noopener"><span>Google Vertex AI — Gemini API, AutoML, agent builder</span></a>
+        <a class="resource-link" href="https://modal.com/" target="_blank" rel="noopener"><span>Modal — serverless GPU functions, deploy inference in Python</span></a>
+        <a class="resource-link" href="https://replicate.com/" target="_blank" rel="noopener"><span>Replicate — run any open-source model via API</span></a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -2100,6 +2284,54 @@
         <span class="tool-pill">Ragas</span>
         <span class="tool-pill">W&amp;B Weave</span>
         <span class="tool-pill">MLflow</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">☁️</span>
+        <h3>Cloud AI Platforms</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">Azure AI Foundry</span>
+        <span class="tool-pill primary">AWS Bedrock</span>
+        <span class="tool-pill primary">Vertex AI</span>
+        <span class="tool-pill">Azure AutoML</span>
+        <span class="tool-pill">SageMaker</span>
+        <span class="tool-pill">Together AI</span>
+        <span class="tool-pill">Replicate</span>
+        <span class="tool-pill">Modal</span>
+        <span class="tool-pill">Fireworks AI</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">🎨</span>
+        <h3>Image Generation</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">ComfyUI</span>
+        <span class="tool-pill primary">AUTOMATIC1111</span>
+        <span class="tool-pill">Fooocus</span>
+        <span class="tool-pill">InvokeAI</span>
+        <span class="tool-pill">SD3.5 Medium</span>
+        <span class="tool-pill">SDXL</span>
+        <span class="tool-pill">Chroma 8.9B</span>
+        <span class="tool-pill">SD 1.5</span>
+      </div>
+    </div>
+    <div class="tool-card fade-in">
+      <div class="tool-card-head">
+        <span class="tool-emoji">🎬</span>
+        <h3>Video Generation</h3>
+      </div>
+      <div class="tool-list">
+        <span class="tool-pill primary">CogVideoX-2B</span>
+        <span class="tool-pill primary">LTX-Video 2B</span>
+        <span class="tool-pill">CogVideoX-5B</span>
+        <span class="tool-pill">Wan2.1 1.3B</span>
+        <span class="tool-pill">AnimateDiff</span>
+        <span class="tool-pill">Open-Sora</span>
+        <span class="tool-pill">ComfyUI</span>
       </div>
     </div>
   </div>
