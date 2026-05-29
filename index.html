@@ -1447,9 +1447,9 @@
       background: rgba(52,211,153,0.04);
     }
 
-    .pace-compare-card.not-rec {
-      border-color: var(--border);
-      opacity: 0.75;
+    .pace-compare-card.fast-track {
+      border-color: var(--blue);
+      background: rgba(56,189,248,0.04);
     }
 
     .pace-compare-card .pace-hrs {
@@ -1460,7 +1460,20 @@
     }
 
     .pace-compare-card.recommended .pace-hrs { color: var(--green); }
-    .pace-compare-card.not-rec .pace-hrs { color: var(--faint); }
+    .pace-compare-card.fast-track .pace-hrs { color: var(--blue); }
+
+    .pace-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin-bottom: 8px;
+    }
+    .pace-compare-card.recommended .pace-tag { color: var(--green); background: rgba(52,211,153,0.12); }
+    .pace-compare-card.fast-track .pace-tag { color: var(--blue); background: rgba(56,189,248,0.12); }
 
     .pace-compare-card .pace-label {
       font-size: 13px;
@@ -1555,6 +1568,7 @@
 
   <div class="nav-links" id="navLinks">
     <a href="#roadmap">Roadmap</a>
+    <a href="#frontier">Frontier</a>
     <a href="#study-plan">Study Plan</a>
     <a href="#resources">Resources</a>
     <a href="#projects">Projects</a>
@@ -1680,6 +1694,149 @@
       <p>Tracing, evals, safety, monitoring, cost controls. LangSmith, Phoenix, DeepEval, Ragas. Know when your app breaks.</p>
       <span class="track-proof">Evaluated app with dashboards</span>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Frontier 2026 Topics ────────────────────────── -->
+<section class="section" id="frontier">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Stay Current</div>
+    <h2 class="section-title">Frontier Topics You Can't Skip in 2026</h2>
+    <p class="section-desc">The roadmap gets you job-ready. These are the moves and models shaping AI engineering right now — skim them, then go deep on whatever your projects need.</p>
+  </div>
+
+  <div class="resource-grid">
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🚀</div>
+        <h3>Forward Deployed Engineer</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Career path · TC $230k–$550k+</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">The hottest, least-saturated AI job of 2026: an engineer embedded inside a client's org to ship production AI — RAG, agents, evals — not slides. Exactly what this roadmap trains you for.</p>
+        <a class="resource-link" href="https://www.marktechpost.com/2026/05/20/what-is-a-forward-deployed-engineer-the-ai-role-openai-anthropic-and-google-are-hiring-in-2026/" target="_blank" rel="noopener"><span>What is an FDE? — the role OpenAI, Anthropic &amp; Google are hiring</span></a>
+        <a class="resource-link" href="https://www.palantir.com/docs/foundry/ai-fde/overview" target="_blank" rel="noopener"><span>Palantir AI FDE — the company that invented the model</span></a>
+        <a class="resource-link" href="https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488" target="_blank" rel="noopener"><span>Forward Deployed AI Engineer — a live job spec</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🧩</div>
+        <h3>Reasoning Models</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Test-time compute · math · code</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Models that "think" before answering — strongest on math, science, and hard code. Learn when the extra latency and cost is worth it versus a fast standard model.</p>
+        <a class="resource-link" href="https://www.clarifai.com/blog/top-10-open-source-reasoning-models-in-2026" target="_blank" rel="noopener"><span>Top 10 open-source reasoning models (2026)</span></a>
+        <a class="resource-link" href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener"><span>DeepSeek-R1 — open-weight frontier reasoning</span></a>
+        <a class="resource-link" href="https://huggingface.co/Qwen/QwQ-32B" target="_blank" rel="noopener"><span>Qwen QwQ-32B — a 32B that competes with giants</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🌐</div>
+        <h3>Omni / Any-to-Any Models</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Text · image · audio · video — one call</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">One model handling every modality in and out. The new default for voice assistants and multimodal apps — including real-time speech-to-speech.</p>
+        <a class="resource-link" href="https://huggingface.co/Qwen/Qwen2.5-Omni-7B" target="_blank" rel="noopener"><span>Qwen2.5-Omni 7B — open omni model you can run locally</span></a>
+        <a class="resource-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/" target="_blank" rel="noopener"><span>Gemini Omni — Google's native any-to-any model</span></a>
+        <a class="resource-link" href="https://platform.openai.com/docs/guides/realtime" target="_blank" rel="noopener"><span>GPT-4o Realtime API — speech-to-speech</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🐤</div>
+        <h3>Best Small Language Models</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Sub-10B · runs on a laptop or 16 GB GPU</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">SLMs now beat 2024-era GPT-4 on many tasks while running on-device — cheaper, private, and fast. The smart default before you reach for a frontier API.</p>
+        <a class="resource-link" href="https://huggingface.co/Qwen/Qwen3-4B" target="_blank" rel="noopener"><span>Qwen3-4B — best all-round small model</span></a>
+        <a class="resource-link" href="https://huggingface.co/google/gemma-3-4b-it" target="_blank" rel="noopener"><span>Gemma 3 4B — 128K context, multimodal</span></a>
+        <a class="resource-link" href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener"><span>Phi-4 — best small-model reasoning &amp; math</span></a>
+        <a class="resource-link" href="https://www.bentoml.com/blog/the-best-open-source-small-language-models" target="_blank" rel="noopener"><span>Best open SLMs in 2026 — comparison guide</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🪙</div>
+        <h3>1-bit &amp; Ternary LLMs</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">1.58-bit / true 1-bit · phone-ready</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Weights stored as {-1, 0, 1} (1.58-bit) or true 1-bit — 10–16× smaller and runs on a phone with no GPU. The frontier of on-device AI.</p>
+        <a class="resource-link" href="https://huggingface.co/microsoft/bitnet-b1.58-2B-4T" target="_blank" rel="noopener"><span>BitNet b1.58 2B4T — Microsoft's official 1.58-bit model</span></a>
+        <a class="resource-link" href="https://arxiv.org/abs/2402.17764" target="_blank" rel="noopener"><span>The Era of 1-bit LLMs — the foundational paper</span></a>
+        <a class="resource-link" href="https://computertech.co/prismml-bonsai-8b-review/" target="_blank" rel="noopener"><span>Bonsai 8B — first commercially viable true 1-bit LLM</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">📉</div>
+        <h3>Quantization &amp; TurboQuant</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Shrink weights &amp; KV cache to 2–4 bits</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Compress models with minimal quality loss so they fit your GPU. TurboQuant (ICLR 2026) squeezes the KV cache 5–6× — the key to long-context, low-memory serving.</p>
+        <a class="resource-link" href="https://arxiv.org/abs/2504.19874" target="_blank" rel="noopener"><span>TurboQuant — near-optimal KV-cache quantization</span></a>
+        <a class="resource-link" href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noopener"><span>llama.cpp / GGUF — run 4-bit &amp; 8-bit models anywhere</span></a>
+        <a class="resource-link" href="https://github.com/mit-han-lab/llm-awq" target="_blank" rel="noopener"><span>AWQ — activation-aware weight quantization</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">⚡</div>
+        <h3>Speculative Decoding</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">2–6× faster · identical output</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">A small "draft" model proposes tokens that the big model verifies in parallel — 2–6× faster inference with no quality drop. Built into vLLM, so you can turn it on today.</p>
+        <a class="resource-link" href="https://blog.vllm.ai/2024/10/17/spec-decode.html" target="_blank" rel="noopener"><span>Speculative decoding in vLLM — up to 2.8×</span></a>
+        <a class="resource-link" href="https://github.com/SafeAILab/EAGLE" target="_blank" rel="noopener"><span>EAGLE-3 — current state-of-the-art draft method</span></a>
+        <a class="resource-link" href="https://arxiv.org/abs/2401.10774" target="_blank" rel="noopener"><span>Medusa — parallel decoding heads (paper)</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">📄</div>
+        <h3>OCR &amp; Document AI</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">VLM-based · scans · tables · handwriting</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Vision-language models now read messy documents better than legacy engines — the backbone of nearly every real-world RAG and data pipeline.</p>
+        <a class="resource-link" href="https://github.com/allenai/olmocr" target="_blank" rel="noopener"><span>olmOCR — open, high-throughput PDF → text</span></a>
+        <a class="resource-link" href="https://mistral.ai/news/mistral-ocr" target="_blank" rel="noopener"><span>Mistral OCR — strong on handwriting &amp; tables</span></a>
+        <a class="resource-link" href="https://github.com/docling-project/docling" target="_blank" rel="noopener"><span>Docling — IBM, documents → clean markdown</span></a>
+        <a class="resource-link" href="https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct" target="_blank" rel="noopener"><span>Qwen2.5-VL — open VLM, 90+ languages</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🎨</div>
+        <h3>Image &amp; Video Generation</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Diffusion · local via ComfyUI or hosted API</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Generate and edit images and short video — run open models locally on a 16 GB GPU or call hosted APIs. A must for product, marketing, and creative AI features.</p>
+        <a class="resource-link" href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank" rel="noopener"><span>FLUX.1 — top open image model</span></a>
+        <a class="resource-link" href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large" target="_blank" rel="noopener"><span>Stable Diffusion 3.5 — open, high quality</span></a>
+        <a class="resource-link" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener"><span>ComfyUI — node workflow for image &amp; video</span></a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1941,17 +2098,19 @@
   </div>
 
   <!-- 2 hrs vs 4 hrs -->
-  <h3 style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;">4 hrs/day vs 2 hrs/day — what actually works</h3>
+  <h3 style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;">Two feasible paces — pick your deadline</h3>
   <div class="pace-compare fade-in">
     <div class="pace-compare-card recommended">
+      <span class="pace-tag">Steady · recommended</span>
       <div class="pace-hrs">2 hrs</div>
       <div class="pace-label">per day, 5 days/week</div>
-      <div class="pace-note">10 hrs/week · finishes in 12 weeks · sustainable · low burnout risk · consistent output every day</div>
+      <div class="pace-note">10 hrs/week · finishes in 12 weeks · sustainable · low burnout risk · best if you have a job or studies alongside.</div>
     </div>
-    <div class="pace-compare-card not-rec">
+    <div class="pace-compare-card fast-track">
+      <span class="pace-tag">Fast track</span>
       <div class="pace-hrs">4 hrs</div>
-      <div class="pace-label">per day, every day</div>
-      <div class="pace-note">28 hrs/week · finishes faster but most people burn out by week 4 · mentally exhausting for hands-on work</div>
+      <div class="pace-label">per day, 5 days/week</div>
+      <div class="pace-note">20 hrs/week · finishes in ~6 weeks · realistic for full-time learners · keep 2 rest days a week to stay sharp and avoid burnout.</div>
     </div>
   </div>
 
