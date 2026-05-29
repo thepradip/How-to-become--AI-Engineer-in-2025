@@ -617,7 +617,22 @@
       font-size: 13px;
       color: var(--muted);
       line-height: 1.55;
+      margin-bottom: 8px;
+    }
+
+    .week-time {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--faint);
       margin-bottom: 10px;
+    }
+
+    .week-time::before {
+      content: '⏱';
+      font-size: 11px;
     }
 
     .week-links {
@@ -627,20 +642,47 @@
     }
 
     .week-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
       font-size: 12px;
       font-weight: 600;
-      color: var(--blue);
+      color: var(--text);
       text-decoration: none;
-      padding: 3px 10px;
-      border-radius: var(--radius-xs);
-      background: rgba(56,189,248,0.08);
-      border: 1px solid rgba(56,189,248,0.15);
-      transition: all 0.15s;
+      padding: 7px 13px;
+      border-radius: var(--radius-sm);
+      background: var(--bg3);
+      border: 1px solid var(--border2);
+      transition: all 0.18s;
+      line-height: 1;
+    }
+
+    .week-link::before {
+      content: '▶';
+      font-size: 8px;
+      color: var(--blue);
+      flex-shrink: 0;
+    }
+
+    .week-link::after {
+      content: '↗';
+      font-size: 10px;
+      color: var(--faint);
+      flex-shrink: 0;
+      transition: color 0.18s, transform 0.18s;
     }
 
     .week-link:hover {
-      background: rgba(56,189,248,0.15);
-      border-color: rgba(56,189,248,0.3);
+      background: var(--surface);
+      border-color: var(--blue);
+      color: var(--blue);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(56,189,248,0.12);
+    }
+
+    .week-link:hover::after {
+      color: var(--blue);
+      transform: translate(1px, -1px);
     }
 
     .week-tag {
@@ -1197,6 +1239,120 @@
       .checklist-grid { grid-template-columns: 1fr; }
     }
 
+    /* ── Quiz Modal ──────────────────────────────────── */
+    .quiz-overlay {
+      position: fixed; inset: 0; z-index: 500;
+      background: rgba(0,0,0,0.75); backdrop-filter: blur(6px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px; opacity: 0; pointer-events: none; transition: opacity 0.2s;
+    }
+    .quiz-overlay.open { opacity: 1; pointer-events: all; }
+    .quiz-modal {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 18px; padding: 28px 32px 32px;
+      max-width: 560px; width: 100%; box-shadow: var(--shadow-lg);
+      transform: translateY(14px); transition: transform 0.2s;
+      max-height: 92vh; overflow-y: auto;
+    }
+    .quiz-overlay.open .quiz-modal { transform: translateY(0); }
+    .quiz-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .quiz-eyebrow {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--blue);
+    }
+    .quiz-counter { font-size: 12px; font-weight: 600; color: var(--faint); }
+    .quiz-progress-track {
+      height: 4px; background: var(--bg3); border-radius: 99px;
+      margin-bottom: 20px; overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%; background: var(--grad2); border-radius: 99px;
+      transition: width 0.35s cubic-bezier(.4,0,.2,1); width: 0%;
+    }
+    .quiz-question { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.55; margin-bottom: 16px; }
+    .quiz-options { display: grid; gap: 8px; margin-bottom: 14px; }
+    .quiz-option {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 11px 14px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); background: var(--bg3);
+      cursor: pointer; transition: all 0.15s;
+      font-size: 13px; color: var(--muted); font-family: var(--font);
+      line-height: 1.45; text-align: left; width: 100%;
+    }
+    .quiz-option:hover:not([disabled]) { border-color: var(--border2); color: var(--text); background: var(--surface); }
+    .quiz-option.selected { border-color: var(--blue); background: rgba(56,189,248,0.08); color: var(--text); }
+    .quiz-option.correct  { border-color: var(--green); background: rgba(52,211,153,0.1); color: var(--green); pointer-events: none; }
+    .quiz-option.wrong    { border-color: var(--red); background: rgba(248,113,113,0.08); color: var(--red); pointer-events: none; }
+    .quiz-option[disabled] { cursor: default; }
+    .quiz-letter {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--surface); border: 1px solid var(--border2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 800; flex-shrink: 0;
+      transition: all 0.15s; color: var(--faint);
+    }
+    .quiz-option.selected .quiz-letter { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .quiz-option.correct  .quiz-letter { background: var(--green); border-color: var(--green); color: #fff; }
+    .quiz-option.wrong    .quiz-letter { background: var(--red); border-color: var(--red); color: #fff; }
+    .quiz-inline-feedback {
+      font-size: 12px; font-weight: 600; padding: 8px 12px;
+      border-radius: var(--radius-xs); margin-bottom: 14px;
+      display: none;
+    }
+    .quiz-inline-feedback.show { display: block; }
+    .quiz-inline-feedback.correct { background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.25); color: var(--green); }
+    .quiz-inline-feedback.wrong   { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); color: var(--red); }
+    .quiz-actions { display: flex; gap: 10px; justify-content: space-between; align-items: center; }
+    .quiz-skip {
+      padding: 9px 14px; border-radius: var(--radius-xs);
+      font-size: 12px; font-weight: 600; cursor: pointer;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--faint); font-family: var(--font); transition: all 0.15s;
+    }
+    .quiz-skip:hover { color: var(--muted); border-color: var(--border2); }
+    .quiz-next {
+      padding: 9px 22px; border-radius: var(--radius-xs);
+      font-size: 13px; font-weight: 700; cursor: pointer;
+      border: none; background: var(--grad2); color: #fff;
+      font-family: var(--font); transition: all 0.15s;
+    }
+    .quiz-next:disabled { opacity: 0.35; cursor: not-allowed; }
+    .quiz-next:not(:disabled):hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(56,189,248,0.3); }
+    /* result screen */
+    .quiz-result { display: none; text-align: center; padding: 8px 0 4px; }
+    .quiz-result.show { display: block; }
+    .quiz-score-ring {
+      width: 96px; height: 96px; border-radius: 50%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      margin: 0 auto 16px; border: 3px solid;
+    }
+    .quiz-score-ring.pass { border-color: var(--green); background: rgba(52,211,153,0.08); }
+    .quiz-score-ring.fail { border-color: var(--red); background: rgba(248,113,113,0.06); }
+    .quiz-score-num { font-size: 28px; font-weight: 900; line-height: 1; }
+    .quiz-score-ring.pass .quiz-score-num { color: var(--green); }
+    .quiz-score-ring.fail .quiz-score-num { color: var(--red); }
+    .quiz-score-denom { font-size: 12px; color: var(--faint); font-weight: 600; }
+    .quiz-result-title { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+    .quiz-result-msg { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+    .quiz-result-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .quiz-retry {
+      padding: 10px 22px; border-radius: var(--radius-xs);
+      font-size: 13px; font-weight: 700; cursor: pointer;
+      border: 1px solid var(--border2); background: var(--surface);
+      color: var(--text); font-family: var(--font); transition: all 0.15s;
+    }
+    .quiz-retry:hover { background: var(--surface2); }
+    .quiz-complete {
+      padding: 10px 22px; border-radius: var(--radius-xs);
+      font-size: 13px; font-weight: 700; cursor: pointer;
+      border: none; background: var(--grad2); color: #fff;
+      font-family: var(--font); transition: all 0.15s;
+    }
+    .quiz-complete:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(56,189,248,0.3); }
+
     /* ── Utility ─────────────────────────────────────── */
     .text-grad {
       background: var(--grad1);
@@ -1500,6 +1656,7 @@
             Python, Git &amp; APIs
           </div>
           <p class="week-desc">Build a CLI notebook helper, learn API calls, pandas basics, and keep every experiment in Git from day one.</p>
+          <div class="week-time">8–10 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.deeplearning.ai/short-courses/ai-python-for-beginners/" target="_blank" rel="noopener">AI Python (DeepLearning.AI)</a>
             <a class="week-link" href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener">10 min to pandas</a>
@@ -1517,6 +1674,7 @@
             Math for AI Builders
           </div>
           <p class="week-desc">Refresh vectors, probability, statistics, cosine similarity, gradients, and evaluation vocabulary you'll need all year.</p>
+          <div class="week-time">6–8 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" rel="noopener">Essence of Linear Algebra</a>
             <a class="week-link" href="https://www.youtube.com/playlist?list=PL1328115D3D8A2566" target="_blank" rel="noopener">Stats (Khan Academy)</a>
@@ -1533,6 +1691,7 @@
             LLM APIs &amp; Model Comparison
           </div>
           <p class="week-desc">Use OpenAI, Claude, Gemini, Qwen, and Kimi APIs. Compare model cost, speed, context window, and output quality side-by-side.</p>
+          <div class="week-time">8–10 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://cookbook.openai.com/" target="_blank" rel="noopener">OpenAI Cookbook</a>
             <a class="week-link" href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener">Anthropic Cookbook</a>
@@ -1550,6 +1709,7 @@
             Prompt Engineering Systems
           </div>
           <p class="week-desc">Create reusable prompt templates with task, context, constraints, schema, examples, critique pass, and stop rules.</p>
+          <div class="week-time">6–8 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompting Guide</a>
             <a class="week-link" href="https://docs.anthropic.com/en/prompt-library/library" target="_blank" rel="noopener">Anthropic Library</a>
@@ -1567,6 +1727,7 @@
             RAG Baseline
           </div>
           <p class="week-desc">Parse documents, chunk content, embed text, retrieve relevant sources, and answer questions with citations and retrieval metrics.</p>
+          <div class="week-time">10–12 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank" rel="noopener">Advanced RAG Course</a>
             <a class="week-link" href="https://docs.llamaindex.ai/en/stable/" target="_blank" rel="noopener">LlamaIndex</a>
@@ -1584,6 +1745,7 @@
             LangGraph Agents
           </div>
           <p class="week-desc">Build a planner-search-writer-critic graph with shared state, automatic retries, and a human-in-the-loop approval checkpoint.</p>
+          <div class="week-time">10–12 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank" rel="noopener">AI Agents in LangGraph</a>
             <a class="week-link" href="https://www.langchain.com/langgraph" target="_blank" rel="noopener">LangGraph Docs</a>
@@ -1600,6 +1762,7 @@
             Advanced Agent Frameworks
           </div>
           <p class="week-desc">Compare CrewAI, AutoGen, OpenHands, and OpenAI Agents SDK. Build a multi-agent team that handles a real research workflow.</p>
+          <div class="week-time">12–15 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://www.crewai.com/" target="_blank" rel="noopener">CrewAI</a>
             <a class="week-link" href="https://microsoft.github.io/autogen/" target="_blank" rel="noopener">AutoGen</a>
@@ -1618,6 +1781,7 @@
             Coding Agents in Practice
           </div>
           <p class="week-desc">Ship one real feature with Claude Code, Codex, or Kimi Code. Review every diff yourself. Write tests. Understand security risks.</p>
+          <div class="week-time">8–10 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">Claude Code Docs</a>
             <a class="week-link" href="https://openai.com/codex/" target="_blank" rel="noopener">OpenAI Codex</a>
@@ -1635,6 +1799,7 @@
             Vibe-Coded UI &amp; Prototyping
           </div>
           <p class="week-desc">Prototype in Lovable, v0, or Bolt in under an hour. Then refactor into a clean app with proper states, accessibility, and maintainable code.</p>
+          <div class="week-time">8–10 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://lovable.dev/" target="_blank" rel="noopener">Lovable</a>
             <a class="week-link" href="https://v0.dev/" target="_blank" rel="noopener">v0 by Vercel</a>
@@ -1653,6 +1818,7 @@
             Local Inference
           </div>
           <p class="week-desc">Run 7B models locally with Ollama and LM Studio. Serve a model with vLLM, test concurrent requests, and record throughput numbers.</p>
+          <div class="week-time">8–10 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://docs.ollama.com/" target="_blank" rel="noopener">Ollama</a>
             <a class="week-link" href="https://docs.vllm.ai/en/latest/" target="_blank" rel="noopener">vLLM</a>
@@ -1670,6 +1836,7 @@
             Evals, Tracing &amp; Monitoring
           </div>
           <p class="week-desc">Add tracing, regression prompts, RAG quality metrics, cost logging, and a failure examples library so your app gets measurably better.</p>
+          <div class="week-time">10–12 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://docs.smith.langchain.com/" target="_blank" rel="noopener">LangSmith</a>
             <a class="week-link" href="https://phoenix.arize.com/" target="_blank" rel="noopener">Arize Phoenix</a>
@@ -1688,6 +1855,7 @@
             Portfolio Capstone
           </div>
           <p class="week-desc">Publish a polished AI app with a detailed README, screenshots, eval results, deploy notes, and a Gamma pitch deck for interviews.</p>
+          <div class="week-time">15–20 hrs</div>
           <div class="week-links">
             <a class="week-link" href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a>
             <a class="week-link" href="https://streamlit.io/" target="_blank" rel="noopener">Streamlit</a>
@@ -2209,6 +2377,40 @@
   </p>
 </footer>
 
+<!-- ── Quiz Modal ─────────────────────────────────── -->
+<div class="quiz-overlay" id="quizOverlay" role="dialog" aria-modal="true">
+  <div class="quiz-modal">
+    <!-- question view -->
+    <div id="quizQuestionView">
+      <div class="quiz-top">
+        <span class="quiz-eyebrow" id="quizWeekLabel"></span>
+        <span class="quiz-counter" id="quizCounter">1 / 10</span>
+      </div>
+      <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+      <p class="quiz-question" id="quizQuestionText"></p>
+      <div class="quiz-options" id="quizOptions"></div>
+      <div class="quiz-inline-feedback" id="quizFeedback"></div>
+      <div class="quiz-actions">
+        <button class="quiz-skip" id="quizSkip">Skip week</button>
+        <button class="quiz-next" id="quizNext" disabled>Next →</button>
+      </div>
+    </div>
+    <!-- result view -->
+    <div class="quiz-result" id="quizResult">
+      <div class="quiz-score-ring" id="quizScoreRing">
+        <div class="quiz-score-num" id="quizScoreNum"></div>
+        <div class="quiz-score-denom" id="quizScoreDenom"></div>
+      </div>
+      <div class="quiz-result-title" id="quizResultTitle"></div>
+      <p class="quiz-result-msg" id="quizResultMsg"></p>
+      <div class="quiz-result-actions">
+        <button class="quiz-retry" id="quizRetry">Try Again</button>
+        <button class="quiz-complete" id="quizComplete">Mark Week Complete ✓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ── Back to Top ────────────────────────────────── -->
 <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
@@ -2278,8 +2480,13 @@
 
   checkboxes.forEach(cb => {
     cb.addEventListener('change', () => {
-      cb.closest('.week-card').classList.toggle('done', cb.checked);
-      saveProgress();
+      if (!cb.checked) {
+        cb.closest('.week-card').classList.remove('done');
+        saveProgress();
+      } else {
+        cb.checked = false;
+        openQuiz(parseInt(cb.dataset.week), cb);
+      }
     });
   });
 
@@ -2316,11 +2523,298 @@
     card.addEventListener('click', e => {
       if (e.target.classList.contains('week-check') || e.target.closest('a')) return;
       const cb = card.querySelector('.week-check');
-      cb.checked = !cb.checked;
-      card.classList.toggle('done', cb.checked);
-      saveProgress();
+      if (cb.checked) {
+        cb.checked = false;
+        card.classList.remove('done');
+        saveProgress();
+      } else {
+        openQuiz(parseInt(cb.dataset.week), cb);
+      }
     });
   });
+
+  /* ── Quiz System ────────────────────── */
+  const PASS_SCORE = 7;
+  const QUIZ_DATA = {
+    1: { label: 'W1 · Python, Git & APIs', questions: [
+      { q: 'What does `git commit` do?', o: ['Uploads your code to GitHub', 'Saves a snapshot of staged changes to the repo history', 'Downloads the latest remote changes', 'Creates a new branch'], c: 1 },
+      { q: 'In Python, which syntax creates a list?', o: ['myList = (1, 2, 3)', 'myList = {1, 2, 3}', 'myList = [1, 2, 3]', 'myList = <1, 2, 3>'], c: 2 },
+      { q: 'Which HTTP method is used to fetch data from an API?', o: ['POST', 'PUT', 'GET', 'DELETE'], c: 2 },
+      { q: 'What does `pip install requests` do?', o: ['Uninstalls requests', 'Updates Python', 'Installs the requests library', 'Creates a new project'], c: 2 },
+      { q: 'What does `git clone <url>` do?', o: ['Creates an empty repo', 'Copies a remote repository to your local machine', 'Deletes the remote repo', 'Merges two branches'], c: 1 },
+      { q: 'In Python, which keyword defines a function?', o: ['func', 'def', 'function', 'define'], c: 1 },
+      { q: 'What does `git push` do?', o: ['Downloads remote changes', 'Deletes local changes', 'Uploads your local commits to the remote repository', 'Creates a pull request'], c: 2 },
+      { q: 'What is a virtual environment in Python?', o: ['A cloud server', 'An isolated Python environment with its own packages', 'A Python GUI app', 'A browser-based code editor'], c: 1 },
+      { q: 'In a REST API, what does a 200 status code mean?', o: ['Not Found', 'Server Error', 'Unauthorized', 'OK — the request succeeded'], c: 3 },
+      { q: 'What does `git add .` do?', o: ['Commits all files', 'Stages all changed files in the current directory', 'Pushes to origin', 'Creates a new branch'], c: 1 }
+    ]},
+    2: { label: 'W2 · Math for AI Builders', questions: [
+      { q: 'What is a vector?', o: ['A single number', 'An ordered list of numbers representing a point or direction', 'A 2D grid of numbers', 'A probability value between 0 and 1'], c: 1 },
+      { q: 'What is the mean (average) of [2, 4, 6, 8]?', o: ['4', '5', '6', '3'], c: 1 },
+      { q: 'What does a probability of 0 mean?', o: ['Certain to happen', '50% chance', 'Impossible — cannot happen', 'Unknown'], c: 2 },
+      { q: 'What is a matrix?', o: ['A single number', 'A list of strings', 'A 2D grid of numbers in rows and columns', 'A type of neural network layer'], c: 2 },
+      { q: 'What does the dot product of two vectors measure?', o: ['How far apart the vectors are', 'A form of similarity — how much they point in the same direction', 'The length of each vector', 'The sum of each element'], c: 1 },
+      { q: 'What does "normalizing" a vector do?', o: ['Makes all values negative', 'Converts it to text', 'Scales it so its total length equals 1', 'Removes all zero values'], c: 2 },
+      { q: 'What is variance in statistics?', o: ['The most frequent value', 'How spread out values are from the mean', 'The middle value in sorted data', 'The total sum of all values'], c: 1 },
+      { q: 'In machine learning, what is a "gradient"?', o: ['A color transition', 'The direction and rate at which a function\'s output changes', 'A type of activation function', 'The final loss value'], c: 1 },
+      { q: 'What are "features" in a machine learning model?', o: ['The model\'s output predictions', 'The input variables used to make predictions', 'The training steps taken', 'The weights inside the model'], c: 1 },
+      { q: 'What is the dot product of vectors [1, 0] and [0, 1]?', o: ['1', '2', '0', '-1'], c: 2 }
+    ]},
+    3: { label: 'W3 · LLM APIs & Model Comparison', questions: [
+      { q: 'What is a "token" in the context of LLMs?', o: ['A login credential', 'An API authentication key', 'A chunk of text (word or subword) the model processes', 'A GPU memory unit'], c: 2 },
+      { q: 'Which company makes the Claude models?', o: ['OpenAI', 'Google', 'Anthropic', 'Meta'], c: 2 },
+      { q: 'What does the "temperature" parameter control in an LLM?', o: ['How fast the model responds', 'How random or creative the output is', 'The maximum response length', 'The model\'s context window size'], c: 1 },
+      { q: 'What does `max_tokens` limit in an API call?', o: ['API calls per day', 'The size of the input prompt', 'The maximum length of the generated response', 'The model\'s RAM usage'], c: 2 },
+      { q: 'What is the role of the "system" message in a chat API?', o: ['To send user input', 'To store previous responses', 'To give the model instructions about its role and behavior', 'To set the API timeout'], c: 2 },
+      { q: 'What does streaming an LLM response do?', o: ['Downloads the model locally', 'Sends tokens to the client as they are generated, not all at once', 'Compresses the response', 'Caches responses for reuse'], c: 1 },
+      { q: 'What does "multimodal" mean for an AI model?', o: ['It runs on multiple GPUs', 'It can process more than one type of input, such as text and images', 'It has multiple versions', 'It generates multiple responses'], c: 1 },
+      { q: 'Which model family is made by Google?', o: ['GPT', 'Claude', 'Gemini', 'Llama'], c: 2 },
+      { q: 'What is a "context window"?', o: ['The model\'s chat interface', 'Permanent memory across all sessions', 'The total number of tokens the model can handle in one request', 'The API rate limit'], c: 2 },
+      { q: 'What is the purpose of an API key when calling an LLM?', o: ['To speed up the response', 'To authenticate your identity and authorize API access', 'To select which model to use', 'To set the response language'], c: 1 }
+    ]},
+    4: { label: 'W4 · Prompt Engineering', questions: [
+      { q: 'What is a system prompt?', o: ['The user\'s message in a chat', 'Instructions that define the model\'s role and behavior', 'The model\'s generated response', 'An error message from the API'], c: 1 },
+      { q: 'What is zero-shot prompting?', o: ['Providing many examples in the prompt', 'Fine-tuning the model first', 'Asking the model to complete a task with no examples', 'Using temperature = 0'], c: 2 },
+      { q: 'What is few-shot prompting?', o: ['Training on a small dataset', 'Providing a few example input-output pairs inside the prompt', 'Limiting the model to short answers', 'Calling the API a few times and picking the best result'], c: 1 },
+      { q: 'What does chain-of-thought prompting do?', o: ['Chains multiple API calls', 'Encourages the model to reason step by step before answering', 'Limits the model to one-word answers', 'Sends the prompt to multiple models'], c: 1 },
+      { q: 'What is a prompt template?', o: ['A pre-trained checkpoint', 'A reusable prompt structure with placeholders for dynamic content', 'The model\'s default system message', 'A fine-tuning dataset format'], c: 1 },
+      { q: 'What does asking the model to respond in JSON help with?', o: ['Faster responses', 'Reliably parsing the output programmatically', 'Reducing token usage', 'Automatically improving accuracy'], c: 1 },
+      { q: 'What is "prompt injection"?', o: ['Adding more examples', 'A security attack where user input overrides system instructions', 'Compressing a long prompt', 'Injecting code into the API call'], c: 1 },
+      { q: 'What does adding "Think step by step" typically improve?', o: ['Response speed', 'Accuracy on reasoning and math problems', 'Token efficiency', 'Response formatting'], c: 1 },
+      { q: 'What is the purpose of setting a "role" in a prompt (e.g., "You are an expert developer")?', o: ['A permission level for the API', 'Context that shapes the model\'s persona and response style', 'A filter that blocks certain topics', 'The model version to use'], c: 1 },
+      { q: 'What is "hallucination" in the context of LLMs?', o: ['The model refusing to answer', 'Slow responses under high load', 'The model confidently stating incorrect or made-up information', 'The model repeating the prompt'], c: 2 }
+    ]},
+    5: { label: 'W5 · RAG Baseline', questions: [
+      { q: 'What does RAG stand for?', o: ['Random Autoregressive Generation', 'Retrieval-Augmented Generation', 'Recursive Agent Graph', 'Ranked API Gateway'], c: 1 },
+      { q: 'What is "chunking" in a RAG pipeline?', o: ['Compressing model weights', 'Splitting documents into smaller pieces for indexing', 'Encrypting stored data', 'Grouping similar users'], c: 1 },
+      { q: 'What does an embedding model convert text into?', o: ['An audio file', 'Compressed HTML', 'A dense numerical vector', 'A JSON object'], c: 2 },
+      { q: 'What is a vector database used for in RAG?', o: ['Storing user credentials', 'Running model training', 'Storing and searching embeddings by similarity', 'Caching API responses'], c: 2 },
+      { q: 'What is semantic search?', o: ['Searching by exact keyword match', 'Finding documents by meaning rather than exact words', 'Searching within a specific file format', 'Full-text SQL search'], c: 1 },
+      { q: 'What is LlamaIndex?', o: ['An image generation model', 'A database for LLMs', 'A Python framework for building RAG pipelines over your data', 'An API wrapper for LLaMA'], c: 2 },
+      { q: 'In RAG, what gets added to the LLM prompt after retrieval?', o: ['The entire document library', 'The user\'s account information', 'The most relevant text chunks found by the retriever', 'The model\'s previous responses'], c: 2 },
+      { q: 'What is Chroma?', o: ['A UI design tool', 'An open-source vector database', 'A Python testing framework', 'A GPU library'], c: 1 },
+      { q: 'What metric measures what fraction of retrieved results are actually relevant?', o: ['Recall', 'F1 Score', 'Precision', 'Accuracy'], c: 2 },
+      { q: 'Why is retrieval important in RAG?', o: ['It replaces the LLM entirely', 'It lets the LLM access information beyond its training data', 'It makes inference faster', 'It compresses the prompt to save tokens'], c: 1 }
+    ]},
+    6: { label: 'W6 · LangGraph Agents', questions: [
+      { q: 'What is LangGraph?', o: ['A graph database for LLM outputs', 'A charting library', 'A framework for building stateful agent workflows as directed graphs', 'A fine-tuning tool'], c: 2 },
+      { q: 'What is a "node" in a LangGraph graph?', o: ['A data storage unit', 'A single step or function the agent can execute', 'A connection between two agents', 'A model checkpoint'], c: 1 },
+      { q: 'What is "state" in a LangGraph agent?', o: ['The model\'s temperature setting', 'Shared data passed between all nodes in the graph', 'The agent\'s error log', 'GPU memory usage'], c: 1 },
+      { q: 'What is a "tool" in the context of AI agents?', o: ['A code editor plugin', 'A special prompt template', 'A function the agent can call to take real-world actions', 'A model adapter'], c: 2 },
+      { q: 'What does "human-in-the-loop" mean in an agent?', o: ['The human writes all the code', 'Execution pauses so a human can review or approve before continuing', 'The human provides all input data', 'The human monitors GPU usage'], c: 1 },
+      { q: 'What is an "edge" in LangGraph?', o: ['An output token', 'A connection that determines which node runs next', 'The agent\'s final answer', 'A training data sample'], c: 1 },
+      { q: 'What does agent "memory" enable?', o: ['Faster model inference', 'Storing and recalling information across turns or sessions', 'Lower API costs', 'Parallel tool execution'], c: 1 },
+      { q: 'What does LangSmith help with when using LangGraph?', o: ['Hosting models locally', 'Tracing and debugging agent runs step by step', 'Generating training data', 'Deploying agents to production'], c: 1 },
+      { q: 'What does a "conditional edge" do in LangGraph?', o: ['Only works with certain models', 'Routes to different nodes based on a runtime condition', 'Adds a delay between steps', 'Logs output to a file'], c: 1 },
+      { q: 'What is the ReAct pattern in agents?', o: ['React.js used inside an agent', 'A pattern where the agent alternates between reasoning and taking actions', 'A method for restarting failed agents', 'A multi-agent communication protocol'], c: 1 }
+    ]},
+    7: { label: 'W7 · Advanced Agent Frameworks', questions: [
+      { q: 'What is CrewAI?', o: ['A video game AI framework', 'A framework for building role-based multi-agent teams', 'A cloud GPU provider', 'A prompt engineering tool'], c: 1 },
+      { q: 'What is AutoGen?', o: ['A tool for auto-generating prompts', 'A Microsoft framework for conversational multi-agent systems', 'An automatic fine-tuning pipeline', 'A code linter'], c: 1 },
+      { q: 'What is an "orchestrator" agent?', o: ['An agent that only retrieves data', 'An agent that generates images', 'An agent that manages and delegates tasks to other agents', 'An agent that monitors API costs'], c: 2 },
+      { q: 'What does "agent handoff" mean?', o: ['Passing a tool output to the LLM', 'Transferring control from one agent to another', 'Sending logs to a monitoring system', 'Handing a task to a human'], c: 1 },
+      { q: 'What is OpenHands?', o: ['A gesture recognition AI', 'An open-source platform for coding agents that can write and run code', 'A hand-tracking library', 'A fine-tuning dataset'], c: 1 },
+      { q: 'What is the OpenAI Agents SDK?', o: ['A library for training custom OpenAI models', 'OpenAI\'s framework for building agents with tools, memory, and handoffs', 'A dataset of agent conversations', 'An on-premise deployment SDK'], c: 1 },
+      { q: 'What is "parallel agent execution"?', o: ['Running the same agent multiple times to compare outputs', 'Multiple agents working on different subtasks at the same time', 'An agent running on multiple GPUs', 'Fallback agents when one fails'], c: 1 },
+      { q: 'What does "agent role" mean in CrewAI?', o: ['The agent\'s API key permissions', 'The specific job description and expertise assigned to an agent', 'The model\'s fine-tuning config', 'The agent\'s memory size'], c: 1 },
+      { q: 'What is Smolagents?', o: ['A framework for tiny models', 'Hugging Face\'s lightweight agent framework', 'A tool for compressing agent memory', 'A multi-modal image agent'], c: 1 },
+      { q: 'Why use multiple specialized agents instead of one?', o: ['Single agents are always slower', 'Specialization — each agent focuses on one task, improving overall quality and reliability', 'LLM APIs require multiple agents', 'One agent cannot use tools'], c: 1 }
+    ]},
+    8: { label: 'W8 · Coding Agents in Practice', questions: [
+      { q: 'What is Claude Code?', o: ['A Python code formatter', 'An AI coding agent that runs in your terminal and edits files directly', 'A cloud IDE by Anthropic', 'A code review service'], c: 1 },
+      { q: 'What should you always do after a coding agent edits your files?', o: ['Accept all changes immediately', 'Delete and redo them manually', 'Review every diff yourself before committing', 'Ask the agent to summarize what it did'], c: 2 },
+      { q: 'What is Cursor?', o: ['A terminal multiplexer', 'An AI-powered code editor built on VS Code', 'A cursor animation library', 'A SQL query tool'], c: 1 },
+      { q: 'What does `git diff` show?', o: ['The list of all branches', 'The commit history', 'The line-by-line changes between your working files and the last commit', 'Your staged files only'], c: 2 },
+      { q: 'What is Windsurf?', o: ['A browser extension for AI search', 'An AI-powered IDE from Codeium', 'A containerization tool', 'A static site generator'], c: 1 },
+      { q: 'Why is writing tests important after using a coding agent?', o: ['Tests make code run faster', 'Tests verify that the generated code actually works as expected', 'Tests are required by LLM APIs', 'Tests automatically fix bugs'], c: 1 },
+      { q: 'What is Cline?', o: ['A CLI for cloud servers', 'An AI coding assistant that runs inside VS Code', 'A Python linter', 'A Git hosting service'], c: 1 },
+      { q: 'What is the main risk of accepting all AI-generated code without reading it?', o: ['It uses more tokens than needed', 'You may ship vulnerable or incorrect code you don\'t fully understand', 'It slows your git history', 'The code won\'t compile'], c: 1 },
+      { q: 'What does "agentic loop" mean in a coding agent?', o: ['A for loop generated by the agent', 'The agent repeatedly reads, edits, and runs code until the task is complete', 'An infinite loop bug from the agent', 'A loop testing multiple LLM responses'], c: 1 },
+      { q: 'What is Kimi Code?', o: ['A Japanese coding tutorial', 'Moonshot AI\'s coding agent model', 'A VS Code color theme', 'A Python package manager'], c: 1 }
+    ]},
+    9: { label: 'W9 · Vibe-Coded UI & Prototyping', questions: [
+      { q: 'What is Lovable?', o: ['A design-to-CSS converter', 'An AI tool that generates full-stack web apps from a text description', 'A color palette generator', 'A font pairing tool'], c: 1 },
+      { q: 'What does v0 by Vercel generate?', o: ['Backend API routes', 'Database schemas', 'React UI components from a text or image prompt', 'Docker configurations'], c: 2 },
+      { q: 'What is Bolt.new?', o: ['A fast JavaScript bundler', 'An in-browser AI app builder that generates and runs full-stack apps', 'A code minifier', 'A browser testing framework'], c: 1 },
+      { q: 'What is Streamlit primarily used for?', o: ['Building mobile apps', 'Streaming video', 'Building interactive data and AI web apps quickly in Python', 'Managing cloud deployments'], c: 2 },
+      { q: 'What is Chainlit specifically designed for?', o: ['Blockchain development', 'Building conversational AI chat interfaces', 'CSS animations', 'Web scraping'], c: 1 },
+      { q: 'What is Next.js?', o: ['The next version of JavaScript', 'A React-based framework for building web apps with server-side rendering', 'A Node.js package manager', 'A database ORM'], c: 1 },
+      { q: 'Why should you refactor AI-generated UI code?', o: ['AI tools require a rewrite before use', 'Generated code often lacks proper state management, error handling, and accessibility', 'Refactoring uses more tokens', 'It\'s required by app stores'], c: 1 },
+      { q: 'What does "accessibility" (a11y) mean in UI development?', o: ['Making the app load faster', 'Shortening the URL', 'Making the app usable by people with disabilities', 'Reducing file size'], c: 2 },
+      { q: 'What is Gamma used for?', o: ['GPU monitoring', 'AI-generated presentations and documents', 'Gamma radiation simulations', 'Code compilation'], c: 1 },
+      { q: 'What is "state management" in a UI app?', o: ['Managing server CPU states', 'Tracking and updating data that changes as users interact with the app', 'A CSS layout technique', 'Managing Git branch states'], c: 1 }
+    ]},
+    10: { label: 'W10 · Local Inference', questions: [
+      { q: 'What is Ollama?', o: ['A cloud LLM service', 'A tool for running large language models locally on your own machine', 'A Python training library', 'A vector database'], c: 1 },
+      { q: 'What is LM Studio?', o: ['A music production tool', 'A desktop app for downloading and running local LLMs with a chat UI', 'A language learning app', 'A model monitoring dashboard'], c: 1 },
+      { q: 'What does quantization do to a model?', o: ['Increases parameter count', 'Duplicates weights for redundancy', 'Reduces numerical precision to shrink model size and speed up inference', 'Converts a model to run on cloud TPUs'], c: 2 },
+      { q: 'What does "inference" mean in AI?', o: ['Training a model on new data', 'Running a trained model to generate output from an input', 'Evaluating benchmark scores', 'Uploading a model to Hugging Face'], c: 1 },
+      { q: 'What is vLLM used for?', o: ['Visualizing attention weights', 'High-throughput production serving of LLMs', 'Training vision-language models', 'A virtual machine for LLM dev'], c: 1 },
+      { q: 'What does "tokens per second" measure in local inference?', o: ['API calls per second', 'The speed at which the model generates text output', 'Simultaneous users supported', 'Context window size'], c: 1 },
+      { q: 'What is a GGUF file?', o: ['A Google GPU utility format', 'A model weight file format used by llama.cpp and Ollama for local inference', 'A fine-tuning configuration file', 'A generative UI framework file'], c: 1 },
+      { q: 'What is llama.cpp?', o: ['A C++ tutorial for building LLMs', 'A highly efficient C++ inference engine for running LLaMA-family models', 'A compiled Python interpreter', 'A C++ wrapper for the OpenAI API'], c: 1 },
+      { q: 'What is the main privacy advantage of running a model locally?', o: ['Local models are always more accurate', 'Your data never leaves your own machine', 'Local models are cheaper than API calls', 'Local models have no context limit'], c: 1 },
+      { q: 'What does "context length" determine in local inference?', o: ['How long the model takes to load', 'The maximum number of tokens the model can process in a single request', 'Concurrent users supported', 'The model\'s temperature setting'], c: 1 }
+    ]},
+    11: { label: 'W11 · Evals, Tracing & Monitoring', questions: [
+      { q: 'What is LangSmith?', o: ['A code generation tool', 'A platform for tracing, evaluating, and debugging LLM applications', 'A language translation service', 'A prompt marketplace'], c: 1 },
+      { q: 'What is a "trace" in LLM observability?', o: ['A type of AI error', 'A complete log of all inputs, outputs, and steps in an LLM call chain', 'A model fine-tuning record', 'A GPU performance metric'], c: 1 },
+      { q: 'What is DeepEval?', o: ['A deep learning benchmark suite', 'An open-source Python framework for evaluating LLM output quality', 'A computer vision evaluation tool', 'A reinforcement learning library'], c: 1 },
+      { q: 'What is Ragas?', o: ['A music generation AI', 'A framework for evaluating RAG pipeline quality metrics', 'A random agent generation system', 'A reinforcement learning algorithm'], c: 1 },
+      { q: 'What does "faithfulness" measure in RAG evaluation?', o: ['Whether the user trusted the answer', 'Whether the model\'s answer is grounded in the retrieved context with no hallucination', 'Whether the retrieved chunks are relevant', 'Whether the response length is appropriate'], c: 1 },
+      { q: 'What is a regression test for an LLM app?', o: ['A test checking if the model regressed to an older version', 'A fixed set of prompts and expected outputs that catches quality drops after code changes', 'A benchmark comparing your model to GPT-4', 'A load test'], c: 1 },
+      { q: 'What does Arize Phoenix provide?', o: ['Phoenix-themed UI components', 'Open-source LLM tracing, evaluation, and observability', 'Cloud LLM hosting', 'Server CPU monitoring'], c: 1 },
+      { q: 'What is "context recall" in RAG evaluation?', o: ['Whether users remember responses', 'What fraction of the relevant information was actually retrieved from the database', 'How quickly context loads', 'The number of chunks in the vector store'], c: 1 },
+      { q: 'Why is cost monitoring important for LLM apps?', o: ['LLM API calls are free', 'Costs scale quickly at production volume — monitoring prevents unexpected bills', 'It\'s required by API terms of service', 'Cost data improves model accuracy'], c: 1 },
+      { q: 'What does W&B Weave do?', o: ['Ensembles multiple models together', 'Provides LLM call tracing and experiment tracking inside Weights & Biases', 'Generates synthetic training data', 'A CSS framework by Weights & Biases'], c: 1 }
+    ]},
+    12: { label: 'W12 · Portfolio Capstone', questions: [
+      { q: 'What should a portfolio project README include?', o: ['Just the license file', 'Problem description, setup instructions, architecture overview, and how to run it', 'Only the dependency list', 'Screenshots only'], c: 1 },
+      { q: 'What is Streamlit Cloud used for?', o: ['Training models in the cloud', 'Storing large datasets', 'Deploying Streamlit Python apps publicly for free', 'Running GPU-heavy inference'], c: 2 },
+      { q: 'Why include evaluation results in your portfolio?', o: ['Required by all job applications', 'It proves you measured quality — not just built and hoped it works', 'Eval results make the README longer', 'It replaces the need for a demo video'], c: 1 },
+      { q: 'What is Gamma used for in a capstone project?', o: ['GPU monitoring during deployment', 'Creating polished AI-generated pitch decks and presentations', 'Generating model evaluation reports', 'Code documentation'], c: 1 },
+      { q: 'What makes a portfolio project stand out to employers?', o: ['Using the most libraries', 'A real use case, working deployment, eval results, and clear documentation', 'Being written in the newest language', 'Having the most GitHub stars'], c: 1 },
+      { q: 'What is the purpose of an architecture diagram in a portfolio?', o: ['It\'s a legal requirement', 'It shows you understand how the system components connect and are structured', 'It replaces the README', 'It improves app performance'], c: 1 },
+      { q: 'What does "deploy" mean for a web app?', o: ['Writing unit tests', 'Committing code to Git', 'Making the app accessible to others on the internet', 'Submitting code for review'], c: 2 },
+      { q: 'What is a GitHub repository?', o: ['A cloud storage bucket for binaries', 'A hosted version-controlled project with full code history', 'A social media profile for developers', 'A containerized deployment environment'], c: 1 },
+      { q: 'What should a portfolio demo video show?', o: ['Only code being written', 'The app working end-to-end, highlighting key features and the problem it solves', 'All edge cases and error states', 'Deployment logs'], c: 1 },
+      { q: 'What is the core goal of a portfolio capstone project?', o: ['Collecting GitHub stars', 'Demonstrating you can identify a problem and ship a working AI solution', 'Using every tool in the curriculum', 'Finishing as fast as possible'], c: 1 }
+    ]}
+  };
+
+  /* quiz state */
+  let _cb = null, _questions = [], _idx = 0, _score = 0, _answered = false;
+
+  const overlay      = document.getElementById('quizOverlay');
+  const qView        = document.getElementById('quizQuestionView');
+  const rView        = document.getElementById('quizResult');
+  const weekLabelEl  = document.getElementById('quizWeekLabel');
+  const counterEl    = document.getElementById('quizCounter');
+  const fillEl       = document.getElementById('quizProgressFill');
+  const questionEl   = document.getElementById('quizQuestionText');
+  const optionsEl    = document.getElementById('quizOptions');
+  const feedbackEl   = document.getElementById('quizFeedback');
+  const nextBtn      = document.getElementById('quizNext');
+  const skipBtn      = document.getElementById('quizSkip');
+  const scoreRing    = document.getElementById('quizScoreRing');
+  const scoreNum     = document.getElementById('quizScoreNum');
+  const scoreDenom   = document.getElementById('quizScoreDenom');
+  const resultTitle  = document.getElementById('quizResultTitle');
+  const resultMsg    = document.getElementById('quizResultMsg');
+  const retryBtn     = document.getElementById('quizRetry');
+  const completeBtn  = document.getElementById('quizComplete');
+
+  function openQuiz(weekNum, cb) {
+    const data = QUIZ_DATA[weekNum];
+    if (!data) { completeWeek(cb); return; }
+    _cb = cb; _questions = data.questions; _idx = 0; _score = 0;
+    weekLabelEl.textContent = data.label;
+    qView.style.display = 'block';
+    rView.classList.remove('show');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    showQuestion(0);
+  }
+
+  function showQuestion(i) {
+    _answered = false;
+    const q = _questions[i];
+    const total = _questions.length;
+    counterEl.textContent = (i + 1) + ' / ' + total;
+    fillEl.style.width = (i / total * 100) + '%';
+    questionEl.textContent = q.q;
+    feedbackEl.className = 'quiz-inline-feedback';
+    feedbackEl.textContent = '';
+    nextBtn.disabled = true;
+    nextBtn.textContent = i < total - 1 ? 'Next →' : 'See Results';
+
+    const L = ['A','B','C','D'];
+    optionsEl.innerHTML = q.o.map((opt, j) =>
+      `<button class="quiz-option" data-idx="${j}">
+        <span class="quiz-letter">${L[j]}</span><span>${opt}</span>
+      </button>`
+    ).join('');
+
+    optionsEl.querySelectorAll('.quiz-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (_answered) return;
+        _answered = true;
+        const chosen = parseInt(btn.dataset.idx);
+        optionsEl.querySelectorAll('.quiz-option').forEach(b => { b.disabled = true; });
+        if (chosen === q.c) {
+          _score++;
+          btn.classList.add('correct');
+          feedbackEl.textContent = '✓ Correct!';
+          feedbackEl.className = 'quiz-inline-feedback correct show';
+        } else {
+          btn.classList.add('wrong');
+          optionsEl.querySelectorAll('.quiz-option')[q.c].classList.add('correct');
+          feedbackEl.textContent = '✗ Incorrect — correct answer highlighted above.';
+          feedbackEl.className = 'quiz-inline-feedback wrong show';
+        }
+        nextBtn.disabled = false;
+      });
+    });
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (!_answered) return;
+    _idx++;
+    if (_idx < _questions.length) {
+      showQuestion(_idx);
+    } else {
+      showResults();
+    }
+  });
+
+  function showResults() {
+    const total = _questions.length;
+    const passed = _score >= PASS_SCORE;
+    fillEl.style.width = '100%';
+    qView.style.display = 'none';
+    rView.classList.add('show');
+    scoreNum.textContent = _score;
+    scoreDenom.textContent = '/ ' + total;
+    scoreRing.className = 'quiz-score-ring ' + (passed ? 'pass' : 'fail');
+    resultTitle.textContent = passed ? 'Week Unlocked! 🎉' : 'Not quite — try again';
+    resultMsg.textContent = passed
+      ? 'You scored ' + _score + '/' + total + ' (' + Math.round(_score/total*100) + '%). Great work — this week is marked complete.'
+      : 'You scored ' + _score + '/' + total + '. You need ' + PASS_SCORE + '/' + total + ' to pass. Review the material and try again.';
+    completeBtn.style.display = passed ? 'inline-flex' : 'none';
+    retryBtn.textContent = passed ? 'Retake Quiz' : 'Try Again';
+  }
+
+  completeBtn.addEventListener('click', () => {
+    completeWeek(_cb);
+    closeQuiz();
+  });
+
+  retryBtn.addEventListener('click', () => {
+    _idx = 0; _score = 0;
+    qView.style.display = 'block';
+    rView.classList.remove('show');
+    showQuestion(0);
+  });
+
+  skipBtn.addEventListener('click', () => {
+    if (_cb) completeWeek(_cb);
+    closeQuiz();
+  });
+
+  function closeQuiz() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    _cb = null;
+  }
+
+  function completeWeek(cb) {
+    cb.checked = true;
+    cb.closest('.week-card').classList.add('done');
+    saveProgress();
+  }
+
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeQuiz(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz(); });
 </script>
 
 </body>
