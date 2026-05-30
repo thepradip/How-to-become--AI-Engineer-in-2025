@@ -1,0 +1,4 @@
+streamlit>=1.40
+pydantic>=2.0
+pytest>=8.0
+# production: pydantic-ai + an API key

@@ -14,7 +14,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B7 | GenAI 01–05 | ✅ (16 tests green) |
 | B8 | GenAI 06–10 | ✅ (16 tests green) |
 | B9 | Agents 01–05 | ✅ (16 tests green) |
-| B10 | Agents 06–09 | ⬜ |
+| B10 | Agents 06–09 | ✅ (13 tests green) |
 | B11 | Agents 10–13 | ⬜ |
 
 ## Shipped projects
@@ -65,3 +65,7 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `agents/03-web-agent` — navigate/extract (browser-use path). ✅ 3 tests
 - `agents/04-research-agent` — search+synthesize (CrewAI path). ✅ 3 tests
 - `agents/05-multiagent-content` — researcher→writer→editor crew. ✅ 2 tests
+- `agents/06-autogen-conversation` — solver↔critic dialogue. ✅ 2 tests
+- `agents/07-pydanticai-tools` — typed tool contracts (Pydantic). ✅ 4 tests
+- `agents/08-a2a-protocol` — agent-to-agent across frameworks. ✅ 3 tests
+- `agents/09-healthcare-agent` — guideline RAG + safety guardrails. ✅ 4 tests

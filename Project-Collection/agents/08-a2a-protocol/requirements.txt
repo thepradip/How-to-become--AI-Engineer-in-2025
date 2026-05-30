@@ -1,0 +1,4 @@
+streamlit>=1.40
+pandas>=2.0
+pytest>=8.0
+# real A2A: a2a-sdk / google-adk; interop with langgraph & crewai agents
