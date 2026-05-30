@@ -1569,6 +1569,7 @@
   <div class="nav-links" id="navLinks">
     <a href="#roadmap">Roadmap</a>
     <a href="#frontier">Frontier</a>
+    <a href="#video-gen">Video</a>
     <a href="#study-plan">Study Plan</a>
     <a href="#resources">Resources</a>
     <a href="#projects">Projects</a>
@@ -1834,6 +1835,70 @@
         <a class="resource-link" href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank" rel="noopener"><span>FLUX.1 — top open image model</span></a>
         <a class="resource-link" href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large" target="_blank" rel="noopener"><span>Stable Diffusion 3.5 — open, high quality</span></a>
         <a class="resource-link" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener"><span>ComfyUI — node workflow for image &amp; video</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Video Generation ────────────────────────────── -->
+<section class="section" id="video-gen">
+  <div class="section-header fade-in">
+    <div class="section-eyebrow">Lights, Camera, Diffusion</div>
+    <h2 class="section-title">Video Generation in 2026</h2>
+    <p class="section-desc">Text-to-video went from research demo to production tool in a year — and as of 2026 most top models generate synchronized audio natively. Use a hosted API for the best quality, or run an open model on your own GPU.</p>
+  </div>
+
+  <div class="resource-grid">
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🎬</div>
+        <h3>Hosted APIs — Best Quality</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Closed models · native audio · 4K</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Reach for these when output quality matters most. Heads-up: OpenAI is sunsetting the Sora API in Sept 2026 — build on Veo, Kling, Runway, or Seedance instead.</p>
+        <a class="resource-link" href="https://deepmind.google/models/veo/" target="_blank" rel="noopener"><span>Google Veo 3.1 — best all-rounder, native audio + 4K</span></a>
+        <a class="resource-link" href="https://klingai.com/" target="_blank" rel="noopener"><span>Kling 3.0 — multi-shot storyboard, ~$0.10/sec</span></a>
+        <a class="resource-link" href="https://runwayml.com/research/introducing-runway-gen-4" target="_blank" rel="noopener"><span>Runway Gen-4.5 — pro control: camera moves, motion brush</span></a>
+        <a class="resource-link" href="https://seed.bytedance.com/en/seedance" target="_blank" rel="noopener"><span>Seedance 2.0 — ByteDance, tops the video arena</span></a>
+        <a class="resource-link" href="https://lumalabs.ai/dream-machine" target="_blank" rel="noopener"><span>Luma Dream Machine — fast and affordable</span></a>
+        <a class="resource-link" href="https://pika.art/" target="_blank" rel="noopener"><span>Pika — quick, social-ready clips &amp; effects</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🖥️</div>
+        <h3>Open / Local Models</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Run on your own GPU · free &amp; private</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Self-host for zero per-second cost, full privacy, and LoRA fine-tuning. Wan 2.2 leads on all-round quality; LTX-Video runs on as little as 12 GB VRAM.</p>
+        <a class="resource-link" href="https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B" target="_blank" rel="noopener"><span>Wan 2.2 (MoE) — best open model, commercial-safe</span></a>
+        <a class="resource-link" href="https://huggingface.co/tencent/HunyuanVideo" target="_blank" rel="noopener"><span>HunyuanVideo 13B — cinematic, great for human subjects</span></a>
+        <a class="resource-link" href="https://huggingface.co/Lightricks/LTX-Video" target="_blank" rel="noopener"><span>LTX-Video — fastest, runs on 12 GB VRAM</span></a>
+        <a class="resource-link" href="https://huggingface.co/THUDM/CogVideoX-5b" target="_blank" rel="noopener"><span>CogVideoX-5B — ~10 GB, solid 6-sec clips</span></a>
+        <a class="resource-link" href="https://huggingface.co/genmo/mochi-1-preview" target="_blank" rel="noopener"><span>Mochi 1 (10B) — high fidelity &amp; prompt adherence</span></a>
+        <a class="resource-link" href="https://github.com/hpcaitech/Open-Sora" target="_blank" rel="noopener"><span>Open-Sora — fully open text-to-video pipeline</span></a>
+      </div>
+    </div>
+
+    <div class="resource-card fade-in">
+      <div class="resource-card-header">
+        <div class="resource-icon">🛠️</div>
+        <h3>Run, Serve &amp; Compare</h3>
+      </div>
+      <div class="resource-card-body">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Workflow tools &amp; benchmarks</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">Drive open models with a node workflow, rent a GPU per second, and check the live leaderboard before you commit to a model.</p>
+        <a class="resource-link" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener"><span>ComfyUI — node workflow for every video model</span></a>
+        <a class="resource-link" href="https://replicate.com/" target="_blank" rel="noopener"><span>Replicate — run any video model via API, pay per second</span></a>
+        <a class="resource-link" href="https://artificialanalysis.ai/text-to-video/arena" target="_blank" rel="noopener"><span>Video Arena — live text-to-video quality leaderboard</span></a>
+        <a class="resource-link" href="https://www.hyperstack.cloud/blog/case-study/best-open-source-video-generation-models" target="_blank" rel="noopener"><span>Best open-source video models — 2026 comparison</span></a>
       </div>
     </div>
 
