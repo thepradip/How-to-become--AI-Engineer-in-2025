@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Data & models (never commit large/real datasets or weights)
+data/*
+!data/.gitkeep
+!data/sample/
+*.csv
+*.parquet
+*.zip
+*.pt
+*.pth
+*.gguf
+*.safetensors
+models/
+mlruns/
+wandb/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
