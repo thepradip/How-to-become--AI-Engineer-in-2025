@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forward Deployed Engineer — Skillset & Study Path | AI Engineer 2026</title>
+  <meta name="description" content="What a Forward Deployed Engineer (FDE) actually does, the full skill stack, a sample client engagement, and how the 12-week AI Engineer plan maps to the role.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1117'/%3E%3Ccircle cx='32' cy='27' r='10' fill='none' stroke='%2338bdf8' stroke-width='2.5'/%3E%3Cpath d='M26 41h12M32 37v8' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='22' r='3' fill='%23a78bfa'/%3E%3Ccircle cx='44' cy='22' r='3' fill='%2334d399'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #0f1117; --bg2: #161b27; --bg3: #1e2535; --surface2: #2e3a50;
+      --border: rgba(255,255,255,0.08); --border2: rgba(255,255,255,0.14);
+      --text: #e8edf5; --muted: #8b97ab; --faint: #5a6478;
+      --blue: #38bdf8; --purple: #a78bfa; --green: #34d399; --amber: #fbbf24;
+      --grad1: linear-gradient(135deg, #38bdf8 0%, #a78bfa 50%, #34d399 100%);
+      --radius: 14px; --radius-sm: 8px;
+      --font: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); text-decoration: none; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    .topbar { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; background: rgba(15,17,23,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .topbar a.back { font-size: 13px; font-weight: 600; color: var(--muted); }
+    .topbar a.back:hover { color: var(--text); }
+    .topbar .brand { font-size: 13px; font-weight: 700; color: var(--text); }
+
+    header.hero { padding: 64px 0 40px; text-align: center; }
+    .eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--blue); background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.2); padding: 5px 14px; border-radius: 99px; margin-bottom: 18px; }
+    header.hero h1 { font-size: clamp(30px, 6vw, 52px); font-weight: 900; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 16px;
+      background: var(--grad1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    header.hero p { font-size: 17px; color: var(--muted); max-width: 640px; margin: 0 auto; }
+
+    .stats { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 32px; }
+    .stat { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 22px; min-width: 150px; }
+    .stat b { display: block; font-size: 24px; font-weight: 800; color: var(--text); }
+    .stat span { font-size: 12px; color: var(--faint); font-weight: 600; }
+
+    section { padding: 36px 0; border-top: 1px solid var(--border); }
+    section h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 10px; }
+    section .lead { color: var(--muted); margin-bottom: 22px; font-size: 15px; }
+
+    .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; }
+    .card + .card { margin-top: 14px; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .col-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text); margin-bottom: 14px; }
+    .col-title.core { color: var(--green); }
+    .col-title.add { color: var(--blue); }
+    ul.skills { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    ul.skills li { font-size: 13.5px; color: var(--muted); display: flex; gap: 8px; align-items: baseline; }
+    ul.skills li::before { content: "▹"; color: var(--blue); font-weight: 700; }
+    .tag { font-size: 10px; font-weight: 700; color: var(--green); margin-left: auto; white-space: nowrap; }
+
+    ol.steps { list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 12px; }
+    ol.steps li { counter-increment: s; position: relative; padding-left: 44px; font-size: 14px; color: var(--muted); }
+    ol.steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(56,189,248,0.12); color: var(--blue); font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+    ol.steps li b { color: var(--text); }
+
+    table.path { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    table.path th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); padding: 8px 10px; border-bottom: 1px solid var(--border2); }
+    table.path td { padding: 9px 10px; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: top; }
+    table.path td.wk { color: var(--blue); font-weight: 700; white-space: nowrap; }
+    table.path td.sk { color: var(--text); font-weight: 600; }
+
+    .reslist { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+    .reslist a { display: block; background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 11px 14px; font-size: 13.5px; color: var(--text); transition: all .15s; }
+    .reslist a:hover { border-color: var(--blue); transform: translateX(3px); }
+    .reslist a span { color: var(--muted); }
+
+    .callout { background: var(--bg2); border: 1px solid var(--border2); border-left: 3px solid var(--amber); border-radius: var(--radius); padding: 18px 22px; }
+    .callout b { color: var(--text); }
+    .callout p { font-size: 14px; color: var(--muted); }
+
+    .cta { text-align: center; padding: 44px 0 60px; }
+    .btn { display: inline-block; background: var(--grad1); color: #0b1020; font-weight: 800; font-size: 15px; padding: 13px 26px; border-radius: 99px; }
+    .btn.ghost { background: transparent; border: 1px solid var(--border2); color: var(--text); margin-left: 10px; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: 13px; color: var(--faint); }
+
+    @media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="topbar">
+    <a class="back" href="../index.html">← Back to the roadmap</a>
+    <span class="brand">AI Engineer 2026</span>
+  </nav>
+
+  <div class="wrap">
+
+    <header class="hero">
+      <span class="eyebrow">🚀 Career Deep-Dive</span>
+      <h1>Forward Deployed Engineer</h1>
+      <p>The hottest — and least saturated — AI job of 2026. An engineer embedded inside a client's organization to ship production AI from the inside: working code, not slides.</p>
+      <div class="stats">
+        <div class="stat"><b>$205k–$486k</b><span>Typical total comp</span></div>
+        <div class="stat"><b>$630k+</b><span>Staff-level FDE</span></div>
+        <div class="stat"><b>95%</b><span>Of AI pilots fail on deployment, not the model</span></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>What the role actually is</h2>
+      <p class="lead">FDEs close a two-sided knowledge gap that kills most enterprise AI projects.</p>
+      <div class="card">
+        <p style="color:var(--muted);font-size:14.5px;">A client's own engineers know the <b style="color:var(--text)">business</b> — data schemas, compliance constraints, legacy architecture. The AI lab's engineers know how <b style="color:var(--text)">models behave in production</b> — prompting patterns, RAG pipelines, evaluation strategy, failure modes. Neither side has the other's knowledge, so pilots stall. The FDE is dropped into the client's environment with <em>both</em>, and is measured on one thing: a system that actually runs.</p>
+        <p style="color:var(--muted);font-size:14.5px;margin-top:12px;">Palantir invented the model; in 2026 OpenAI, Anthropic, Google Cloud, Databricks, Scale AI and Salesforce all hire FDE-style roles. The skill stack — RAG, evals, agents, observability — is the most in-demand and least saturated path in enterprise AI.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>The FDE skill stack</h2>
+      <p class="lead">The AI Engineer roadmap builds the technical core. The forward-deployed layer is what separates an FDE from a backend AI developer — and it's the part most self-learners skip.</p>
+      <div class="two-col">
+        <div class="card">
+          <div class="col-title core">✅ Technical core — the roadmap covers this</div>
+          <ul class="skills">
+            <li>LLM APIs &amp; model selection <span class="tag">W3–4</span></li>
+            <li>RAG pipelines &amp; vector search <span class="tag">W5–6</span></li>
+            <li>Agents, tools &amp; memory <span class="tag">W7–8</span></li>
+            <li>Serving &amp; local inference <span class="tag">W10</span></li>
+            <li>Evals, tracing &amp; monitoring <span class="tag">W11</span></li>
+            <li>Ship a real app + deploy notes <span class="tag">W12</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="col-title add">➕ Forward-deployed layer — add these</div>
+          <ul class="skills">
+            <li>Requirements discovery &amp; problem framing</li>
+            <li>Solution scoping and rapid prototyping</li>
+            <li>Deploying into a client's existing stack (their auth, data, infra)</li>
+            <li>Data, security &amp; compliance basics</li>
+            <li>Reading large, messy, legacy codebases fast</li>
+            <li>Stakeholder demos &amp; clear written updates</li>
+            <li>Iterating under real-world constraints &amp; deadlines</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>A sample client engagement</h2>
+      <p class="lead">What a real FDE week-1-to-ship loop looks like — practice this shape with your capstone.</p>
+      <div class="card">
+        <ol class="steps">
+          <li><b>Discover.</b> Sit with the client's team. Map the real problem, their data shapes, constraints, and what "success" means to them — not to you.</li>
+          <li><b>Scope.</b> Cut it down to the smallest version that delivers value in days, not months. Write it down and get agreement.</li>
+          <li><b>Prototype.</b> Stand up a RAG/agent prototype against their real (messy) data. Wire it into their auth and one real workflow.</li>
+          <li><b>Evaluate.</b> Build a small eval set from their actual failure cases. Add tracing and cost logging so quality is measurable.</li>
+          <li><b>Harden &amp; hand off.</b> Tighten security, document it, and run a stakeholder demo that speaks to business outcomes — then enable their team to own it.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>12-week plan → FDE</h2>
+      <p class="lead">Every week of the study plan maps to an FDE competency. Then layer the forward-deployed skills on top of your capstone.</p>
+      <div class="card" style="overflow-x:auto;">
+        <table class="path">
+          <thead><tr><th>Weeks</th><th>You learn</th><th>FDE competency it builds</th></tr></thead>
+          <tbody>
+            <tr><td class="wk">W1–2</td><td class="sk">Python, Git, APIs, math</td><td>Engineering fundamentals you'll use in any client stack</td></tr>
+            <tr><td class="wk">W3–4</td><td class="sk">LLM APIs &amp; model comparison</td><td>Pick the right model for a client's cost/latency/quality needs</td></tr>
+            <tr><td class="wk">W5–6</td><td class="sk">RAG &amp; search</td><td>Make a system "know" the client's private documents</td></tr>
+            <tr><td class="wk">W7–8</td><td class="sk">Agents, tools &amp; memory</td><td>Automate a real client workflow end-to-end</td></tr>
+            <tr><td class="wk">W9</td><td class="sk">Vibe-coded UI &amp; prototyping</td><td>Stand up a demo in hours for fast stakeholder feedback</td></tr>
+            <tr><td class="wk">W10</td><td class="sk">Local inference &amp; serving</td><td>Deploy on-prem when data can't leave the building</td></tr>
+            <tr><td class="wk">W11</td><td class="sk">Evals, tracing &amp; monitoring</td><td>Prove the system works and keep it healthy in production</td></tr>
+            <tr><td class="wk">W12</td><td class="sk">Portfolio capstone</td><td>Run it like a real engagement — discover, scope, ship, demo</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout" style="margin-top:14px;">
+        <p><b>Turn the capstone into an FDE proof-of-work:</b> pick a concrete business problem, scope it with a one-page brief, ship it into a realistic environment (mock client auth + their data shape), and record a 3-minute stakeholder demo focused on the outcome — not the tech.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Go deeper</h2>
+      <div class="reslist">
+        <a href="https://www.marktechpost.com/2026/05/20/what-is-a-forward-deployed-engineer-the-ai-role-openai-anthropic-and-google-are-hiring-in-2026/" target="_blank" rel="noopener">What is an FDE? <span>— the role OpenAI, Anthropic &amp; Google are hiring</span></a>
+        <a href="https://www.palantir.com/docs/foundry/ai-fde/overview" target="_blank" rel="noopener">Palantir AI FDE <span>— the company that invented the model</span></a>
+        <a href="https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488" target="_blank" rel="noopener">Forward Deployed AI Engineer <span>— a live job spec to study</span></a>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="../index.html#study-plan">Start the 12-week plan →</a>
+      <a class="btn ghost" href="../index.html#frontier">Back to Frontier Topics</a>
+    </div>
+
+  </div>
+
+  <footer>Part of <a href="../index.html">How to Become an AI Engineer in 2026</a></footer>
+
+</body>
+</html>

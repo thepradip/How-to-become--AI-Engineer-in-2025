@@ -1427,6 +1427,30 @@
       color: var(--muted);
     }
 
+    /* ── FDE skillset panel ──────────────────────────── */
+    .fde-panel {
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      border-left: 3px solid var(--blue);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 28px;
+    }
+    .fde-head { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+    .fde-icon { font-size: 26px; line-height: 1; }
+    .fde-head h3 { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .fde-head p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .fde-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .fde-col-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text); margin-bottom: 12px; }
+    .fde-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .fde-list li { font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; align-items: baseline; border-bottom: 1px dashed var(--border); padding-bottom: 6px; }
+    .fde-list li span { font-size: 11px; font-weight: 700; color: var(--green); white-space: nowrap; }
+    .fde-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .fde-tip { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+    .fde-link { display: inline-block; margin-top: 16px; font-size: 13px; font-weight: 600; color: var(--blue); }
+    .fde-link:hover { text-decoration: underline; }
+    @media (max-width: 768px) { .fde-cols { grid-template-columns: 1fr; } }
+
     .pace-compare {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1718,6 +1742,7 @@
       <div class="resource-card-body">
         <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:4px 0 6px;">Career path · TC $230k–$550k+</div>
         <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px;">The hottest, least-saturated AI job of 2026: an engineer embedded inside a client's org to ship production AI — RAG, agents, evals — not slides. Exactly what this roadmap trains you for.</p>
+        <a class="resource-link" href="docs/forward-deployed-engineer.html"><span>📋 Our FDE skillset &amp; study path — full guide</span></a>
         <a class="resource-link" href="https://www.marktechpost.com/2026/05/20/what-is-a-forward-deployed-engineer-the-ai-role-openai-anthropic-and-google-are-hiring-in-2026/" target="_blank" rel="noopener"><span>What is an FDE? — the role OpenAI, Anthropic &amp; Google are hiring</span></a>
         <a class="resource-link" href="https://www.palantir.com/docs/foundry/ai-fde/overview" target="_blank" rel="noopener"><span>Palantir AI FDE — the company that invented the model</span></a>
         <a class="resource-link" href="https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488" target="_blank" rel="noopener"><span>Forward Deployed AI Engineer — a live job spec</span></a>
@@ -2469,6 +2494,46 @@
       </article>
 
     </div>
+
+    <!-- FDE skillset panel -->
+    <div class="fde-panel fade-in">
+      <div class="fde-head">
+        <span class="fde-icon">🚀</span>
+        <div>
+          <h3>Targeting a Forward Deployed Engineer role?</h3>
+          <p>This plan already builds the FDE technical core. Layer these client-facing skills on top — they're what separate an FDE from a backend AI developer, and the part most self-learners skip.</p>
+        </div>
+      </div>
+      <div class="fde-cols">
+        <div>
+          <div class="fde-col-title">✅ The plan already covers</div>
+          <ul class="fde-list">
+            <li>LLM APIs &amp; model selection <span>W3–4</span></li>
+            <li>RAG pipelines &amp; vector search <span>W5–6</span></li>
+            <li>Agents, tools &amp; memory <span>W7–8</span></li>
+            <li>Serving &amp; local inference <span>W10</span></li>
+            <li>Evals, tracing &amp; monitoring <span>W11</span></li>
+            <li>Ship a real app + deploy notes <span>W12</span></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fde-col-title">➕ Add these FDE-specific skills</div>
+          <div class="fde-chips">
+            <span class="tool-pill primary">Requirements discovery</span>
+            <span class="tool-pill primary">Solution scoping</span>
+            <span class="tool-pill">Deploy into a client's stack</span>
+            <span class="tool-pill">Security &amp; compliance basics</span>
+            <span class="tool-pill">Stakeholder demos</span>
+            <span class="tool-pill">Clear technical docs</span>
+            <span class="tool-pill">Reading messy codebases</span>
+            <span class="tool-pill">Iterating under constraints</span>
+          </div>
+          <p class="fde-tip">Practice them by treating your Week 12 capstone like a real client engagement: pick a business problem, scope it, ship into a realistic environment, and record a 3-minute stakeholder demo.</p>
+        </div>
+      </div>
+      <a class="fde-link" href="docs/forward-deployed-engineer.html">Full FDE skillset &amp; study path →</a>
+    </div>
+
   </div>
 </div>
 
