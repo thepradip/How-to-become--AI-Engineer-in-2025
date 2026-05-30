@@ -8,7 +8,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B1 | ML 01–05 | ✅ (16 tests green) |
 | B2 | ML 06–10 | ✅ (15 tests green) |
 | B3 | Deep Learning 01–05 | ✅ (15 tests green) |
-| B4 | Deep Learning 06–10 | ⬜ |
+| B4 | Deep Learning 06–10 | ✅ (16 tests green) |
 | B5 | NLP 01–05 | ⬜ |
 | B6 | NLP 06–10 | ⬜ |
 | B7 | GenAI 01–05 | ⬜ |
@@ -35,3 +35,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `deep-learning/03-pneumonia-xray` — ResNet + **Grad-CAM**. ✅ 4 tests
 - `deep-learning/04-object-detection` — **YOLO11** (ultralytics). ✅ 2 tests
 - `deep-learning/05-unet-segmentation` — **U-Net** pixel segmentation. ✅ 3 tests
+- `deep-learning/06-traffic-signs` — GTSRB CNN (43 classes). ✅ 3 tests
+- `deep-learning/07-lstm-forecasting` — LSTM multi-step forecast. ✅ 3 tests
+- `deep-learning/08-speech-emotion` — audio features + MLP (librosa opt). ✅ 4 tests
+- `deep-learning/09-face-verification` — embeddings + cosine verify. ✅ 3 tests
+- `deep-learning/10-vit-finetune` — ViT fine-tune + W&B (optional). ✅ 3 tests
