@@ -1,0 +1,4 @@
+streamlit>=1.40
+numpy>=1.26
+pytest>=8.0
+# real 1-bit models: transformers (microsoft/bitnet-b1.58-2B-4T) or bitnet.cpp

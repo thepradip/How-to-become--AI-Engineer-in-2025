@@ -11,7 +11,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B4 | Deep Learning 06–10 | ✅ (16 tests green) |
 | B5 | NLP 01–05 | ✅ (11 tests green) |
 | B6 | NLP 06–10 | ✅ (14 tests green) |
-| B7 | GenAI 01–05 | ⬜ |
+| B7 | GenAI 01–05 | ✅ (16 tests green) |
 | B8 | GenAI 06–10 | ⬜ |
 | B9 | Agents 01–05 | ⬜ |
 | B10 | Agents 06–09 | ⬜ |
@@ -50,3 +50,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `nlp/08-question-answering` — extractive TF-IDF (+SQuAD path). ✅ 3 tests
 - `nlp/09-llm-finetune-lora` — **Unsloth QLoRA** (GPU; data-prep tested). ✅ 3 tests
 - `nlp/10-semantic-search` — TF-IDF (+sentence-transformers path). ✅ 2 tests
+- `genai/01-prompt-playground` — multi-provider + offline mock. ✅ 3 tests
+- `genai/02-rag` — chat-with-docs/PDF, retrieval + citations. ✅ 4 tests
+- `genai/03-graphrag` — knowledge-graph retrieval (networkx). ✅ 4 tests
+- `genai/04-local-llm-chat` — Ollama/vLLM client. ✅ 2 tests
+- `genai/05-bitnet-1bit` — ternary quantization demo. ✅ 3 tests

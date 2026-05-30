@@ -1,0 +1,19 @@
+"""1-bit / BitNet Quantization — UI (shared chat). Run: streamlit run app.py"""
+
+import pathlib
+import sys
+
+HERE = pathlib.Path(__file__).resolve()
+sys.path.insert(0, str(HERE.parents[2]))
+sys.path.insert(0, str(HERE.parent))
+
+from _shared.chat_ui import run_chat_app  # noqa: E402
+from src.handler import respond  # noqa: E402
+
+run_chat_app(
+    title="1-bit / BitNet Quantization",
+    page_icon="🪙",
+    intro="Demonstrates ternary {-1,0,1} weight quantization (BitNet b1.58 / Bonsai). Type **demo**.",
+    respond=respond,
+    examples=["demo"],
+)
