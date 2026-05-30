@@ -83,7 +83,18 @@
 
     footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: 13px; color: var(--faint); }
 
-    @media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
+    /* scenarios + playbook */
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .scn { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--purple); border-radius: var(--radius); padding: 18px 20px; }
+    .scn h3 { font-size: 15.5px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .scn .meta { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); margin-bottom: 9px; }
+    .scn p { font-size: 13px; color: var(--muted); line-height: 1.55; margin-bottom: 10px; }
+    .scn p b { color: var(--text); }
+    .scn a { font-size: 12.5px; font-weight: 600; color: var(--green); }
+    .scn a:hover { text-decoration: underline; }
+    .pill { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: rgba(56,189,248,0.12); color: var(--blue); margin: 0 4px 4px 0; }
+
+    @media (max-width: 680px) { .two-col, .grid2 { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -134,12 +145,13 @@
           <div class="col-title add">➕ Forward-deployed layer — add these</div>
           <ul class="skills">
             <li>Requirements discovery &amp; problem framing</li>
-            <li>Solution scoping and rapid prototyping</li>
-            <li>Deploying into a client's existing stack (their auth, data, infra)</li>
-            <li>Data, security &amp; compliance basics</li>
+            <li>Solution scoping under ambiguity (scope before you code)</li>
+            <li>Cloud deployment — AWS / Azure / GCP &amp; on-prem / private cloud</li>
+            <li>Data, security &amp; compliance (HIPAA, access controls)</li>
+            <li>Eval suites — golden sets &amp; LLM-as-judge</li>
+            <li>System design with token-cost &amp; latency budgets</li>
             <li>Reading large, messy, legacy codebases fast</li>
-            <li>Stakeholder demos &amp; clear written updates</li>
-            <li>Iterating under real-world constraints &amp; deadlines</li>
+            <li><b>Client communication under pressure</b> (the #1 missing skill)</li>
           </ul>
         </div>
       </div>
@@ -183,11 +195,122 @@
     </section>
 
     <section>
+      <h2>Client communication playbook</h2>
+      <p class="lead">The one skill the roadmap doesn't teach — and the thing FDE interviews and clients test hardest. Master these six moves.</p>
+      <div class="card">
+        <ol class="steps">
+          <li><b>Scope before you solve.</b> In the first minutes ask "Who's the user? What does success look like? What's the eval set?" — never jump to code. Interviewers literally grade your first 48 seconds on this.</li>
+          <li><b>Explain to a non-technical CISO / CFO.</b> Translate architecture into risk, cost and outcome. Hold a technical boundary ("we can't promise zero hallucination, but here's how we measure and cap it") without alienating the client.</li>
+          <li><b>Handle the angry-VP-on-Friday moment.</b> Acknowledge, contain, give a clear next step + ETA, then follow up in writing. Stay calm under pressure.</li>
+          <li><b>Demo for outcomes, not features.</b> Show the business result in a tight 3-minute story; lead with the metric, not the model.</li>
+          <li><b>Write it down.</b> One-page scope brief → weekly status → decision log → runbook at handoff. Written clarity is half the job.</li>
+          <li><b>Say no safely.</b> Push back on out-of-scope or unsafe asks with an alternative, not a flat refusal.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>10 real-world FDE scenarios</h2>
+      <p class="lead">Practice these end-to-end engagements — across Claude Code, Codex, healthcare, finance, document automation, on-prem and the major clouds. Each maps to a project you can build in the <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection" target="_blank" rel="noopener">Project Collection</a>.</p>
+      <div class="grid2">
+
+        <div class="scn">
+          <h3>1 · Roll out Claude Code to a dev team</h3>
+          <div class="meta">Client: enterprise dev org · Cloud: laptops / on-prem · Tool: Claude Code</div>
+          <p>Embed with the team; set up <code>CLAUDE.md</code> house rules, slash commands, plan mode and review gates so engineers ship features safely with AI. <b>Comms:</b> win over skeptical seniors by reviewing diffs together; onboard non-coders with the plain-English workflow. <b>Win:</b> more PRs/week, no drop in review quality.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/00-getting-started" target="_blank" rel="noopener">→ Build it: 00-getting-started</a>
+        </div>
+
+        <div class="scn">
+          <h3>2 · Legacy migration with OpenAI Codex</h3>
+          <div class="meta">Client: fintech platform · Cloud: client GitHub + CI · Tool: OpenAI Codex</div>
+          <p>Dispatch well-scoped Codex tasks to refactor a legacy service <em>with tests</em>; review every patch. <b>Comms:</b> agree a definition-of-done up front; explain each diff and the test strategy to the lead engineer. <b>Win:</b> module migrated, tests green in their CI.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/agents/01-react-from-scratch" target="_blank" rel="noopener">→ Build it: agents + getting-started</a>
+        </div>
+
+        <div class="scn">
+          <h3>3 · Clinical assistant (HIPAA, private cloud)</h3>
+          <div class="meta">Client: hospital network · Cloud: Azure (private) · Stack: RAG + guardrails</div>
+          <p>Guideline-grounded Q&amp;A with strict safety rails (no diagnosis/dosage, emergency escalation), deployed inside the client's Azure tenant. <b>Comms:</b> align scope with the compliance officer; agree the golden eval set with clinicians; demo to them. <b>Win:</b> passes a clinician-reviewed eval, zero unsafe outputs.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/agents/09-healthcare-agent" target="_blank" rel="noopener">→ Build it: agents/09-healthcare-agent</a>
+        </div>
+
+        <div class="scn">
+          <h3>4 · Finance analyst copilot + dashboard</h3>
+          <div class="meta">Client: asset manager · Cloud: AWS · Stack: SQL agent + RAG</div>
+          <p>NL→SQL over financials + RAG over filings, with a no-advice guardrail, surfaced in a dashboard. <b>Comms:</b> present metrics to the CFO; hold the "not investment advice" boundary under pressure. <b>Win:</b> analysts self-serve validated answers.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/agents/10-finance-agent" target="_blank" rel="noopener">→ Build it: agents/10-finance-agent</a>
+        </div>
+
+        <div class="scn">
+          <h3>5 · Document automation for claims</h3>
+          <div class="meta">Client: insurer · Cloud: GCP Document AI / client cloud · Stack: OCR + extraction</div>
+          <p>OCR scanned claims → validated structured fields (Pydantic guardrails) → into their system of record. <b>Comms:</b> quantify hours saved to the ops lead; agree accuracy thresholds. <b>Win:</b> high straight-through-processing rate at the agreed accuracy.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/genai/08-document-intelligence" target="_blank" rel="noopener">→ Build it: genai/08-document-intelligence</a>
+        </div>
+
+        <div class="scn">
+          <h3>6 · Support RAG bot with quality gates</h3>
+          <div class="meta">Client: SaaS company · Cloud: Azure · Stack: RAG + evals + guardrails</div>
+          <p>Chat-with-docs over their help center + tickets, with citations, a PII output rail and an eval harness. <b>Comms:</b> build the golden set with support leads; send a weekly quality report. <b>Win:</b> deflection rate up, faithfulness ≥ target.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/genai/02-rag" target="_blank" rel="noopener">→ Build it: genai/02-rag</a>
+        </div>
+
+        <div class="scn">
+          <h3>7 · On-prem local LLM (data can't leave)</h3>
+          <div class="meta">Client: defense / health · Cloud: on-prem GPU servers · Stack: vLLM / Ollama + quantization</div>
+          <p>Serve a 4-bit open model on their hardware behind the firewall; benchmark latency/cost. <b>Comms:</b> get CISO sign-off on the architecture; agree a latency/cost SLA. <b>Win:</b> meets the SLA with zero data egress.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/genai/04-local-llm-chat" target="_blank" rel="noopener">→ Build it: genai/04-local-llm-chat</a>
+        </div>
+
+        <div class="scn">
+          <h3>8 · Multi-agent ops automation</h3>
+          <div class="meta">Client: logistics firm · Cloud: client cloud · Stack: CrewAI / LangGraph + A2A</div>
+          <p>A research/router crew that automates a multi-step workflow, with agents interoperating via A2A and human approval gates. <b>Comms:</b> run a scoping workshop; phase the rollout; define stop conditions. <b>Win:</b> workflow automated end-to-end, safely.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/agents/08-a2a-protocol" target="_blank" rel="noopener">→ Build it: agents/04, 05, 08</a>
+        </div>
+
+        <div class="scn">
+          <h3>9 · Production monitoring &amp; evals (LLMOps)</h3>
+          <div class="meta">Client: any AI product team · Cloud: AWS / Azure / GCP · Stack: evals + tracing + guardrails</div>
+          <p>Stand up tracing, an LLM-as-judge eval suite, guardrails and dashboards; wire evals into CI. <b>Comms:</b> define SLOs and an incident-comms plan with the team. <b>Win:</b> regressions caught before prod; on-call has dashboards.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/genai/10-evals-guardrails" target="_blank" rel="noopener">→ Build it: genai/10-evals-guardrails</a>
+        </div>
+
+        <div class="scn">
+          <h3>10 · Package &amp; deploy to the client's cloud</h3>
+          <div class="meta">Client: enterprise · Cloud: AWS / Azure / GCP · Stack: FastAPI + harness + monitoring</div>
+          <p>Wrap a model/agent in an API with retries, observability and cost controls; deploy to their cloud with a runbook. <b>Comms:</b> hand off to their SRE team with docs + a runbook; train them to own it. <b>Win:</b> clean handoff; meets cost/latency targets.</p>
+          <a href="https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026/tree/main/Project-Collection/agents/13-agent-harness" target="_blank" rel="noopener">→ Build it: agents/13-agent-harness</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>What top companies test (interview signals)</h2>
+      <p class="lead">Synthesised from 2026 FDE interview reports at OpenAI, Anthropic, Google, Palantir, Databricks &amp; Scale AI — and where each is covered.</p>
+      <div class="card">
+        <ul class="skills">
+          <li><b>Open-ended deployment scenario</b> (Palantir): an ambiguous problem, 30–60 min, no single answer — they watch how you <em>scope</em>. → the 10 scenarios above + the comms playbook</li>
+          <li><b>System design with LLM primitives</b> (OpenAI): weave token-cost, latency budgets and RAG into the whiteboard. → W3–4 + GenAI track</li>
+          <li><b>Eval methodology</b> — "the new system design": golden set + LLM-as-judge + catch regressions. Can't whiteboard it → instant pass. → GenAI 10 + W11</li>
+          <li><b>Integration &amp; monitoring</b>: APIs, data pipelines, debugging distributed systems (not LeetCode). → Agents track + scenario 9</li>
+          <li><b>Anthropic specifics</b>: Claude API strengths (long context, function calling, thinking mode), red-teaming, biased-output handling. → Frontier + guardrails</li>
+          <li><b>Customer-empathy behavioral</b>: a simulated negotiation — "explain this to a non-technical CISO" and hold the line. → comms playbook</li>
+          <li><b>Cloud &amp; security</b>: deploy on AWS / Azure / GCP / on-prem with data governance &amp; access controls. → W10 + scenarios 3, 7, 10</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
       <h2>Go deeper</h2>
       <div class="reslist">
         <a href="https://www.marktechpost.com/2026/05/20/what-is-a-forward-deployed-engineer-the-ai-role-openai-anthropic-and-google-are-hiring-in-2026/" target="_blank" rel="noopener">What is an FDE? <span>— the role OpenAI, Anthropic &amp; Google are hiring</span></a>
         <a href="https://www.palantir.com/docs/foundry/ai-fde/overview" target="_blank" rel="noopener">Palantir AI FDE <span>— the company that invented the model</span></a>
         <a href="https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488" target="_blank" rel="noopener">Forward Deployed AI Engineer <span>— a live job spec to study</span></a>
+        <a href="https://www.tryexponent.com/blog/forward-deployed-engineer-interview-the-definitive-2026-guide-fde" target="_blank" rel="noopener">FDE interview guide 2026 <span>— Exponent, the full loop</span></a>
+        <a href="https://fde.academy/blog/forward-deployed-engineer-interview-questions" target="_blank" rel="noopener">FDE interview questions <span>— common scenarios &amp; signals</span></a>
       </div>
     </section>
 
