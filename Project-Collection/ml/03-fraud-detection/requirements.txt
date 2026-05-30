@@ -1,0 +1,7 @@
+streamlit>=1.40
+scikit-learn>=1.4
+imbalanced-learn>=0.12
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8.0
