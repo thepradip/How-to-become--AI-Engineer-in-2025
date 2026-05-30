@@ -28,4 +28,4 @@ clf("an absolute masterpiece")
 CPU (Python 3.11), offline on synthetic data (sklearn baseline). DistilBERT path requires
 `transformers` + a model download and is faster on a T4/M2 GPU.
 
-> **Freelance relevance.** Review/feedback sentiment dashboards are a common, quick-to-ship deliverable.
+> **Why it matters.** Review/feedback sentiment dashboards are a common, quick-to-ship deliverable.

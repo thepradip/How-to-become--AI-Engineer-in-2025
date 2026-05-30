@@ -1,6 +1,6 @@
 # GenAI 07 · Video Generation 🔴
 
-**Problem.** Generate short video from text — the fastest-growing AI media category (Upwork: AI video
+**Problem.** Generate short video from text — the fastest-growing AI media category (AI video
 +329% YoY in 2026). Run open models locally (**Wan 2.2 / LTX-Video**, 16 GB GPU) or call hosted APIs
 (**Veo 3.1, Kling 3.0, Runway, Seedance**).
 
@@ -27,4 +27,4 @@ The text-to-video landscape (open vs. hosted) · frames → clip assembly · nat
 ## Tested on
 CPU (Python 3.11), offline (procedural GIF). Real video gen needs a GPU (LTX ~12 GB) or a hosted API key.
 
-> **Freelance relevance.** AI video creation/editing is the single fastest-growing freelance AI skill.
+> **Why it matters.** AI video creation/editing is the single fastest-growing AI skill.

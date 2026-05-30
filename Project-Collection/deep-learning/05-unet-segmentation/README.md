@@ -26,5 +26,5 @@ augmentation.
 CPU (Python 3.11) — smoke test covers model output shape, a training step, and mask prediction on the
 synthetic task. **Real, larger images train faster on a T4/M2 GPU.**
 
-> **Freelance relevance.** Pixel-level segmentation (medical, geospatial, manufacturing QA) is
-> specialised, well-paid CV work.
+> **Why it matters.** Pixel-level segmentation (medical, geospatial, manufacturing QA) is
+> specialised, in-demand CV work.

@@ -33,5 +33,5 @@ CPU (Python 3.11) — smoke test builds ViT (`weights=None`, offline), checks ou
 training step. **Real ViT fine-tuning needs a T4/M2 (16 GB) GPU.** W&B is optional (offline mode used
 if installed).
 
-> **Freelance relevance.** "Fine-tune a SOTA model on our images and track experiments" is exactly the
+> **Why it matters.** "Fine-tune a SOTA model on our images and track experiments" is exactly the
 > deliverable here.

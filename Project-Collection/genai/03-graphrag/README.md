@@ -22,4 +22,4 @@ summaries (Microsoft GraphRAG), hybrid graph+vector retrieval.
 ## Tested on
 CPU (Python 3.11), fully offline (networkx + mock LLM). Real triple extraction needs an LLM.
 
-> **Freelance relevance.** Knowledge-graph Q&A over org data is a high-value, differentiated RAG build.
+> **Why it matters.** Knowledge-graph Q&A over org data is a high-value, differentiated RAG build.

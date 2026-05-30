@@ -24,4 +24,4 @@ recall for a filter. **Extension:** fine-tune **DistilBERT** for higher accuracy
 ## Tested on
 CPU (Python 3.11), fully offline on synthetic data. No GPU.
 
-> **Freelance relevance.** Text moderation / spam / intent classification is everyday NLP contract work.
+> **Why it matters.** Text moderation / spam / intent classification is everyday NLP project work.

@@ -26,5 +26,5 @@ fallback (a pattern you'll reuse in every LLM app).
 ## Tested on
 CPU (Python 3.11), fully offline via the mock provider. Real providers need a key or a local Ollama.
 
-> **Freelance relevance.** Prompt design + a provider-agnostic client is the foundation of every LLM
+> **Why it matters.** Prompt design + a provider-agnostic client is the foundation of every LLM
 > feature you'll ship.

@@ -33,5 +33,5 @@ data-efficiency of fine-tuning.
 CPU (Python 3.11) — smoke test builds the model (`weights=None`, offline) and trains one step on
 synthetic data. **Real fine-tuning with pretrained weights is much faster on a T4/M2 GPU.**
 
-> **Freelance relevance.** "Classify our product images / detect defects" is a staple CV contract;
+> **Why it matters.** "Classify our product images / detect defects" is a staple CV project;
 > transfer learning is how you deliver it on a small dataset.

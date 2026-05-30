@@ -22,5 +22,7 @@ audit logging, and human oversight.
 ## Tested on
 CPU (Python 3.11), fully offline (TF-IDF retrieval + rule guardrails). No GPU.
 
-> ⚠️ Educational only — **not a medical device**. > **Freelance relevance:** healthcare GenAI
+> ⚠️ Educational only — **not a medical device**.
+
+> **Why it matters:** healthcare GenAI
 > (with compliance/guardrails) is a high-value, regulated niche.

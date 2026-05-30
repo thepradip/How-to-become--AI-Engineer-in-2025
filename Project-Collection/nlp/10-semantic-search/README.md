@@ -27,4 +27,4 @@ search & RAG retrieval. **Extension:** a vector DB (Chroma/Qdrant), re-ranking, 
 CPU (Python 3.11), fully offline (TF-IDF). The embedding path needs `sentence-transformers` + a model
 download.
 
-> **Freelance relevance.** Semantic search / matching / recommendation features are in constant demand.
+> **Why it matters.** Semantic search / matching / recommendation features are in constant demand.

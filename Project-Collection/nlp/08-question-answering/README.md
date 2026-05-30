@@ -28,5 +28,5 @@ Extractive QA vs. generative answers · sentence relevance with TF-IDF cosine ·
 CPU (Python 3.11), fully offline (TF-IDF baseline). The transformer path needs `transformers` + a
 model download.
 
-> **Freelance relevance.** "Answer questions over our docs" — the most requested LLM feature, and QA is
+> **Why it matters.** "Answer questions over our docs" — the most requested LLM feature, and QA is
 > its evaluation backbone.

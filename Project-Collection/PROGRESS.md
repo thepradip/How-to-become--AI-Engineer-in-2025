@@ -66,7 +66,7 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `agents/04-research-agent` — search+synthesize (CrewAI path). ✅ 3 tests
 - `agents/05-multiagent-content` — researcher→writer→editor crew. ✅ 2 tests
 - `agents/06-autogen-conversation` — solver↔critic dialogue. ✅ 2 tests
-- `agents/07-pydanticai-tools` — typed tool contracts (Pydantic). ✅ 4 tests
+- `agents/07-pydanticai-tools` — typed tool projects (Pydantic). ✅ 4 tests
 - `agents/08-a2a-protocol` — agent-to-agent across frameworks. ✅ 3 tests
 - `agents/09-healthcare-agent` — guideline RAG + safety guardrails. ✅ 4 tests
 - `agents/10-finance-agent` — financials SQL + no-advice guardrail. ✅ 4 tests

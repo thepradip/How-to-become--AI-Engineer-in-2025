@@ -26,4 +26,4 @@ pattern (precursor to multi-agent crews — Agents 05).
 ## Tested on
 CPU (Python 3.11), fully offline (local corpus). Real web research needs CrewAI + a search API + an LLM.
 
-> **Freelance relevance.** Automated research/briefing agents are a popular productivity build.
+> **Why it matters.** Automated research/briefing agents are a popular productivity build.

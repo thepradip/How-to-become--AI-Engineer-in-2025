@@ -22,5 +22,5 @@ turning evals into a regression gate. **Production tools:** **Ragas**/**DeepEval
 CPU (Python 3.11), fully offline (regex/string metrics). No GPU. Production evaluators add LLM-as-judge
 metrics (need a model).
 
-> **Freelance relevance.** "Make sure it's accurate and safe" — evals + guardrails are how you prove it,
+> **Why it matters.** "Make sure it's accurate and safe" — evals + guardrails are how you prove it,
 > and a frequent standalone engagement.

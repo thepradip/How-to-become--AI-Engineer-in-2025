@@ -27,4 +27,4 @@ word-order need a sequence model. **Extension:** fine-tune on a domain glossary;
 CPU (Python 3.11), fully offline (word-lookup demo). The NLLB path needs `transformers` +
 `sentencepiece` + a model download (GPU recommended for speed).
 
-> **Freelance relevance.** Localisation pipelines and multilingual chat are common product needs.
+> **Why it matters.** Localisation pipelines and multilingual chat are common product needs.

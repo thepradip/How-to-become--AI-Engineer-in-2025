@@ -26,4 +26,4 @@ exist). **Extensions:** streaming, barge-in, wake-word, OpenAI Realtime.
 ## Tested on
 CPU (Python 3.11), offline (text middle of the pipeline via mock LLM). STT/TTS need audio models.
 
-> **Freelance relevance.** Voice agents (support, IVR, assistants) are a fast-growing, in-demand build.
+> **Why it matters.** Voice agents (support, IVR, assistants) are a fast-growing, in-demand build.

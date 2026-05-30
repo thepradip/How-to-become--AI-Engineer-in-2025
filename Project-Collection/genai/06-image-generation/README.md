@@ -26,5 +26,5 @@ The text-to-image workflow · prompt → image · local diffusion vs. hosted API
 ## Tested on
 CPU (Python 3.11), offline (procedural demo). Real diffusion needs `diffusers` + a 16 GB GPU.
 
-> **Freelance relevance.** Image-gen pipelines (and editing/inpainting) are booming — AI image work is
-> among the fastest-growing freelance categories in 2026.
+> **Why it matters.** Image-gen pipelines (and editing/inpainting) are booming — AI image work is
+> among the fastest-growing categories in 2026.

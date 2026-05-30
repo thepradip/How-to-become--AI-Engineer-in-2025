@@ -23,5 +23,5 @@ tracing, evals-in-CI (ties back to GenAI 10).
 ## Tested on
 CPU (Python 3.11), fully offline. No GPU/keys.
 
-> **Freelance relevance.** Turning a prototype agent into something observable, retry-safe and
+> **Why it matters.** Turning a prototype agent into something observable, retry-safe and
 > deployable is exactly what clients pay senior engineers for.

@@ -25,4 +25,4 @@ schema-in-prompt. **Extensions:** LangGraph state machine, query validation, mul
 ## Tested on
 CPU (Python 3.11), fully offline (SQLite + rule-based NL→SQL). LLM-driven version needs a key.
 
-> **Freelance relevance.** "Chat with our database" dashboards are a frequent, high-value request.
+> **Why it matters.** "Chat with our database" dashboards are a frequent, high-value request.

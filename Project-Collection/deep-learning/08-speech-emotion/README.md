@@ -26,4 +26,4 @@ spectrograms, data augmentation (pitch/time shift).
 CPU (Python 3.11) — smoke test covers feature extraction, the model, training on separable synthetic
 classes (>40% acc, chance = 17%), and the handler. No GPU; no librosa required for tests.
 
-> **Freelance relevance.** Voice/audio analytics (sentiment, emotion, keyword spotting) is a growing niche.
+> **Why it matters.** Voice/audio analytics (sentiment, emotion, keyword spotting) is a growing niche.

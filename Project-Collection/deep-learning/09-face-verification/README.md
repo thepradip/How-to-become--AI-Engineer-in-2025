@@ -27,5 +27,5 @@ evaluation (ROC, EER).
 CPU (Python 3.11) — smoke test checks unit-norm embeddings, the verify API, and that **same-identity
 pairs score higher than different-identity pairs after training**. No GPU required for the demo.
 
-> **Freelance relevance.** Face/image matching and de-duplication appear in identity, security and
+> **Why it matters.** Face/image matching and de-duplication appear in identity, security and
 > media-asset projects.

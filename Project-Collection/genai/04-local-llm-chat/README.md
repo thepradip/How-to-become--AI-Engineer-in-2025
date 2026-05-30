@@ -22,5 +22,5 @@ trade-offs of local vs. hosted.
 ## Tested on
 CPU (Python 3.11), offline via mock. A real local model needs Ollama or vLLM (16 GB GPU recommended).
 
-> **Freelance relevance.** "Run it on-prem / no data leaves our network" is a common enterprise
+> **Why it matters.** "Run it on-prem / no data leaves our network" is a common enterprise
 > requirement local models satisfy.

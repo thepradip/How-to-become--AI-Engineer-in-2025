@@ -1,7 +1,7 @@
 # GenAI 08 · Document Intelligence / OCR 📄 🟡
 
-**Problem.** Turn messy documents (scanned invoices, contracts, forms, PDFs) into structured data.
-The backbone of finance/ops/legal automation — and a constant freelance request.
+**Problem.** Turn messy documents (scanned invoices, projects, forms, PDFs) into structured data.
+The backbone of finance/ops/legal automation — and a constant request.
 
 **What you build.** The pipeline scan/PDF → **OCR** → **field extraction**. The extraction step
 (regex/LLM over OCR'd text) runs and is tested offline; the OCR step uses a modern engine
@@ -27,5 +27,5 @@ extraction. **Upgrade:** an LLM with a structured schema (see GenAI 09) for robu
 ## Tested on
 CPU (Python 3.11), offline (field extraction). OCR of scans/PDFs needs an OCR engine (`docling`, etc.).
 
-> **Freelance relevance.** "Extract data from our invoices/forms/PDFs" is one of the most common,
-> immediately-valuable automation gigs.
+> **Why it matters.** "Extract data from our invoices/forms/PDFs" is one of the most common,
+> immediately-valuable automation projects.

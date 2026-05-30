@@ -2,7 +2,7 @@
 
 **Problem.** A telecom company loses recurring revenue every time a subscriber cancels. If we can
 flag who is *likely* to churn, the retention team can intervene with offers before they leave.
-Predicting churn is one of the most common paid ML engagements — it maps directly to retention
+Predicting churn is one of the most common ML engagements — it maps directly to retention
 budgets, so businesses pay for it.
 
 **What you build.** A leak-free scikit-learn `Pipeline` that trains and **compares multiple
@@ -61,5 +61,5 @@ OpenML data when online. No GPU required.
 > `brew install libomp`. If it's missing, this project **automatically falls back** to scikit-learn's
 > `GradientBoostingClassifier` (same role in the ensemble), so everything still runs.
 
-> **Freelance relevance.** Churn/retention modelling + a simple "score a customer" UI is a frequent
-> Upwork/Toptal request from subscription businesses (telco, SaaS, gyms).
+> **Why it matters.** Churn/retention modelling + a simple "score a customer" UI is a frequent
+> request from subscription businesses (telco, SaaS, gyms).

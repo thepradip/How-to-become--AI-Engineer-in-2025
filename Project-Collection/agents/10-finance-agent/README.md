@@ -20,5 +20,7 @@ finance-domain caution. **Extensions:** RAG over earnings reports, anomaly detec
 ## Tested on
 CPU (Python 3.11), fully offline (SQLite). No GPU.
 
-> ⚠️ Educational — **not investment advice.** > **Freelance relevance:** finance document automation &
+> ⚠️ Educational — **not investment advice.**
+
+> **Why it matters:** finance document automation &
 > analysis are high-value, compliance-sensitive engagements.

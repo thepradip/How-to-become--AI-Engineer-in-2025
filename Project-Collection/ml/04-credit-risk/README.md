@@ -33,4 +33,4 @@ fairness checks across groups.
 ## Tested on
 CPU (Python 3.11), offline on the synthetic sample; real data via OpenML when online. No GPU. ✅
 
-> **Freelance relevance.** Credit scoring, lead scoring, and risk models are common fintech contracts.
+> **Why it matters.** Credit scoring, lead scoring, and risk models are common fintech projects.

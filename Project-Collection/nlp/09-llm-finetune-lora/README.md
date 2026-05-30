@@ -27,5 +27,5 @@ CPU (Python 3.11) — `pytest` covers the **data-prep** utilities offline (no mo
 requires a CUDA GPU (16 GB)**; `train_lora` is marked `# pragma: no cover` and documented, not run here.
 We do not claim a training run that didn't happen.
 
-> **Freelance relevance.** "Fine-tune an open model on our data" is one of the highest-paid LLM gigs
-> ($150–250/hr per Upwork's 2026 data).
+> **Why it matters.** "Fine-tune an open model on our data" is one of the top LLM projects
+> ($150–250/hr per 2026 market data).

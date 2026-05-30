@@ -26,5 +26,5 @@ CPU (Python 3.11) — smoke test builds the YOLO11 architecture from the bundled
 weights) and runs the forward/annotate path on a blank image. **Real detection downloads COCO weights;
 custom training wants a T4/M2 GPU.** Tests `importorskip` torch & ultralytics.
 
-> **Freelance relevance.** "Count/track objects in our camera feed or images" is a very common,
-> deployable CV contract.
+> **Why it matters.** "Count/track objects in our camera feed or images" is a very common,
+> deployable CV project.

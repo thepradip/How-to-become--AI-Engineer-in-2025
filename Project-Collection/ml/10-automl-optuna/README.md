@@ -24,11 +24,11 @@ streamlit run app.py     # set trials in the sidebar, type "tune"
 
 ## What you learned
 Bayesian hyperparameter search vs. grid/random · clean train/CV/test separation · experiment tracking
-with MLflow · reading an optimization-history curve. **This is the tuning skill expected on paid ML work.**
+with MLflow · reading an optimization-history curve. **This is the tuning skill expected on real-world ML work.**
 
 ## Tested on
 CPU (Python 3.11), fully offline (5-trial fast test in CI; use 30–100 trials for real gains). No GPU. ✅
 MLflow is optional — the app runs without it.
 
-> **Freelance relevance.** "Improve our model's accuracy" engagements are largely feature work +
+> **Why it matters.** "Improve our model's accuracy" engagements are largely feature work +
 > disciplined hyperparameter tuning like this.

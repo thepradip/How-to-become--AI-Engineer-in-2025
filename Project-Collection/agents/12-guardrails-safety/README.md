@@ -21,4 +21,4 @@ Input vs. output rails · jailbreak detection · PII redaction · why rails belo
 ## Tested on
 CPU (Python 3.11), fully offline (rule-based rails). No GPU.
 
-> **Freelance relevance.** "Make our chatbot safe / compliant" is a frequent, standalone hardening gig.
+> **Why it matters.** "Make our chatbot safe / compliant" is a frequent, standalone hardening project.

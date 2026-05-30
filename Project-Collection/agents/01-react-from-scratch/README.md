@@ -21,5 +21,5 @@ debugging agents. **Next:** let an LLM pick actions (LangChain/LangGraph) — Ag
 ## Tested on
 CPU (Python 3.11), fully offline (rule-based policy + safe calculator). No GPU/keys.
 
-> **Freelance relevance.** Agent literacy starts here; clients want builders who understand the loop,
+> **Why it matters.** Agent literacy starts here; clients want builders who understand the loop,
 > not just glue frameworks together.

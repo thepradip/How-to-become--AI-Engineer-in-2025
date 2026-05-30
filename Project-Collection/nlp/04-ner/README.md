@@ -33,4 +33,4 @@ transformer. **Extension:** fine-tune `bert-base` for token classification on yo
 CPU (Python 3.11), fully offline (rule-based extractor). No GPU. The transformer path needs
 `transformers` + a model download.
 
-> **Freelance relevance.** "Extract fields X/Y/Z from these documents" is one of the most common NLP gigs.
+> **Why it matters.** "Extract fields X/Y/Z from these documents" is one of the most common NLP projects.

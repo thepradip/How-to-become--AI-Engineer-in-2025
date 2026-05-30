@@ -26,4 +26,4 @@ Extractive vs. abstractive summarization · sentence scoring · faithfulness vs.
 ## Tested on
 CPU (Python 3.11), fully offline (extractive). No GPU. BART path needs `transformers` + a download.
 
-> **Freelance relevance.** Summarization/condensation features are common in document and content tools.
+> **Why it matters.** Summarization/condensation features are common in document and content tools.

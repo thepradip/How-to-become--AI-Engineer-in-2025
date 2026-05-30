@@ -24,4 +24,4 @@ Unsupervised topic discovery · NMF vs. LDA · interpreting topics by top words.
 ## Tested on
 CPU (Python 3.11), fully offline (sklearn). No GPU.
 
-> **Freelance relevance.** "What are people talking about in this data?" — a common analytics ask.
+> **Why it matters.** "What are people talking about in this data?" — a common analytics ask.

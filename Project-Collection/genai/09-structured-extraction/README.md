@@ -27,5 +27,5 @@ Schema-first extraction · Pydantic validators as **guardrails** · type-safe LL
 ## Tested on
 CPU (Python 3.11), fully offline (regex + Pydantic validation). LLM extraction needs `pydantic-ai` + a key.
 
-> **Freelance relevance.** Reliable structured output is what separates a demo from a shippable LLM
+> **Why it matters.** Reliable structured output is what separates a demo from a shippable LLM
 > feature — clients pay for the guardrails.

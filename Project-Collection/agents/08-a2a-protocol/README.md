@@ -21,4 +21,4 @@ frameworks. **Production:** the official A2A SDK + framework adapters (LangGraph
 ## Tested on
 CPU (Python 3.11), fully offline (in-process A2A simulation). No GPU/keys.
 
-> **Freelance relevance.** Interop matters as orgs accumulate agents from different teams/vendors.
+> **Why it matters.** Interop matters as orgs accumulate agents from different teams/vendors.

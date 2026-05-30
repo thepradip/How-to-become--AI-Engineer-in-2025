@@ -26,4 +26,4 @@ CrewAI with real LLMs/tools, hierarchical process, parallel roles.
 ## Tested on
 CPU (Python 3.11), fully offline (deterministic roles). Real crews need CrewAI + an LLM key.
 
-> **Freelance relevance.** Content/marketing automation crews are a popular productised-agent offering.
+> **Why it matters.** Content/marketing automation crews are a popular productised-agent offering.

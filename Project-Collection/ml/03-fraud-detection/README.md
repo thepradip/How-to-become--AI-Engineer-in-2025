@@ -33,5 +33,5 @@ precision vs. recall for an alert budget.
 CPU (Python 3.11), offline on the synthetic imbalanced sample; real data via OpenML when online.
 No GPU. ✅ (SMOTE via `imbalanced-learn`.)
 
-> **Freelance relevance.** Fraud/anomaly detection is a recurring, well-paid task in fintech,
+> **Why it matters.** Fraud/anomaly detection is a recurring, in-demand task in fintech,
 > payments, and insurance.

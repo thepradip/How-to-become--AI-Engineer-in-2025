@@ -28,5 +28,5 @@ Quantization math (absmean ternary) · the size/quality trade-off · why 1-bit e
 CPU (Python 3.11), fully offline (numpy quantization demo). Running a real BitNet/Bonsai model needs
 `transformers`/`bitnet.cpp` + a weight download.
 
-> **Freelance relevance.** On-device / edge LLMs are an emerging niche; understanding quantization is
+> **Why it matters.** On-device / edge LLMs are an emerging niche; understanding quantization is
 > key to cheap deployment.

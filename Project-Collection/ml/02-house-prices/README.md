@@ -32,5 +32,5 @@ models · communicating price drivers.
 CPU (Python 3.11). `pytest` runs offline on the synthetic sample (R² > 0.7); the app uses the real
 Ames data when online. No GPU. ✅
 
-> **Freelance relevance.** Price/valuation models (real estate, used goods, insurance) are a steady
-> source of paid regression work.
+> **Why it matters.** Price/valuation models (real estate, used goods, insurance) are a steady
+> source of regression work.

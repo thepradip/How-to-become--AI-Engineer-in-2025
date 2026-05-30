@@ -30,4 +30,4 @@ prediction intervals.
 ## Tested on
 CPU (Python 3.11), fully offline on the synthetic series. No GPU. ✅
 
-> **Freelance relevance.** Sales/demand forecasting is one of the most-requested analytics gigs.
+> **Why it matters.** Sales/demand forecasting is one of the most-requested analytics projects.

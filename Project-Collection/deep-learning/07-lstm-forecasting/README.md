@@ -25,4 +25,4 @@ and its error accumulation. **Extensions:** multivariate inputs, teacher forcing
 ## Tested on
 CPU (Python 3.11) — smoke test (windowing, forward, training reduces loss, multi-step forecast). No GPU.
 
-> **Freelance relevance.** Sequence forecasting for IoT/energy/finance clients.
+> **Why it matters.** Sequence forecasting for IoT/energy/finance clients.

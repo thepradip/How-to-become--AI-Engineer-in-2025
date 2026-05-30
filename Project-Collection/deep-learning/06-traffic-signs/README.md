@@ -24,5 +24,5 @@ brightness) for robustness.
 ## Tested on
 CPU (Python 3.11) — smoke test (synthetic, offline). Real GTSRB training is light but faster on GPU.
 
-> **Freelance relevance.** Sign/symbol/logo classification appears across automotive, mapping and
+> **Why it matters.** Sign/symbol/logo classification appears across automotive, mapping and
 > brand-monitoring projects.

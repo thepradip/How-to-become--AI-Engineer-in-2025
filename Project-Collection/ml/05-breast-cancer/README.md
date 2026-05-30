@@ -39,5 +39,5 @@ probabilities.
 ## Tested on
 CPU (Python 3.11), fully offline on the real bundled dataset. No GPU. ✅ `pytest` green.
 
-> **Freelance relevance.** Diagnostic/triage classifiers with an explainability layer are common
+> **Why it matters.** Diagnostic/triage classifiers with an explainability layer are common
 > healthcare-AI engagements; the explanation step is often the actual deliverable.

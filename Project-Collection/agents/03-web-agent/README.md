@@ -21,10 +21,10 @@ pip install browser-use playwright && playwright install chromium
 
 ## What you learned
 Navigation + extraction loops · why browser agents matter (no-API sites) · the mock-vs-live trade-off.
-**Extensions:** real browser-use runs, form filling, pagination, auth-aware scraping.
+**Extensions:** real browser-use runs, form filling, pagination, auth-aware data extraction.
 
 ## Tested on
 CPU (Python 3.11), fully offline (mock site). Live browsing needs Playwright/browser-use.
 
-> **Freelance relevance.** "Automate this web workflow / extract data from this portal" — steady,
-> well-paid automation work.
+> **Why it matters.** "Automate this web workflow / extract data from this portal" — steady,
+> in-demand automation work.

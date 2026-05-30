@@ -31,5 +31,5 @@ explanations are often the real deliverable in healthcare AI.
 CPU (Python 3.11) — smoke test covers model output shape, Grad-CAM heatmap shape/range, the overlay,
 and the handler, all on synthetic data (`weights=None`, offline). **Real fine-tuning wants a T4/M2 GPU.**
 
-> **Freelance relevance.** Medical/industrial image triage **with explainability** is a high-value,
+> **Why it matters.** Medical/industrial image triage **with explainability** is a high-value,
 > trust-sensitive engagement.

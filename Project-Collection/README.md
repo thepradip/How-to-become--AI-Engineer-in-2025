@@ -1,9 +1,9 @@
 # 🛠️ Project Collection — Hands-On AI Engineering
 
-A companion, **build-it-yourself** course to [*How to Become an AI Engineer in 2026*](../index.html).
-Every project is a **real-world problem** (not a toy demo), grounded in what companies actually
-hire for on Upwork/Toptal in 2026 — solved end-to-end with documented Python, a working UI, tests,
-and a professional README you can show in interviews or reuse on client work.
+A complete, **build-it-yourself** companion course to [*How to Become an AI Engineer in 2026*](../index.html).
+Each of the 53 projects solves a **real-world problem** end-to-end — documented Python, a working UI,
+automated tests, and a professional README. Together they form a portfolio you can show in interviews
+and adapt for production work.
 
 > Built for **working professionals, coders, and non-coders**. If you can follow a recipe and run a
 > command, you can ship these. Start with [`00-getting-started`](00-getting-started/) to learn how to
@@ -101,11 +101,10 @@ streamlit run app.py                 # open the chat UI in your browser
 See [`00-getting-started/environment-setup.md`](00-getting-started/environment-setup.md) for GPU
 notes (T4 / Apple M-series 16 GB), Ollama, vLLM, and the recommended 2026 local-model list.
 
-## Ground rules for this collection
-- **Real & recent data/models only** — via open registries/APIs (OpenML, UCI, Hugging Face,
-  yfinance, Kaggle). No website scraping. No copy-paste from other repos.
-- **Never commit data, model weights, or secrets** — `.gitignore` enforces it; data downloads on
-  first run.
+## Conventions
+- **Real, current datasets & models** — loaded via open registries/APIs (OpenML, UCI, Hugging Face,
+  yfinance, Kaggle) on first run.
+- **Never commit data, model weights, or secrets** — `.gitignore` enforces it.
 - Each README has an honest **“Tested on”** line stating exactly what was run (CPU vs. GPU-required).
 
 ## Progress

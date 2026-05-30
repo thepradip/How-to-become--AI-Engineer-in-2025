@@ -25,4 +25,4 @@ GroupChat, tool-using agents, human-in-the-loop.
 ## Tested on
 CPU (Python 3.11), fully offline (deterministic dialogue). Real conversations need AutoGen + an LLM.
 
-> **Freelance relevance.** Debate/critique loops improve quality on open-ended generation tasks.
+> **Why it matters.** Debate/critique loops improve quality on open-ended generation tasks.

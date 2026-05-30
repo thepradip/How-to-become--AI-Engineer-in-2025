@@ -29,4 +29,4 @@ into business-readable segments.
 ## Tested on
 CPU (Python 3.11), fully offline on synthetic transactions. No GPU. ✅
 
-> **Freelance relevance.** Customer segmentation for CRM/marketing is a frequent analytics gig.
+> **Why it matters.** Customer segmentation for CRM/marketing is a frequent analytics project.

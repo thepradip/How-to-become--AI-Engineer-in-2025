@@ -30,4 +30,4 @@ the `surprise`/`implicit` libraries.
 ## Tested on
 CPU (Python 3.11), fully offline on synthetic ratings (SVD beats the global-mean baseline). No GPU. ✅
 
-> **Freelance relevance.** Recommendation engines for shops/content sites are common product work.
+> **Why it matters.** Recommendation engines for shops/content sites are common product work.

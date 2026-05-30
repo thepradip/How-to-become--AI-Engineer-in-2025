@@ -29,4 +29,4 @@ eval harness (see GenAI 10).
 CPU (Python 3.11), fully offline (TF-IDF retrieval + mock LLM). Real answers need an API key/Ollama;
 PDFs need `pypdf`.
 
-> **Freelance relevance.** "Chat with our documents/PDFs" is the single most-requested LLM build.
+> **Why it matters.** "Chat with our documents/PDFs" is the single most-requested LLM build.
