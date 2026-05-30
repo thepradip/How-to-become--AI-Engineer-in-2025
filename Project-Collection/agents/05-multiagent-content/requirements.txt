@@ -1,0 +1,3 @@
+streamlit>=1.40
+pytest>=8.0
+# production multi-agent crews: crewai, crewai-tools + an API key

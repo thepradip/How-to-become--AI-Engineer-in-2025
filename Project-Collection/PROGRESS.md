@@ -13,7 +13,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B6 | NLP 06–10 | ✅ (14 tests green) |
 | B7 | GenAI 01–05 | ✅ (16 tests green) |
 | B8 | GenAI 06–10 | ✅ (16 tests green) |
-| B9 | Agents 01–05 | ⬜ |
+| B9 | Agents 01–05 | ✅ (16 tests green) |
 | B10 | Agents 06–09 | ⬜ |
 | B11 | Agents 10–13 | ⬜ |
 
@@ -60,3 +60,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `genai/08-document-intelligence` — OCR + field extraction. ✅ 2 tests
 - `genai/09-structured-extraction` — Pydantic guardrails (+PydanticAI). ✅ 4 tests
 - `genai/10-evals-guardrails` — eval metrics + PII/safety harness. ✅ 4 tests
+- `agents/01-react-from-scratch` — ReAct loop + safe tools. ✅ 4 tests
+- `agents/02-sql-agent` — NL→SQL over SQLite (LangGraph path). ✅ 4 tests
+- `agents/03-web-agent` — navigate/extract (browser-use path). ✅ 3 tests
+- `agents/04-research-agent` — search+synthesize (CrewAI path). ✅ 3 tests
+- `agents/05-multiagent-content` — researcher→writer→editor crew. ✅ 2 tests

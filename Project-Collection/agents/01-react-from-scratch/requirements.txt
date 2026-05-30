@@ -1,0 +1,3 @@
+streamlit>=1.40
+pytest>=8.0
+# real LLM-driven ReAct: langchain / langgraph + an API key

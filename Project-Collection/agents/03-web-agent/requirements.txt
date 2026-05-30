@@ -1,0 +1,3 @@
+streamlit>=1.40
+pytest>=8.0
+# real browsing: browser-use, playwright (+ playwright install)
