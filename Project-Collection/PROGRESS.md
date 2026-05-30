@@ -7,7 +7,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B0 | Scaffold, shared chat UI, getting-started + env guide, website link | ✅ |
 | B1 | ML 01–05 | ✅ (16 tests green) |
 | B2 | ML 06–10 | ✅ (15 tests green) |
-| B3 | Deep Learning 01–05 | ⬜ |
+| B3 | Deep Learning 01–05 | ✅ (15 tests green) |
 | B4 | Deep Learning 06–10 | ⬜ |
 | B5 | NLP 01–05 | ⬜ |
 | B6 | NLP 06–10 | ⬜ |
@@ -30,3 +30,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `ml/08-stock-movement` — technical features, chronological split + backtest. ✅ 3 tests
 - `ml/09-recommender` — baselines vs SVD matrix factorization (MovieLens). ✅ 4 tests
 - `ml/10-automl-optuna` — Optuna tuning + MLflow (optional) capstone. ✅ 2 tests
+- `deep-learning/01-cnn-from-scratch` — PyTorch CNN, Fashion-MNIST. ✅ 3 tests
+- `deep-learning/02-transfer-learning` — ResNet-18 fine-tune. ✅ 3 tests
+- `deep-learning/03-pneumonia-xray` — ResNet + **Grad-CAM**. ✅ 4 tests
+- `deep-learning/04-object-detection` — **YOLO11** (ultralytics). ✅ 2 tests
+- `deep-learning/05-unet-segmentation` — **U-Net** pixel segmentation. ✅ 3 tests
