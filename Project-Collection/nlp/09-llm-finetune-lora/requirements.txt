@@ -1,0 +1,3 @@
+streamlit>=1.40
+pytest>=8.0
+# GPU training: unsloth, trl, peft, transformers, datasets, bitsandbytes (CUDA 16GB)

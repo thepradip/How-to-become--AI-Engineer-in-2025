@@ -1,0 +1,4 @@
+streamlit>=1.40
+scikit-learn>=1.4
+pytest>=8.0
+# span extraction: transformers (distilbert-base-cased-distilled-squad)

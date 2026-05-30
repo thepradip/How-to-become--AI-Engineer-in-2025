@@ -10,7 +10,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B3 | Deep Learning 01–05 | ✅ (15 tests green) |
 | B4 | Deep Learning 06–10 | ✅ (16 tests green) |
 | B5 | NLP 01–05 | ✅ (11 tests green) |
-| B6 | NLP 06–10 | ⬜ |
+| B6 | NLP 06–10 | ✅ (14 tests green) |
 | B7 | GenAI 01–05 | ⬜ |
 | B8 | GenAI 06–10 | ⬜ |
 | B9 | Agents 01–05 | ⬜ |
@@ -45,3 +45,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `nlp/03-fake-news` — real/fake text classification. ✅ 2 tests
 - `nlp/04-ner` — rule-based NER (+transformer path). ✅ 2 tests
 - `nlp/05-summarization` — extractive (+BART path). ✅ 3 tests
+- `nlp/06-topic-modeling` — NMF + LDA (+BERTopic path). ✅ 3 tests
+- `nlp/07-translation` — offline demo (+NLLB path). ✅ 3 tests
+- `nlp/08-question-answering` — extractive TF-IDF (+SQuAD path). ✅ 3 tests
+- `nlp/09-llm-finetune-lora` — **Unsloth QLoRA** (GPU; data-prep tested). ✅ 3 tests
+- `nlp/10-semantic-search` — TF-IDF (+sentence-transformers path). ✅ 2 tests
