@@ -4,10 +4,21 @@
 
 This roadmap is for builders who want to go from Python basics to useful AI products, agents, local inference, evaluation, and UI shipping in 2026. It keeps the original beginner-friendly spirit, but adds the tools that now matter in day-to-day AI engineering: agentic coding assistants, LangGraph, local LLM inference, UI vibe-coding tools, prompt improvement workflows, and production evaluation.
 
-## Study Plan Artifacts
+## 🛠️ Hands-On Project Collection
 
-- [Interactive HTML study plan](docs/ai-engineer-2026-study-plan.html)
-- [Printable PDF study plan](output/pdf/ai-engineer-2026-study-plan.pdf)
+A complete, build-it-yourself companion course: **53 real-world projects** across Machine Learning, Deep Learning, NLP, Generative AI, and AI Agents. Every project ships documented Python, a working UI (one shared chat interface), automated tests, and a professional README — together they form a portfolio you can show and adapt for production work.
+
+➡️ **[Browse the Project Collection »](Project-Collection/)**
+
+| Track | Projects | Examples |
+| --- | --- | --- |
+| Machine Learning | 10 | churn, fraud (SMOTE), demand forecasting, recommender, AutoML + Optuna |
+| Deep Learning | 10 | CNN, transfer learning, Grad-CAM X-ray, YOLO11, U-Net, ViT fine-tune |
+| NLP | 10 | sentiment, NER, summarization, QA, LoRA/QLoRA fine-tune (Unsloth) |
+| Generative AI | 10 | RAG (chat with PDFs), GraphRAG, local LLM, image/video gen, OCR, guardrails |
+| AI Agents | 13 | ReAct, SQL/web/research agents, CrewAI, AutoGen, PydanticAI, A2A, voice |
+
+New to AI coding tools? Start with [`Project-Collection/00-getting-started`](Project-Collection/00-getting-started) to learn how to drive Claude Code, OpenAI Codex, and Lovable.
 
 ## 2026 Learning Tracks
 
