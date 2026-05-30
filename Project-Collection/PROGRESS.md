@@ -15,7 +15,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B8 | GenAI 06–10 | ✅ (16 tests green) |
 | B9 | Agents 01–05 | ✅ (16 tests green) |
 | B10 | Agents 06–09 | ✅ (13 tests green) |
-| B11 | Agents 10–13 | ⬜ |
+| B11 | Agents 10–13 | ✅ (14 tests green) |
 
 ## Shipped projects
 All use multiple algorithms + a stacking ensemble via the shared engine (`_shared/tabular.py`),
@@ -69,3 +69,9 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `agents/07-pydanticai-tools` — typed tool contracts (Pydantic). ✅ 4 tests
 - `agents/08-a2a-protocol` — agent-to-agent across frameworks. ✅ 3 tests
 - `agents/09-healthcare-agent` — guideline RAG + safety guardrails. ✅ 4 tests
+- `agents/10-finance-agent` — financials SQL + no-advice guardrail. ✅ 4 tests
+- `agents/11-voice-agent` — STT→LLM→TTS (text orchestration tested). ✅ 2 tests
+- `agents/12-guardrails-safety` — input+output rails (NeMo path). ✅ 4 tests
+- `agents/13-agent-harness` — registry/router/trace/retries capstone. ✅ 4 tests
+
+## ✅ Complete: 53 projects across 12 batches · ~162 pytest tests green · one shared chat UI · all pushed.
