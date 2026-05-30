@@ -1,0 +1,6 @@
+streamlit>=1.40
+scikit-learn>=1.4
+pandas>=2.0
+numpy>=1.26
+pytest>=8.0
+# higher accuracy: transformers, datasets (DistilBERT fine-tune)

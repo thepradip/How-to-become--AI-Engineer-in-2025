@@ -9,7 +9,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B2 | ML 06–10 | ✅ (15 tests green) |
 | B3 | Deep Learning 01–05 | ✅ (15 tests green) |
 | B4 | Deep Learning 06–10 | ✅ (16 tests green) |
-| B5 | NLP 01–05 | ⬜ |
+| B5 | NLP 01–05 | ✅ (11 tests green) |
 | B6 | NLP 06–10 | ⬜ |
 | B7 | GenAI 01–05 | ⬜ |
 | B8 | GenAI 06–10 | ⬜ |
@@ -40,3 +40,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `deep-learning/08-speech-emotion` — audio features + MLP (librosa opt). ✅ 4 tests
 - `deep-learning/09-face-verification` — embeddings + cosine verify. ✅ 3 tests
 - `deep-learning/10-vit-finetune` — ViT fine-tune + W&B (optional). ✅ 3 tests
+- `nlp/01-sms-spam` — TF-IDF + NB/LogReg/SVM (shared text engine). ✅ 2 tests
+- `nlp/02-sentiment` — review sentiment (+DistilBERT path). ✅ 2 tests
+- `nlp/03-fake-news` — real/fake text classification. ✅ 2 tests
+- `nlp/04-ner` — rule-based NER (+transformer path). ✅ 2 tests
+- `nlp/05-summarization` — extractive (+BART path). ✅ 3 tests

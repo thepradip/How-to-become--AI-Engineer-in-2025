@@ -1,0 +1,4 @@
+streamlit>=1.40
+pandas>=2.0
+pytest>=8.0
+# production NER: spacy (+ en_core_web_sm) or transformers
