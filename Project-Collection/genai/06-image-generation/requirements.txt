@@ -1,0 +1,4 @@
+streamlit>=1.40
+numpy>=1.26
+pytest>=8.0
+# real text-to-image: diffusers, transformers, torch (SD3.5 / FLUX, 16GB GPU)

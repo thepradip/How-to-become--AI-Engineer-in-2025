@@ -1,0 +1,5 @@
+streamlit>=1.40
+numpy>=1.26
+pillow>=10.0
+pytest>=8.0
+# real text-to-video: diffusers + torch (LTX-Video/Wan2.2, GPU) or Replicate API

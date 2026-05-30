@@ -12,7 +12,7 @@ Built in reviewable batches. ✅ = code + shared chat UI + tests + README, teste
 | B5 | NLP 01–05 | ✅ (11 tests green) |
 | B6 | NLP 06–10 | ✅ (14 tests green) |
 | B7 | GenAI 01–05 | ✅ (16 tests green) |
-| B8 | GenAI 06–10 | ⬜ |
+| B8 | GenAI 06–10 | ✅ (16 tests green) |
 | B9 | Agents 01–05 | ⬜ |
 | B10 | Agents 06–09 | ⬜ |
 | B11 | Agents 10–13 | ⬜ |
@@ -55,3 +55,8 @@ the shared chat UI, and real datasets. Tested on CPU.
 - `genai/03-graphrag` — knowledge-graph retrieval (networkx). ✅ 4 tests
 - `genai/04-local-llm-chat` — Ollama/vLLM client. ✅ 2 tests
 - `genai/05-bitnet-1bit` — ternary quantization demo. ✅ 3 tests
+- `genai/06-image-generation` — diffusion (procedural demo + diffusers). ✅ 3 tests
+- `genai/07-video-generation` — text-to-video (demo + LTX/Wan2.2). ✅ 3 tests
+- `genai/08-document-intelligence` — OCR + field extraction. ✅ 2 tests
+- `genai/09-structured-extraction` — Pydantic guardrails (+PydanticAI). ✅ 4 tests
+- `genai/10-evals-guardrails` — eval metrics + PII/safety harness. ✅ 4 tests

@@ -1,0 +1,4 @@
+streamlit>=1.40
+pandas>=2.0
+pytest>=8.0
+# OCR engines: docling, olmocr, or transformers (Qwen2.5-VL); Mistral OCR API
